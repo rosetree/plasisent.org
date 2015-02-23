@@ -1,0 +1,88 @@
+body {
+	width: 98%;
+	max-width: 40rem;
+	margin: 1rem auto;
+}
+
+
+/* Headlines */
+
+h1, h2, h3, h4 {
+	font-family: monospace;
+	margin: 1.4em 0 0.9em 0;
+}
+
+h1 {
+	font-size: 1.6rem;
+	border-top: #ccc dotted thin;
+	padding: 0.1em 0;
+}
+
+h2 {
+	font-size: 1.1rem;
+	font-weight: bold;
+}
+
+h3 {
+	font-size: 0.9rem;
+	font-weight: bold;
+}
+
+/* Markdown Flavour for Headlines */
+h1:before { content: "# "; }
+h2:before { content: "## "; }
+h3:before { content: "### "; }
+
+
+/* Body Text */
+
+p, li {
+	line-height: 1.4;
+	margin-top: 0.9em;
+}
+
+i, em, u {
+	font-style: italic;
+}
+
+blockquote {
+	font-size: 0.9rem;
+	padding-left: 1.1rem;
+	border-left: #ccc solid thin;
+}
+
+/* Links */
+
+a {
+	color: #282;
+}
+
+a:hover, a:visited {
+	color: #262;
+}
+
+
+/* Bilder */
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+
+/* Listen */
+
+ul {
+	padding-left: 1.1rem;
+}
+
+ul li {
+	list-style-type: disc;
+}
+
+
+/* Sonstiges */
+
+hr {
+	margin: 1.4em 0;
+}

@@ -1,0 +1,22 @@
+!!!
+%html{lang: "de"}
+  %head
+    %meta{charset: "utf-8"}
+    %title #{@item[:title]} | Plasisent
+    %link{rel: "stylesheet", href: @items["/styles/master/"].path}
+    %meta{name: "generator", content: "nanoc #{Nanoc::VERSION}"}
+  %body
+    %p
+      = link_to "Plasisent", @items["/"].path, title: @items["/"][:title]
+
+    -#
+      After the header is done, load a different layout for each kind of
+      content you want to create. The kind could be one of the following:
+
+      * page
+      * article
+      * category
+      * quicky
+      * archive
+
+    = yield

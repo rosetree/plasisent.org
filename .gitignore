@@ -5,6 +5,8 @@ output/
 
 # Temporary file directory
 tmp/
+# Temporary sass directory
+.sass-cache
 
 # Crash Log
 crash.log
