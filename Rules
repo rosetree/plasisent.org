@@ -14,6 +14,7 @@
 #   because “*” matches zero or more characters.
 
 preprocess do
+  move_post_identifiers
   create_tag_pages
 end
 
@@ -23,6 +24,11 @@ compile '*' do
       :syntax => :scss,
       #:style => :compressed,
     }
+  elsif item[:extension] == 'md'
+    filter :kramdown, {
+      :smart_quotes => 'sbquo,lsquo,bdquo,ldquo',
+    }
+    layout 'default'
   elsif item.binary?
     # don’t filter binary items
   else

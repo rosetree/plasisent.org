@@ -29,3 +29,13 @@ def link_tags(item, tag_attribute = :tags)
   linked_tags.join ', '
 end
 
+
+def move_post_identifiers
+  @items.each do |item|
+    next if item.binary?
+    if /([0-9]{4})\/[0-9]{3}\-([^\/]+)/.match(item.identifier)
+      year, slug = /([0-9]{4})\/[0-9]{3}\-([^\/]+)/.match(item.identifier).captures
+      item.identifier = "/#{year}/#{slug}/"
+    end
+  end
+end
