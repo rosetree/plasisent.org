@@ -1,0 +1,10 @@
+= yield
+
+- if @category_items == []
+  %p Bisher wurden in diesem Regal keine Inhalte hinterlegt.
+- else
+  %ul
+    - @category_items.each do |category_item|
+      %li
+        %a{href: category_item.path}
+          = category_item[:title]

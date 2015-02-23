@@ -15,8 +15,39 @@
 
       * page
       * article
-      * category
+      * category / tag
       * quicky
       * archive
 
-    = yield
+    - case @item[:kind]
+    - when "category"
+      - category_items = all_items_with_category item[:name] || item[:title]
+      = render "category", :category_items => category_items do
+        = yield
+    - when "tag"
+      = render "tag" do
+        = yield
+    - else
+      = yield
+
+
+    -# Footer Ersatz
+    %h1< Anhang
+
+    - category_link = ""
+    - if item[:category]
+      - category_link = link_category item
+    
+    - if item[:tags] or category_link != ""
+      %h2{title: item[:title]} Dieser Beitrag …
+
+    - if category_link != ""
+      %p … ist eingeordnet im Regal #{category_link}.
+
+    - if item[:tags]
+      %p … behandelt die Themen #{link_tags item}.
+
+    %h2 Alle Regale
+    %ul
+      - all_categories.each do |cat|
+        %li= link_to cat[:title], cat.path
