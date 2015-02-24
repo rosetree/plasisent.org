@@ -1,0 +1,24 @@
+%h1= item[:title]
+
+- if item[:linkprev] || item[:linknext]
+  %p
+    - if item[:linkprev]
+      = link_to item[:linkprev][:title], item[:linkprev][:link]
+      ←
+    - if item[:linknext]
+      →
+      = link_to item[:linknext][:title], item[:linknext][:link]
+
+- if item[:posts]
+  %ol
+    - item[:posts].each do |i|
+      %li<
+        = i[:created_at].strftime("%d %B %Y")
+        %br/
+        = link_to i[:title], i.path
+
+-#%h2 Neue Themen -# TODO
+ 
+- if item[:referenced_tags]
+  %h2 Angesprochene Themen
+  %p= link_tags item, :referenced_tags

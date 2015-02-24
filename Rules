@@ -16,6 +16,9 @@
 preprocess do
   move_post_identifiers
   create_tag_pages
+  generate_yearly_archive(@items.find_all { |i| i[:kind] == 'article' }, :created_at, 'Jahr')
+  # TODO: Add new tags to the weekly archive. `|| i[:kind] == 'tag'`
+  generate_weekly_archive(@items.find_all { |i| i[:kind] == 'article' }, :created_at, 'KW')
 end
 
 compile '*' do
