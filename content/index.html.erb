@@ -1,0 +1,24 @@
+---
+title: "Ein mehr oder weniger politisches Blog"
+---
+
+<p>
+Herzlich Willkommen auf meiner Blogwiese. Schau dich ruhig um, machs dir
+bequem, nehm’ dir einen Kaffee. Ich spreche hier ein paar Themen an, die mir
+wichtig sind. Was mich aktuell so beschäftigt siehst du direkt unter diesem
+kurzen Absatz.
+</p>
+
+<% count = 4 %>
+<% index = 0 %>
+
+<% sorted_articles.each do |article| %>
+  <h1><%= link_to article[:title], article.path %></h1>
+
+  <p><em>Geschrieben am <%= article[:created_at].strftime("%F") %>.</em></p>
+
+  <%= article.compiled_content %>
+
+  <% index += 1 %>
+  <% break if index == count %>
+<% end %>
