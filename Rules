@@ -27,11 +27,6 @@ compile '*' do
       :syntax => :scss,
       #:style => :compressed,
     }
-  elsif item[:extension] == 'md'
-    filter :kramdown, {
-      :smart_quotes => 'sbquo,lsquo,bdquo,ldquo',
-    }
-    layout 'default'
   elsif item.binary?
     # don’t filter binary items
   else
