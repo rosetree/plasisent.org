@@ -36,6 +36,9 @@ compile '*' do
     # don’t filter binary items
   else
     filter :erb
+    filter :kramdown, {
+      :smart_quotes => 'sbquo,lsquo,bdquo,ldquo',
+    }
     layout 'default'
   end
 end
