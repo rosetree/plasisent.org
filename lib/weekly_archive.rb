@@ -38,25 +38,12 @@ def generate_weekly_archive(articles, date_attribute, title, week_url_prefix = "
       end
       articles_tags = articles_tags.flatten.compact.uniq
 
-      linkprev = nil
-      linknext = nil
-
-      if (wi > 0)
-        linkprev = { :title => "#{title} #{weeklist[wi - 1]}", :link => "/#{year}/#{week_url_prefix}#{weeklist[wi - 1]}/" }
-      end
-
-      if (wi < weeklist.size - 1)
-        linknext = { :title => "#{title} #{weeklist[wi + 1]}", :link => "/#{year}/#{week_url_prefix}#{weeklist[wi + 1]}/" }
-      end
-
       @items << Nanoc::Item.new(
         "",
         {
           :title => "#{title} #{week}",
           :kind => "archive",
           :posts => weekmap[week],
-          :linkprev => linkprev,
-          :linknext => linknext,
           :referenced_tags => articles_tags
         },
         "/#{year}/#{week_url_prefix}#{week}/")

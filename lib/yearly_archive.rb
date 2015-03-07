@@ -24,25 +24,12 @@ def generate_yearly_archive(articles, date_attribute, title)
     year = yearlist[i]
     yearmap[year].sort! { |a,b| b[date_attribute].to_datetime <=> a[date_attribute].to_datetime }
 
-    linkprev = nil
-    linknext = nil
-
-    if (i > 0)
-      linkprev = { :title => "#{title} #{yearlist[i - 1]}", :link => "/#{yearlist[i - 1]}/" }
-    end
-
-    if (i < yearlist.size - 1)
-      linknext = { :title => "#{title} #{yearlist[i + 1]}", :link => "/#{yearlist[i + 1]}/" }
-    end
-
     @items << Nanoc::Item.new(
       "",
       {
         :title => "#{title} #{year}",
         :kind => "archive",
         :posts => yearmap[year],
-        :linkprev => linkprev,
-        :linknext => linknext,
       },
       "/#{year}/")
   end

@@ -1,14 +1,5 @@
 %h1= item[:title]
 
-- if item[:linkprev] || item[:linknext]
-  %p
-    - if item[:linkprev]
-      = link_to item[:linkprev][:title], item[:linkprev][:link]
-      ←
-    - if item[:linknext]
-      →
-      = link_to item[:linknext][:title], item[:linknext][:link]
-
 - if item[:posts]
   %ol
     - item[:posts].each do |i|

@@ -5,6 +5,11 @@
     %title #{@item[:title]} | Plasisent
     %link{rel: "stylesheet", href: @items["/styles/master/"].path}
     %meta{name: "generator", content: "nanoc #{Nanoc::VERSION}"}
+    - if item[:prev] or item[:next]
+      - if item[:prev]
+        %link{rel: "prev", title: item[:prev][:title], href: item[:prev].path}
+      - if item[:next]
+        %link{rel: "next", title: item[:next][:title], href: item[:next].path}
   %body
     %p
       = link_to "Plasisent", @items["/"].path, title: @items["/"][:title]
@@ -42,10 +47,18 @@
     -# Footer Ersatz
     %h1< Anhang
 
+    - if item[:prev] or item[:next]
+      %p
+        - if item[:prev]
+          #{link_to item[:prev][:title], item[:prev].path}
+          ←
+        - if item[:next]
+          → #{link_to item[:next][:title], item[:next].path}
+
     - category_link = ""
     - if item[:category]
       - category_link = link_category item
-    
+
     - if item[:tags] or category_link != ""
       %h2{title: item[:title]} Dieser Beitrag …
 

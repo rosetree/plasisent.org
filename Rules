@@ -19,6 +19,7 @@ preprocess do
   generate_yearly_archive(@items.find_all { |i| i[:kind] == 'article' }, :created_at, 'Jahr')
   # TODO: Add new tags to the weekly archive. `|| i[:kind] == 'tag'`
   generate_weekly_archive(@items.find_all { |i| i[:kind] == 'article' }, :created_at, 'KW')
+  generate_prev_next_links
 end
 
 compile '*' do
