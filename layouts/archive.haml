@@ -4,13 +4,7 @@
   %ol
     - item[:posts].each do |i|
       %li<
-        %em
-          -# TODO: This code that creates links to the archives is nearly the same, as somewhere else.
-          - idate = i[:created_at]
-          = idate.strftime("%-d %B")
-          - year_link = link_to idate.strftime("%Y"), "/#{idate.strftime("%Y")}/"
-          - week_link = link_to "Woche #{idate.strftime("%-V")}", "/#{idate.strftime("%Y")}/kw-#{idate.strftime("%V")}/"
-          = "(#{year_link}, #{week_link})"
+        %em= i.linked_date_information
         %br/
         = link_to i[:title], i.path
 

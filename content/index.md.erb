@@ -12,14 +12,9 @@ kurzen Absatz.
 
 <% sorted_articles.each do |article| %>
 
-<% # TODO: This code that creates links to the archives is nearly the same, as somewhere else. %>
-<% idate = article[:created_at] %>
-<% year_link = link_to idate.strftime("%Y"), "/#{idate.strftime("%Y")}/" %>
-<% week_link = link_to "Woche #{idate.strftime("%-V")}", "/#{idate.strftime("%Y")}/kw-#{idate.strftime("%V")}/" %>
-
 # <%= link_to article[:title], article.path %>
 
-*Geschrieben am <%= idate.strftime("%-d %B") %> (<%= year_link %>, <%= week_link %>).*
+*Geschrieben am <%= article.linked_date_information %>.*
 
 <%= article.compiled_content %>
 

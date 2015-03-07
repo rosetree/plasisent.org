@@ -82,3 +82,30 @@ def generate_prev_next_links
     end
   end
 end
+
+
+def german_month_name date
+  german_months = ["Januar", "Februar", "März", "April", "Mai", "Juni", "Juli",
+                   "August", "September", "Oktober", "November", "Dezember"]
+  german_months[date.strftime("%m").to_i - 1]
+end
+
+
+module Nanoc
+  class Item
+    def linked_date_information
+      return "" unless self[:created_at]
+
+      date = self[:created_at]
+
+      year  = date.strftime "%Y"
+      month = german_month_name date
+      day   = date.strftime "%-d"
+
+      year_link = link_to year, "/#{year}/"
+      week_link = link_to "Woche #{date.strftime("%-V")}", "/#{year}/kw-#{date.strftime("%V")}/"
+
+      "#{day}. #{month} (#{year_link}, #{week_link})"
+    end
+  end
+end
