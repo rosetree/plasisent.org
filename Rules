@@ -21,6 +21,11 @@ preprocess do
   generate_prev_next_links
 end
 
+
+compile "/htaccess" do
+  filter :erb
+end
+
 compile '*' do
   if item[:extension] == 'scss'
     filter :sass, {
@@ -36,6 +41,11 @@ compile '*' do
     }
     layout 'default'
   end
+end
+
+
+route "/htaccess" do
+  "/.htaccess"
 end
 
 route '*' do

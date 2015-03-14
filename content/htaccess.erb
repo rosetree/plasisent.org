@@ -1,0 +1,15 @@
+<% sorted_articles.each do |article|
+  date  = article[:created_at]
+  year  = article[:created_at].year
+  month = article[:created_at].strftime "%m"
+  day   = article[:created_at].strftime "%d"
+
+  slug = /\d\/(.*)$/.match(article.identifier).captures.first
+%>
+<% if date.to_datetime < DateTime.new(2015, 1, 14) %>
+  RedirectMatch 301 ^<%= "/#{slug}" %>?$ <%= article.path %>
+<% end %>
+<% if date.to_datetime > DateTime.new(2015, 1, 14) and date.to_datetime < DateTime.new(2015, 3, 1)%>
+  RedirectMatch 301 ^<%= "/#{year}/#{month}/#{day}/#{slug}" %>?$ <%= article.path %>
+<% end %>
+<% end %>
