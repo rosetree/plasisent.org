@@ -1,0 +1,14 @@
+nav a {
+	&:after {
+		content: " / ";
+		color: black;
+	}
+
+	&:first-child {
+		font-weight: bold;
+	}
+
+	&:last-child:after {
+		content: "";
+	}
+}
