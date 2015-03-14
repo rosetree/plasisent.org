@@ -1,12 +1,10 @@
 %h1= item[:title]
 
-- if item[:posts]
-  %ol
-    - item[:posts].each do |i|
-      %li<
-        %em= i.linked_date_information
-        %br/
-        = link_to i[:title], i.path
+- item[:posts].each do |i|
+  %p<
+    %em= i.linked_date_information
+    %br/
+    = link_to i[:title], i.path
 
 - if item[:referenced_tags]
   %h2 Angesprochene Themen
