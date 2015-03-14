@@ -2,12 +2,15 @@ body {
 	width: 98%;
 	max-width: 40rem;
 	margin: 1rem auto;
+	padding: 1rem;
+	box-shadow: 0 0 10px #ccc;
+	border-radius: 5px;
 }
 
 
 /* Headlines */
 
-h1, h2, h3, h4 {
+h1, h2, h3 {
 	font-family: monospace;
 	margin: 1.4em 0 0.9em 0;
 }
@@ -67,12 +70,16 @@ a:hover, a:visited {
 img {
 	max-width: 100%;
 	height: auto;
+	border-radius: 3px;
 }
 
+a img:hover {
+	box-shadow: 0 0 10px #282;
+}
 
 /* Listen */
 
-ul {
+ul, ol {
 	padding-left: 1.1rem;
 }
 
@@ -80,9 +87,18 @@ ul li {
 	list-style-type: disc;
 }
 
+ol li {
+	list-style-type: decimal;
+}
+
+
 
 /* Sonstiges */
 
 hr {
 	margin: 1.4em 0;
+	height: 1px;
+	border: none;
+	color: #ccc;
+	background-color: #ccc;
 }
