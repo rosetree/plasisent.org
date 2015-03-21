@@ -3,6 +3,7 @@
   %head
     %meta{charset: "utf-8"}
     %title #{@item[:title]} | Plasisent
+    %link{rel: "stylesheet", href: 'http://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700|Ubuntu:400,700,400italic,700italic'}
     %link{rel: "stylesheet", href: @items["/styles/master/"].path}
     %meta{name: "generator", content: "nanoc #{Nanoc::VERSION}"}
     - if item[:prev] or item[:next]
