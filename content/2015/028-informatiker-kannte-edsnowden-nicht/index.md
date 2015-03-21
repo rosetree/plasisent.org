@@ -12,5 +12,5 @@ findet, was die NSA sich so erlaubt.
 
 Diese Anekdote wollte ich dir mal eben mitteilen. Mich lehrte es, dass ich
 vielleicht ein bisschen direkter sein sollte, wenn ich von der totalen
-Überwachung der gesemten Menschheit rede. Einfach mal davon ausgehen, dass mein
+Überwachung der gesamten Menschheit rede. Einfach mal davon ausgehen, dass mein
 Gegenüber nicht genau weiß, worum es geht.
