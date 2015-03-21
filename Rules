@@ -22,6 +22,9 @@ preprocess do
 end
 
 
+compile '/static/*/' do
+end
+
 compile "/htaccess" do
   filter :erb
 end
@@ -43,6 +46,11 @@ compile '*' do
   end
 end
 
+
+route '/static/*/' do
+  # /static/foo.html/ → /foo.html
+  item.identifier[7..-2]
+end
 
 route "/htaccess" do
   "/.htaccess"
