@@ -17,6 +17,7 @@ body {
 /* Headlines */
 
 h1, h2, h3 {
+	// TODO: Clean multiple line headlines (look at :first-line).
 	font-family: 'Ubuntu Mono', monospace;
 	margin: 1.7em 0 1em 0;
 	// TODO: Smaller word spacings in headlines.

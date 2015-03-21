@@ -50,9 +50,8 @@ end
 
 route '*' do
   if item[:extension] == 'scss'
-    if item.identifier.split("/")[-1].start_with?("_")
+    unless item.identifier.split("/")[-1].start_with?("_")
       # Do nothing when a SCSS file starts with an underscore.
-    else
       # Write item with identifier /foo/ to /foo.css
       item.identifier.chop + '.css'
     end
