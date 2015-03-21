@@ -1,18 +1,26 @@
+html {
+	background-color: #efe;
+}
+
 body {
 	width: 98%;
 	max-width: 40rem;
 	margin: 1rem auto;
 	padding: 1rem;
-	box-shadow: 0 0 10px #ccc;
+	box-shadow: 0 0 10px #a88;
 	border-radius: 5px;
+	background-color: white;
+	font-family: 'Ubuntu', monospace;
 }
 
 
 /* Headlines */
 
 h1, h2, h3 {
-	font-family: monospace;
-	margin: 1.4em 0 0.9em 0;
+	font-family: 'Ubuntu Mono', monospace;
+	margin: 1.7em 0 1em 0;
+	// TODO: Smaller word spacings in headlines.
+	// word-spacing: 0em;
 }
 
 h1 {
@@ -48,6 +56,10 @@ i, em, u {
 	font-style: italic;
 }
 
+b, strong {
+	font-weight: bold;
+}
+
 blockquote {
 	font-size: 0.9rem;
 	padding-left: 1.1rem;
@@ -60,8 +72,12 @@ a {
 	color: #282;
 }
 
-a:hover, a:visited {
+a:visited {
 	color: #262;
+}
+
+a:hover {
+	color: #422;
 }
 
 
