@@ -20,6 +20,7 @@ tags:
   - Demonstration
   - Vandalismus
   - Flüchtlingslager
+  - Rekursiver Leseaufruf
 ---
 
 * Der Fotograf Sascha Rheker hat zu den Blockupy Protesten gegen die neue
