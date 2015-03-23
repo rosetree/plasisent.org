@@ -46,6 +46,11 @@ tags:
 In meinen Augen eine weitere gerechtfertigte Demonstration, die von ein paar
 Idioten (nein, nicht die Polizei oder die Lügenpresse) zerstört wurde.
 
+**Update**: In [einem Kommentar][kommentar], wurde ich darauf hingewiesen, dass
+es von Blockupy ein [Statement zum vermeintlichen Angriff auf ein
+Flüchtlingsheim][statement] gibt.  Demnach wurde kein Flüchtlingsheim
+angegriffen, sondern ein Gebäude, dass auf einem Gelände steht, auf dem sich
+auch ein Gebäude befindet, in dem jugendliche Flüchtlinge unter kommen.
 
 [hirnfick]: https://tuxproject.de/blog/2015/03/kapitalismuskritiker-enteignen/
 
@@ -58,3 +63,7 @@ Idioten (nein, nicht die Polizei oder die Lügenpresse) zerstört wurde.
 [rayk]: https://www.youtube.com/watch?v=LVzC1zGy5yM
 
 [srheker]: http://www.sascharheker.com/album.php?id=134
+
+[kommentar]: http://plasisent.org/2015/bilder-und-links-zu-blockupy/#comment-2161
+
+[statement]: https://blockupy.org/5916/refugees-are-welcome-here-klarstellung-zu-den-ereignissen-am-kolpingwerk/
