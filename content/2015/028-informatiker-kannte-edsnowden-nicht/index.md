@@ -1,3 +1,15 @@
+---
+kind: article
+category: Überwachung
+title: Informatiker kannte Edward Snowden nicht
+created_at: 2015-03-16 23:13:45 +0200
+tags:
+  - NSA
+  - GCHQ
+  - mein Mitbewohner
+  - Edward Snowden
+---
+
 **Mein Mitbewohner ist Informatiker, um die 30 Jahre alt und hat bis heute
 nichts von Edward Snowden gehört.** Als ich das heute Mittag herausfand bin ich
 aus allen Wolken gefallen. Wie kann ein Mensch, der circa 17 Stunden am Tag im
