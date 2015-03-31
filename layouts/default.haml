@@ -16,9 +16,6 @@
     %nav
       %p
         = link_to "Plasisent", @items["/"].path, title: @items["/"][:title]
-        %a{href: "https://github.com/rosetree/plasisent.org"}<
-          GitHub Repository
-          -# TODO: Link current page in Github?
         = link_to "Aktuelle Woche", last_week_archive.path, title: "Okay, „aktuell“ ist hier vielleicht nicht der richtige Begriff, aber was soll ich den sonst schreiben? „Letzte Woche in der ich etwas veröffentlicht habe“? Viel zu lang. Im moment ist das aber #{last_week_archive[:title]}."
         = link_to "Kontakt", "http://rosetree.de/micha/"
 
@@ -57,6 +54,7 @@
     -# Footer Ersatz
     %h1< Anhang
 
+    -# FIXME: Why am I using `item` instead of `@item` from here?
     - if item[:prev] or item[:next]
       %p
         - if item[:prev]
@@ -69,7 +67,7 @@
     - if item[:category]
       - category_link = link_category item
 
-    - if item[:tags] or category_link != "" or item[:created_at]
+    - if item[:tags] or category_link != "" or item[:created_at] or @item.github_url != ""
       %h2{title: item[:title]} Dieser Beitrag …
 
     - if item[:created_at]
@@ -80,6 +78,9 @@
 
     - if item[:tags]
       %p … behandelt die Themen #{link_tags item}.
+
+    - unless @item.github_url == ""
+      %p … ist auf #{link_to "GitHub", @item.github_url} zu finden.
 
     %h2 Alle Regale
     %ul
