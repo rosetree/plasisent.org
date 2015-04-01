@@ -19,6 +19,9 @@
         = link_to "Aktuelle Woche", last_week_archive.path, title: "Okay, „aktuell“ ist hier vielleicht nicht der richtige Begriff, aber was soll ich den sonst schreiben? „Letzte Woche in der ich etwas veröffentlicht habe“? Viel zu lang. Im moment ist das aber #{last_week_archive[:title]}."
         = link_to "Kontakt", "http://rosetree.de/micha/"
 
+    - if @item[:cleaned?] == false
+      %p< Diese Seite wurde noch nicht korrigiert und von Unsauberkeiten bereinigt. Es kann deshalb sein, dass sie komisch aussieht. Wenn du helfen willst, kannst du dir die #{link_to "Datei auf GitHub", @item.github_url} einmal anschauen.
+
     %p< Dies ist die #{'<b>Vorschau</b>'} auf die neue Version meines Blogs. Die aktuelle Version findest du unter #{link_to "plasisent.org", "http://plasisent.org"}. Ich freue mich über Kritik und Lob. Schreib mir doch einfach eine E-Mail.
 
     -#
