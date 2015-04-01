@@ -12,6 +12,14 @@
 def generate_yearly_archive(articles, date_attribute, title)
   today = Time.now
   currentyear = today.year
+
+  # FIXME: It shouldn’t be necessary to check type of the date_attribute here.
+  articles.each do |item|
+    if item[date_attribute].is_a? String
+      item[date_attribute] = DateTime.parse(item[date_attribute])
+    end
+  end
+
   yearmap = articles.group_by { |item| item[date_attribute].year }
 
   if !yearmap.has_key?(currentyear)
