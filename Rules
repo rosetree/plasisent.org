@@ -6,7 +6,8 @@ preprocess do
   create_tag_pages
   generate_yearly_archive sorted_articles, :created_at, "Jahr"
   generate_weekly_archive sorted_articles, :created_at, "KW"
-  generate_prev_next_links
+  # TODO: Create a “prev-next-link” cache.
+  # generate_prev_next_links
 end
 
 
