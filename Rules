@@ -18,6 +18,10 @@ compile "/htaccess" do
   filter :erb
 end
 
+compile "/feed" do
+  filter :erb
+end
+
 compile '*' do
   if item[:extension] == 'scss'
     filter :sass, {
@@ -43,6 +47,10 @@ end
 
 route "/htaccess" do
   "/.htaccess"
+end
+
+route "/feed" do
+  "/feed/index.xml"
 end
 
 route '*' do

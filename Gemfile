@@ -6,3 +6,5 @@ gem "adsf"
 gem "sass"
 gem "haml"
 gem "kramdown"
+
+gem "builder"
