@@ -18,6 +18,7 @@
       %p
         = link_to "Plasisent", @items["/"].path, title: @items["/"][:title]
         = link_to "Aktuelle Woche", last_week_archive.path, title: "Okay, „aktuell“ ist hier vielleicht nicht der richtige Begriff, aber was soll ich den sonst schreiben? „Letzte Woche in der ich etwas veröffentlicht habe“? Viel zu lang. Im moment ist das aber #{last_week_archive[:title]}."
+        = link_to "Suche", @items["/suche/"].path, title: "Es handelt sich hierbei eher um eine Alibisuche, aber immerhin kannst du einen Begriff eingeben und eventuelle Ergebnisse betrachten."
         = link_to "Kontakt", "http://rosetree.de/micha/"
 
     - if @item[:cleaned?] == false
