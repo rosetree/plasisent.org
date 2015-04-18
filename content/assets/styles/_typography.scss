@@ -48,7 +48,7 @@ h3:before { content: "### "; }
 
 /* Body Text */
 
-p, li, pre {
+p, li, pre, form {
 	line-height: 1.4;
 	margin-top: 0.9em;
 }
@@ -119,6 +119,37 @@ code {
 pre {
 	padding: 0.9em 1.1rem;
 	background-color: #eee;
+	border-top:    #ccc thin solid;
+	border-bottom: #ccc thin solid;
+}
+
+
+/* Form Elements */
+
+// TODO: Add better looking and more general design for form elements.
+
+input {
+	color: #244;
+	width: 70%;
+	padding: 0.3em 0.5em;
+	border: none;
+	border-top:    #eee thin solid;
+	border-bottom: #eee thin solid;
+}
+
+input[type=submit] {
+	color: #fff;
+	background-color: #282;
+	width: 20%;
+	cursor: pointer;
+	border-radius: 3px;
+}
+
+input[type=submit]:hover {
+	background-color: #3a3;
+}
+
+input[type=text]:focus {
 	border-top:    #ccc thin solid;
 	border-bottom: #ccc thin solid;
 }
