@@ -6,8 +6,22 @@ include Nanoc::Helpers::LinkTo
 
 
 def generate_url base, title
-  title = title.gsub /[ äöüß#]/, ' ' => '-', 'ä' => 'ae', 'ö' => 'oe', 'ü' => 'ue', 'ß' => 'ss', '#' => 'hashtag-'
-  title = title.downcase
+  title = title.downcase.gsub /[ äÄöÖüÜß#„“]/ do |match|
+    case match
+    when " " then "-"
+    when "ä" then "ae"
+    when "Ä" then "ae"
+    when "ö" then "oe"
+    when "Ö" then "oe"
+    when "ü" then "ue"
+    when "Ü" then "ue"
+    when "ß" then "ss"
+    when "#" then "hashtag-"
+    # Some chars have to be removed.
+    when "„", "“"
+      ""
+    end
+  end
   return "#{base}#{title}/"
 end
 
