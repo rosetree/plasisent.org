@@ -48,7 +48,7 @@ h3:before { content: "### "; }
 
 /* Body Text */
 
-p, li {
+p, li, pre {
 	line-height: 1.4;
 	margin-top: 0.9em;
 }
@@ -109,6 +109,19 @@ ol li {
 }
 
 
+/* Code and Pre Elements */
+
+code {
+	background-color: #eee;
+	font-family: monospace;
+}
+
+pre {
+	padding: 0.9em 1.1rem;
+	background-color: #eee;
+	border-top:    #ccc thin solid;
+	border-bottom: #ccc thin solid;
+}
 
 /* Sonstiges */
 

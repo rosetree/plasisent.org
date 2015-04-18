@@ -50,9 +50,9 @@
       -# TODO: I am not sure, whether or not I should add the headline to an
           article in the layout or in the text …
       %h1= @item[:title]
-      = yield
+      ~ yield
     - else
-      = yield
+      ~ yield
 
 
     -# Footer Ersatz
