@@ -35,6 +35,7 @@ compile '*' do
     filter :kramdown, {
       :smart_quotes => 'sbquo,lsquo,bdquo,ldquo',
     }
+    filter :add_figure_to_img
     layout 'default'
   end
 end
