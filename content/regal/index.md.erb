@@ -1,0 +1,15 @@
+---
+title: Alle Regale
+---
+
+# <%= @item[:title] %>
+
+Dies ist eine langweilige Liste aller Regale, in denen ich bisher Artikel
+abgelegt habe. Um diese bisher sehr lieblose Seite werde ich mich später noch
+im Detail kümmern.
+
+<%# TODO: Die Seite mit allen Regalen liebevoller gestalten. %>
+
+<% all_categories.each do |cat| %>
+* <%= link_to cat[:title], cat.path %>
+<% end %>

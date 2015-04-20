@@ -17,6 +17,7 @@
     %nav
       %p
         = link_to "Plasisent", @items["/"].path, title: @items["/"][:title]
+        = link_to "Regale", @items["/regal/"].path
         = link_to "Aktuelle Woche", last_week_archive.path, title: "Okay, „aktuell“ ist hier vielleicht nicht der richtige Begriff, aber was soll ich den sonst schreiben? „Letzte Woche in der ich etwas veröffentlicht habe“? Viel zu lang. Im moment ist das aber #{last_week_archive[:title]}."
         = link_to "Suche", @items["/suche/"].path, title: "Es handelt sich hierbei eher um eine Alibisuche, aber immerhin kannst du einen Begriff eingeben und eventuelle Ergebnisse betrachten."
         = link_to "Kontakt", "http://rosetree.de/micha/"
@@ -87,7 +88,6 @@
     - unless @item.github_url == ""
       %p … ist auf #{link_to "GitHub", @item.github_url} zu finden.
 
-    %h2 Alle Regale
-    %ul
-      - all_categories.each do |cat|
-        %li= link_to cat[:title], cat.path
+    %h2 Sonst noch was?
+
+    %p Folgen kannst du mir auf #{link_to "Twitter", "https://twitter.com/r0setree"} und #{link_to "GitHub", "https://github.com/rosetree"}. Dort gibt es auch das #{link_to "Repository dieses Blogs", "https://github.com/rosetree/plasisent"}. Bearbeitungen von mir findest du aber nicht nur auf GitHub sondern auch bei einigen #{link_to "Wikimedia-Projekten", "https://tools.wmflabs.org/guc/?user=MRosetree"} – allen voran #{link_to "Wikipedia", "https://de.wikipedia.org/wiki/Special:Beiträge/MRosetree"}.
