@@ -18,6 +18,14 @@ kurzen Absatz.
 
 <%= article.compiled_content %>
 
+<% if index == 0 %>
+  <aside><%= load_snippet "Empfohlene Artikel" %></aside>
+<% end %>
+
+<% if index == 1 %>
+  <aside><%= load_snippet "Empfohlene Blogs" %></aside>
+<% end %>
+
 <% index += 1 %>
 <% break if index == count %>
 

@@ -54,6 +54,10 @@ route "/feed" do
   "/feed/index.xml"
 end
 
+route "/snippets/*/" do
+  nil
+end
+
 route '*' do
   if item[:extension] == 'scss'
     unless item.identifier.split("/")[-1].start_with?("_")

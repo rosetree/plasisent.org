@@ -52,6 +52,14 @@ def move_post_identifiers
 end
 
 
+# TODO: Document load_snippet.
+def load_snippet name
+  snippet = generate_url "/snippets/", name
+  # TODO: Error handling. (What if snippet doesn’t exist?)
+  @items[snippet].compiled_content if @items[snippet]
+end
+
+
 ##
 # FIXME: Generating prev and next links is very (!) slow.
 #
