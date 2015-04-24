@@ -3,6 +3,7 @@
 include Nanoc::Helpers::Rendering
 include Nanoc::Helpers::Blogging
 include Nanoc::Helpers::LinkTo
+include Nanoc::Helpers::Text
 
 
 def generate_url base, title
@@ -59,6 +60,13 @@ def load_snippet name
   @items[snippet].compiled_content if @items[snippet]
 end
 
+def snippet_for_title name
+  strip_html(nl_to_space(load_snippet(name))).strip
+end
+
+def nl_to_space text
+  text.gsub(/(\r\n?|\n)/, " ")
+end
 
 ##
 # FIXME: Generating prev and next links is very (!) slow.
