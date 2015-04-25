@@ -18,14 +18,14 @@
       %p
         = link_to "Plasisent", @items["/"].path, title: @items["/"][:title]
         = link_to "Regale", @items["/regal/"].path
-        = link_to "Aktuelle Woche", last_week_archive.path, title: "Okay, „aktuell“ ist hier vielleicht nicht der richtige Begriff, aber was soll ich den sonst schreiben? „Letzte Woche in der ich etwas veröffentlicht habe“? Viel zu lang. Im moment ist das aber #{last_week_archive[:title]}."
-        = link_to "Suche", @items["/suche/"].path, title: "Es handelt sich hierbei eher um eine Alibisuche, aber immerhin kannst du einen Begriff eingeben und eventuelle Ergebnisse betrachten."
+        = link_to "Aktuelle Woche", last_week_archive.path, title: snippet_for_title("Title Nav Aktuelle Woche")
+        = link_to "Suche", @items["/suche/"].path, title: snippet_for_title("Title Nav Suche")
         = link_to "Kontakt", "http://rosetree.de/micha/"
 
     - if @item[:cleaned?] == false
-      %p< Diese Seite wurde noch nicht korrigiert und von Unsauberkeiten bereinigt. Es kann deshalb sein, dass sie komisch aussieht. Wenn du helfen willst, kannst du dir die #{link_to "Datei auf GitHub", @item.github_url} einmal anschauen.
+      = load_snippet("Warnung Unbereinigter Import") % link_to("Datei auf GitHub", @item.github_url)
 
-    %p< Dies ist die #{'<b>Vorschau</b>'} auf die neue Version meines Blogs. Die aktuelle Version findest du unter #{link_to "plasisent.org", "http://plasisent.org"}. Ich freue mich über Kritik und Lob. Schreib mir doch einfach eine E-Mail.
+    = load_snippet "Warnung Blog Vorschau"
 
     -#
       After the header is done, load a different layout for each kind of
@@ -90,4 +90,4 @@
 
     %h2 Sonst noch was?
 
-    %p Folgen kannst du mir auf #{link_to "Twitter", "https://twitter.com/r0setree"} und #{link_to "GitHub", "https://github.com/rosetree"}. Dort gibt es auch das #{link_to "Repository dieses Blogs", "https://github.com/rosetree/plasisent.org"}. Bearbeitungen von mir findest du aber nicht nur auf GitHub sondern auch bei einigen #{link_to "Wikimedia-Projekten", "https://tools.wmflabs.org/guc/?user=MRosetree"} – allen voran #{link_to "Wikipedia", "https://de.wikipedia.org/wiki/Special:Beiträge/MRosetree"}.
+    = load_snippet "Follow Me"
