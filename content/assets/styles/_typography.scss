@@ -1,8 +1,9 @@
 body {
 	width: 98%;
 	max-width: 40rem;
-	background-color: white;
 	margin: 2rem auto;
+	color: $text;
+	background-color: $background;
 	// Boring default font list. (TODO: Think about font choice.)
 	font-family: 'Ubuntu', 'Open-Sans', 'DejaVu Sans', sans-serif;
 }
@@ -20,7 +21,7 @@ h1, h2, h3 {
 
 h1 {
 	font-size: 1.6rem;
-	border-top: #ccc dotted thin;
+	border-top: $delimiter dotted thin;
 	padding: 0.1em 0;
 }
 
@@ -58,23 +59,28 @@ b, strong {
 blockquote {
 	font-size: 0.9rem;
 	padding-left: 1.1rem;
-	border-left: #ccc solid thin;
+	border-left: $delimiter solid thin;
 }
 
 /* Links */
 
 a {
-	color: #282;
+	color: $link;
 }
 
+h1 a, h2 a, h3 a,
 a:visited {
-	color: #262;
+	color: $link-hover;
 }
 
 a:hover {
-	color: #422;
+	color: $link-hover;
 }
 
+h1 a:hover, h2 a:hover, h3 a:hover,
+a:visited:hover {
+	color: $link;
+}
 
 /* Bilder */
 
@@ -85,7 +91,7 @@ img {
 }
 
 a img:hover {
-	box-shadow: 0 0 10px #282;
+	box-shadow: 0 0 10px $link;
 }
 
 /* Listen */
@@ -106,15 +112,15 @@ ol li {
 /* Code and Pre Elements */
 
 code {
-	background-color: #eee;
+	background-color: $background-pre;
 	font-family: 'Ubuntu Mono', monospace;
 }
 
 pre {
 	padding: 0.9em 1.1rem;
-	background-color: #eee;
-	border-top:    #ccc thin solid;
-	border-bottom: #ccc thin solid;
+	background-color: $background-pre;
+	border-top:    $delimiter thin solid;
+	border-bottom: $delimiter thin solid;
 }
 
 
@@ -123,29 +129,30 @@ pre {
 // TODO: Add better looking and more general design for form elements.
 
 input {
-	color: #244;
+	color: $delimiter;
+	background: $background;
 	width: 70%;
 	padding: 0.3em 0.5em;
 	border: none;
-	border-top:    #eee thin solid;
-	border-bottom: #eee thin solid;
+	border-top:    $delimiter thin solid;
+	border-bottom: $delimiter thin solid;
 }
 
 input[type=submit] {
-	color: #fff;
-	background-color: #282;
+	color: $background;
+	background-color: $link;
 	width: 20%;
 	cursor: pointer;
 	border-radius: 3px;
 }
 
 input[type=submit]:hover {
-	background-color: #3a3;
+	background-color: $link-hover;
 }
 
 input[type=text]:focus {
-	border-top:    #ccc thin solid;
-	border-bottom: #ccc thin solid;
+	border-top:    $delimiter thin solid;
+	border-bottom: $delimiter thin solid;
 }
 
 /* Sonstiges */
@@ -154,6 +161,6 @@ hr {
 	margin: 1.4em 0;
 	height: 1px;
 	border: none;
-	color: #ccc;
-	background-color: #ccc;
+	color: $delimiter;
+	background-color: $delimiter;
 }

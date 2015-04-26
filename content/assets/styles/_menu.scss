@@ -1,7 +1,7 @@
 nav a {
 	&:after {
 		content: " / ";
-		color: black;
+		color: $delimiter;
 	}
 
 	&:first-child {
