@@ -1,7 +1,6 @@
 ---
 kind: article
-categories:
-- Netzneutralität
+category: Netzneutralität
 title: Netzneutralität ist wichtig!
 created_at: '2014-05-23 09:56:42 +0200'
 tags: []

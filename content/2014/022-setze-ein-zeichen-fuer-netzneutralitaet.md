@@ -1,8 +1,6 @@
 ---
 kind: article
-categories:
-- Menschenrechte
-- Politik
+category: Netzneutralität
 title: Setze ein Zeichen für Netzneutralität
 created_at: '2014-03-28 22:42:28 +0100'
 tags:

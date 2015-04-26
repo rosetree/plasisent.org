@@ -1,7 +1,6 @@
 ---
 kind: article
-categories:
-- Politik
+category: Netzneutralität
 title: Saved the Internet
 created_at: '2014-04-03 10:37:48 +0200'
 tags:

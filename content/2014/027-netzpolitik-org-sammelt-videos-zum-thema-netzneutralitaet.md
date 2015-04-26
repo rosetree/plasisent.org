@@ -1,7 +1,6 @@
 ---
 kind: article
-categories:
-- Netzneutralität
+category: Netzneutralität
 title: Netzpolitik.org sammelt Videos zum Thema Netzneutralität
 created_at: '2014-04-02 13:25:42 +0200'
 tags: []
