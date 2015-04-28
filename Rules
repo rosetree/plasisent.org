@@ -29,9 +29,10 @@ end
 
 compile '*' do
   if item[:extension] == 'scss'
+    next if item.identifier.split("/")[-1].start_with?("_")
     filter :sass, {
       :syntax => :scss,
-      #:style => :compressed,
+      :style => :compressed,
     }
   elsif item.binary?
     # don’t filter binary items
