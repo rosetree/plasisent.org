@@ -20,18 +20,18 @@ h1, h2, h3 {
 }
 
 h1 {
-	font-size: 1.6rem;
+	font-size: 1.6em;
 	border-top: $delimiter dotted thin;
 	padding: 0.1em 0;
 }
 
 h2 {
-	font-size: 1.1rem;
+	font-size: 1.1em;
 	font-weight: bold;
 }
 
 h3 {
-	font-size: 0.9rem;
+	font-size: 0.9em;
 	font-weight: bold;
 }
 
@@ -57,8 +57,8 @@ b, strong {
 }
 
 blockquote {
-	font-size: 0.9rem;
-	padding-left: 1.1rem;
+	font-size: 0.9em;
+	padding-left: 1.1em;
 	border-left: $delimiter solid thin;
 }
 
@@ -97,7 +97,7 @@ a img:hover {
 /* Listen */
 
 ul, ol {
-	padding-left: 1.1rem;
+	padding-left: 1.1em;
 }
 
 ul li {
@@ -117,7 +117,7 @@ code {
 }
 
 pre {
-	padding: 0.9em 1.1rem;
+	padding: 0.9em 1.1em;
 	background-color: $background-pre;
 	border-top:    $delimiter thin solid;
 	border-bottom: $delimiter thin solid;
