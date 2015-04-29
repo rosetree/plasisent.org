@@ -1,0 +1,26 @@
+aside {
+	border-radius: 3px;
+	margin:  1.1rem 0;
+	padding: 1.1rem;
+	font-size: 0.9rem;
+	background: $background-pre;
+
+	&:hover {
+		box-shadow: 0 0 10px $background-pre;
+	}
+}
+
+// This prevents a large gap, when the first element has a large margin to the
+// top. The padding to the top is done inside the aside, but if padding is
+// used, the margin of the inner element is also applied.
+aside *:first-child {
+	margin-top:  0;
+}
+
+aside h1 {
+	border: none;
+}
+
+aside blockquote {
+	border-left: $background solid thin;
+}
