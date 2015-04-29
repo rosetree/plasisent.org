@@ -1,5 +1,9 @@
 DirectoryIndex <%= @config[:index_filenames].join(" ") %>
 
+# Redirect the lonely ZIP file from the WordPress upload path to the assets
+# path. After that, you’re free to redirect every other file in the WordPress
+# upload path to assets/images, because I didn’t upload any more other files.
+Redirect 301 /wordpress/wp-content/uploads/mehrere-dateien-mit-pgp-verschluesseln.zip /assets/files/mehrere-dateien-mit-pgp-verschluesseln.zip
 RedirectMatch 301 ^/wordpress/wp-content/uploads/(.*)$ /assets/images/$1
 
 RedirectMatch 301 ^/kontakt/? http://rosetree.de/micha
