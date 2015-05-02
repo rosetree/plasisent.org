@@ -20,9 +20,8 @@ h1, h2, h3 {
 }
 
 h1 {
-	font-size: 1.6em;
-	border-top: $delimiter dotted thin;
-	padding: 0.1em 0;
+	font-size: 1.7em;
+	margin-top: 2em;
 }
 
 h2 {
@@ -66,6 +65,7 @@ blockquote {
 
 a {
 	color: $link;
+	border-bottom: $link-hover dotted thin;
 }
 
 h1 a, h2 a, h3 a,
@@ -73,8 +73,10 @@ a:visited {
 	color: $link-hover;
 }
 
-a:hover {
+a:hover,
+a:focus {
 	color: $link-hover;
+	border-bottom: $text solid thin;
 }
 
 h1 a:hover, h2 a:hover, h3 a:hover,
@@ -88,10 +90,6 @@ img {
 	max-width: 100%;
 	height: auto;
 	border-radius: 3px;
-}
-
-a img:hover {
-	box-shadow: 0 0 10px $link;
 }
 
 /* Listen */
