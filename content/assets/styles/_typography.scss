@@ -12,11 +12,8 @@ body {
 /* Headlines */
 
 h1, h2, h3 {
-	// TODO: Clean multiple line headlines (look at :first-line).
 	font-family: 'Ubuntu Mono', monospace;
 	margin: 1.7em 0 1em 0;
-	// TODO: Smaller word spacings in headlines.
-	// word-spacing: 0em;
 }
 
 h1 {
@@ -42,8 +39,8 @@ h3:before { content: "### "; }
 
 /* Body Text */
 
-p, li, pre, form, figure {
-	line-height: 1.4;
+p, li, pre, form, figure, iframe {
+	line-height: 1.5;
 	margin-top: 0.9em;
 }
 
@@ -167,4 +164,9 @@ hr {
 	border: none;
 	color: $delimiter;
 	background-color: $delimiter;
+}
+
+iframe[width], iframe[height] {
+	max-width:  100%;
+	max-height: auto;
 }
