@@ -12,6 +12,9 @@ tags:
   - Vim
   - Git
   - Freie Software
+  - Gesundheit
+  - Sport
+  - Joggen
 ---
 
 Die [30 Tage währenden Herausforderungen][30days] sind ein Konzept, das mir
@@ -41,7 +44,22 @@ kannte gestartet. Da nutzte ich aber entweder Programme, in die ich mich nicht
 einlernen wollte, oder Systeme, die auf Tabellenkalkulationsprogramme
 aufsetzten. Und diese Tools finde ich unglaublich anstrengend.
 
-0. Mehr Bewegung – z.B. zweimal pro Woche joggen
+## Mehr Bewegung – z.B. regelmäßig joggen
+
+Noch so etwas, das schon länger in meinem Kopf herumgeistert. Als
+Software-Entwickler sitze ich täglich circa acht bis zehn Stunden am Computer.
+Dazu kommen noch meine Hobbys (wie dieses Blog) und Kommunikation über das
+Internet. Et voilá: Ich sitzte nur noch am Computer.
+
+Man muss kein Arzt sein um zu wissen, dass dieser Zustand für den Körper nicht
+sonderlich gesund ist. Also nehme ich mir aktuell vor mich häufiger zu bewegen.
+Zum Beispiel versuche ich seit wenigen Wochen, zumindest zwei Mal in der Woche
+joggen zu gehen. Nur eine kleine Runde, aber besser als gar nicht.
+
+Auch in meinem Freundeskreis gibt es in der letzten Zeit immer wieder den
+Versuch, sich häufiger zum Sport machen zu treffen. Das könnte eigentlich auch
+etwas konsequenter durchgezogen werden. Müsste sich mal jemand drum kümmern …
+
 0. Beim Einkauf mitrechnen
 0. Weniger Süßkram / mehr Obst (und Gemüse)
 
