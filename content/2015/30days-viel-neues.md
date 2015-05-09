@@ -60,7 +60,18 @@ Auch in meinem Freundeskreis gibt es in der letzten Zeit immer wieder den
 Versuch, sich häufiger zum Sport machen zu treffen. Das könnte eigentlich auch
 etwas konsequenter durchgezogen werden. Müsste sich mal jemand drum kümmern …
 
-0. Beim Einkauf mitrechnen
+## Kopfrechnen beim Einkauf
+
+Wie bei der privaten Buchführung geht es auch hier im das Thema Geld und das
+obwohl ich Geld eigentlich nicht sonderlich mag. In der letzten Zeit ist mir
+immer wieder aufgefallen, wie blind ich einkaufe. An der Kasse bin ich oft
+erstaunt, wie viel – oder wenig – ich für meinen Einkauf bezahlen muss.
+
+Um das zu verhindern habe ich mir erst vor ein paar Tagen vorgenommen, mir das
+Preisrechnen anzugewöhnen. Einfach jedes Mal, wenn ich etwas einpacke den Preis
+aufaddieren. Im Moment bin ich zwar noch nicht so fix beim Kopfrechnen, aber
+das wird sich mit der Zeit sicherlich ändern.
+
 0. Weniger Süßkram / mehr Obst (und Gemüse)
 
 
