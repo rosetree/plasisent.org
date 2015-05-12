@@ -25,8 +25,6 @@
     - if @item[:cleaned?] == false
       = load_snippet("Warnung Unbereinigter Import") % link_to("Datei auf GitHub", @item.github_url)
 
-    = load_snippet "Warnung Blog Vorschau"
-
     -#
       After the header is done, load a different layout for each kind of
       content you want to create. The kind could be one of the following:
