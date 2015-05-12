@@ -130,8 +130,8 @@ pre {
 // TODO: Add better looking and more general design for form elements.
 
 input {
-	color: $delimiter;
-	background: $background;
+	color: $text;
+	background: $background-pre;
 	width: 70%;
 	padding: 0.3em 0.5em;
 	border: none;
@@ -152,8 +152,8 @@ input[type=submit]:hover {
 }
 
 input[type=text]:focus {
-	border-top:    $delimiter thin solid;
-	border-bottom: $delimiter thin solid;
+	border-top:    $text-secondary thin solid;
+	border-bottom: $text-secondary thin solid;
 }
 
 /* Sonstiges */
