@@ -32,33 +32,33 @@ für ein Buchführungsprogramm, aber diese freie Software bietet viele der
 Features, die ich gesucht habe.
 
 Da wären zum Beispiel die Bedienung über das [Commandline-Interface][cli].
-Große grafische Oberflächen mit ettlichen Menüs gefallen mir nicht sehr, es
+Große grafische Oberflächen mit etlichen Menüs gefallen mir nicht sehr, es
 fühlt sich für mich oft ehrlicher an, ein Programm über das Terminal zu
 bedienen. Zudem werden die Daten in einfachen Textdateien gespeichert. Das
 erlaubt mir, meinen [bevorzugten Texteditor][vim] und meine [geliebte
 Versionsverwaltung][git] für Dateien zu verwenden.
 
 Diese Rahmenbedingungen führten dazu, dass der Versuch bisher länger anhält als
-alle vorherigen. Den ein oder anderen Anlauf hatte ich schon bevor ich ledger
-kannte gestartet. Da nutzte ich aber entweder Programme, in die ich mich nicht
-einlernen wollte, oder Systeme, die auf Tabellenkalkulationsprogramme
+alle vorhergehenden. Den ein oder anderen Anlauf hatte ich schon bevor ich
+ledger kannte gestartet. Da nutzte ich aber entweder Programme, in die ich mich
+nicht einlernen wollte, oder Systeme, die auf Tabellenkalkulationsprogramme
 aufsetzten. Und diese Tools finde ich unglaublich anstrengend.
 
 ## Mehr Bewegung – z.B. regelmäßig joggen
 
-Noch so etwas, das schon länger in meinem Kopf herumgeistert. Als
+Noch ein Punkt, der schon länger in meinem Kopf herumgeistert. Als
 Software-Entwickler sitze ich täglich circa acht bis zehn Stunden am Computer.
 Dazu kommen noch meine Hobbys (wie dieses Blog) und Kommunikation über das
-Internet. Et voilá: Ich sitzte nur noch am Computer.
+Internet. Et voilà: Ich sitze nur noch am Computer.
 
 Man muss kein Arzt sein um zu wissen, dass dieser Zustand für den Körper nicht
-sonderlich gesund ist. Also nehme ich mir aktuell vor mich häufiger zu bewegen.
+sonderlich gesund ist. Daher nehme ich mir aktuell vor mich häufiger zu bewegen.
 Zum Beispiel versuche ich seit wenigen Wochen, zumindest zwei Mal in der Woche
 joggen zu gehen. Nur eine kleine Runde, aber besser als gar nicht.
 
 Auch in meinem Freundeskreis gibt es in der letzten Zeit immer wieder den
-Versuch, sich häufiger zum Sport machen zu treffen. Das könnte eigentlich auch
-etwas konsequenter durchgezogen werden. Müsste sich mal jemand drum kümmern …
+Versuch, sich häufiger zum Sport machen zu treffen. Das könnte eigentlich etwas
+konsequenter durchgezogen werden. Müsste sich mal jemand drum kümmern …
 
 ## Kopfrechnen beim Einkauf
 
@@ -69,7 +69,7 @@ erstaunt, wie viel – oder wenig – ich für meinen Einkauf bezahlen muss.
 
 Um das zu verhindern habe ich mir erst vor ein paar Tagen vorgenommen, mir das
 Preisrechnen anzugewöhnen. Einfach jedes Mal, wenn ich etwas einpacke den Preis
-aufaddieren. Im Moment bin ich zwar noch nicht so fix beim Kopfrechnen, aber
+aufaddieren. Im Moment bin ich zwar noch nicht sehr fix beim Kopfrechnen, aber
 das wird sich mit der Zeit sicherlich ändern.
 
 ## Weniger Süßkram / mehr Obst (und Gemüse)
