@@ -72,7 +72,16 @@ Preisrechnen anzugewöhnen. Einfach jedes Mal, wenn ich etwas einpacke den Preis
 aufaddieren. Im Moment bin ich zwar noch nicht so fix beim Kopfrechnen, aber
 das wird sich mit der Zeit sicherlich ändern.
 
-0. Weniger Süßkram / mehr Obst (und Gemüse)
+## Weniger Süßkram / mehr Obst (und Gemüse)
+
+Eine gesündere Ernährung mit mehr Vitaminen und weniger Fett und Zucker, werde
+ich mir noch angewöhnen müssen. Bisher kann ich Schokolade oder Zucker in den
+verschiedensten Variationen fast maßlos verzehren. Obst und Gemüse bleiben
+leider auf der Stre… ich meine dem Küchenti… also im Supermarktregal.
+
+Dazu habe ich mir bisher noch fast keine Gedanken gemacht. Eigentlich weiß ich
+nur, dass ich gesünder essen sollte. In welchem Ausmaß und mit welchen Methoden
+habe ich mir aber noch nicht überlegt. Über Tipps würde ich mich freuen!
 
 
 [30days]: /regal/30-days-challenge/
