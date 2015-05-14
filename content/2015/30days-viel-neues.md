@@ -84,6 +84,13 @@ nur, dass ich gesünder essen sollte. In welchem Ausmaß und mit welchen Methode
 habe ich mir aber noch nicht überlegt. Über Tipps würde ich mich freuen!
 
 
+---
+
+Eigentlich bekomme ich fast jeden Tag Ideen für Gewohnheiten, die ich mir neu
+aneignen könnte. Dies jedoch sind die Punkte, auf die ich mich in der nächsten
+Zeit verstärkt konzentrieren möchte.
+
+
 [30days]: /regal/30-days-challenge/
 
 [ledger]: http://ledger-cli.org/
