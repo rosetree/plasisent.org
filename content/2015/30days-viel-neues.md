@@ -92,11 +92,16 @@ Zeit verstärkt konzentrieren möchte.
 
 
 [30days]: /regal/30-days-challenge/
+  "Alle Artikel im Regal der 30 Tage Herausforderungen."
 
 [ledger]: http://ledger-cli.org/
+  "Die Homepage der freien Buchführungssoftware ledger."
 
 [cli]: https://de.wikipedia.org/wiki/Kommandozeile
+  "Was ist eine Commandline? Der Artikel bei Wikipedia erklärt das."
 
 [vim]: http://www.vim.org/
+  "Die Homepage des freien Texteditors Vim. Ich mag ihn einfach ☺"
 
 [git]: https://git-scm.org/
+  "Die Versionsverwaltungssoftware Git, die vor zehn Jahren für den Linux Kernel entwickelt wurde."
