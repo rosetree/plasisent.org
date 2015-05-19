@@ -14,7 +14,7 @@ kurzen Absatz.
 
 # <%= link_to article[:title], article.path %>
 
-*Veröffentlicht am <%= article.linked_date_information %>.*
+*Veröffentlicht von <%= article[:author_name] %> am <%= article.linked_date_information %>.*
 
 <%= article.compiled_content %>
 
