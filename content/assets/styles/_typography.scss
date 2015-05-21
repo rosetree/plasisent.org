@@ -12,7 +12,6 @@ body {
 /* Headlines */
 
 h1, h2, h3 {
-	font-family: 'Ubuntu Mono', monospace;
 	margin: 1.7em 0 1em 0;
 }
 
@@ -30,11 +29,6 @@ h3 {
 	font-size: 0.9em;
 	font-weight: bold;
 }
-
-/* Markdown Flavour for Headlines */
-h1:before { content: "# "; }
-h2:before { content: "## "; }
-h3:before { content: "### "; }
 
 
 /* Body Text */
