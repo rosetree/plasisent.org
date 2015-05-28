@@ -12,6 +12,8 @@ body {
 /* Headlines */
 
 h1, h2, h3 {
+	// Boring monospace font list. (TODO: Think about font choice.)
+	font-family: 'Ubuntu Mono', 'Fira Code', 'Courier New', monospace;
 	margin: 1.7em 0 1em 0;
 }
 
@@ -108,7 +110,8 @@ ol li {
 
 code {
 	background-color: $background-pre;
-	font-family: 'Ubuntu Mono', monospace;
+	// Boring monospace font list. (TODO: Think about font choice.)
+	font-family: 'Ubuntu Mono', 'Fira Code', 'Courier New', monospace;
 }
 
 pre {
