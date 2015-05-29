@@ -12,6 +12,7 @@ tags:
   - Demokratie
   - ZDF
   - Die Anstalt
+  - netzpolitik.org
 ---
 
 Welch geniale Show! In Aufbau, Inhalt und künstlerischer Darstellung, können
@@ -40,9 +41,19 @@ Okay, wie wäre es damit: Der Bundesnachrichtendienst als „Bond“ und Angela
 Merkel als „M“. Wenn das mal kein Anreiz ist, ausnahmsweise eine Sendung des
 ZDF anzuschauen.
 
+**Update** vom 29. Mai (circa 11 Uhr): Auch [bei netzpolitik.org erschien ein
+Artikel über „Die Anstalt“][np]. Dort wurde zudem ein [Faktencheck mit den
+Quellen der aktuellen Folge][data] verlinkt. Das ist sehr, sehr gut!
+
 
 [mediathek]: http://www.zdf.de/ZDFmediathek/kanaluebersicht/2078314#/beitrag/video/2407406/%22Die-Anstalt%22-vom-26-Mai-2015
   "„Die Anstalt“ vom 26. Mai in der ZDF Mediathek. Anschalten lohnt sich!"
 
 [yt]: https://www.youtube.com/watch?v=bzsKNZsRbgk
   "Einer der vielen Uploads der letzten Folge von „Die Anstalt“ bei YouTube."
+
+[np]: https://netzpolitik.org/2015/die-anstalt-im-zdf-video-der-name-ist-bnd-james-bnd/
+  "Auch netzpolitik.org lobt die aktuelle Folge von „Die Anstalt“."
+
+[data]: http://www.zdf.de/ZDF/zdfportal/blob/38627008/1/data.pdf
+  "Faktencheck zur aktuellen Folge von „Die Anstalt“."
