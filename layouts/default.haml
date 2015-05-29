@@ -69,11 +69,8 @@
     - if item[:category]
       - category_link = link_category item
 
-    - if item[:tags] or category_link != "" or item[:created_at] or @item.github_url != ""
+    - if item[:tags] or category_link != "" or @item.github_url != ""
       %h2{title: item[:title]} Dieser Beitrag …
-
-    - if item[:created_at]
-      %p … wurde veröffentlicht am #{item.linked_date_information}
 
     - if category_link != ""
       %p … ist eingeordnet im Regal #{category_link}.

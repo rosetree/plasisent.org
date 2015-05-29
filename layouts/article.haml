@@ -1,3 +1,5 @@
 %h1= link_to_unless_current item[:title], item.path
 
+%em Veröffentlicht am #{item.linked_date_information}.
+
 ~ yield
