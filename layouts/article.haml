@@ -1,5 +1,7 @@
-%h1= link_to_unless_current item[:title], item.path
+%article
 
-%em Veröffentlicht am #{item.linked_date_information}.
+  %header
+    %h1= link_to_unless_current item[:title], item.path
+    %p Veröffentlicht am #{item.linked_date_information}.
 
-~ yield
+  ~ yield

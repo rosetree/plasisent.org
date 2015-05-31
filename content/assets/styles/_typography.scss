@@ -11,6 +11,10 @@ body {
 
 /* Headlines */
 
+header p {
+	color: $text-secondary;
+}
+
 h1, h2, h3 {
 	// Boring monospace font list. (TODO: Think about font choice.)
 	font-family: 'Ubuntu Mono', 'Fira Code', 'Courier New', monospace;
