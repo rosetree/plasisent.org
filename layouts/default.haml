@@ -6,6 +6,10 @@
     %link{rel: "stylesheet", href: 'http://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700|Ubuntu:400,700,400italic,700italic'}
     %link{rel: "stylesheet", href: @items["/assets/styles/master/"].path}
     %link{rel: "alternate",  href: @items["/feed/"].path, type: "application/atom+xml"}
+    %link{rel: "profile", href: "http://osprotocol.com"}
+    %meta{property: "os:repo", content: "https://github.com/rosetree/plasisent.org"}
+    %meta{property: "os:rcs_type", content: "git"}
+    %meta{property: "os:src", content: "git@github.com:rosetree/plasisent.org"}
     %meta{name: "viewport",  content: "width=device-width,initial-scale=1"}
     %meta{name: "generator", content: "nanoc #{Nanoc::VERSION}"}
     - if item[:prev] or item[:next]
