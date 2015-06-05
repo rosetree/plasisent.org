@@ -18,7 +18,8 @@
       - if item[:next]
         %link{rel: "next", title: item[:next][:title], href: item[:next].path}
   %body
-    %nav
+
+    %nav{role: "navigation"}
       %p
         = link_to "Plasisent", @items["/"].path, title: @items["/"][:title]
         = link_to "Regale", @items["/regal/"].path
@@ -39,57 +40,56 @@
       * quicky
       * archive
 
-    - case @item[:kind]
-    - when "category"
-      - category_items = all_items_with_category item[:name] || item[:title]
-      = render "category", :category_items => category_items do
-        = yield
-    - when "tag"
-      = render "tag" do
-        = yield
-    - when "archive"
-      = render "archive" do
-        yield
-    - when "article"
-      -# TODO: I am not sure, whether or not I should add the headline to an
-          article in the layout or in the text …
-      %h1= @item[:title]
-      ~ yield
-    - else
-      ~ yield
+    %main{role: "main"}
+
+      - case @item[:kind]
+      - when "category"
+        - category_items = all_items_with_category item[:name] || item[:title]
+        = render "category", :category_items => category_items do
+          = yield
+      - when "tag"
+        = render "tag" do
+          = yield
+      - when "archive"
+        = render "archive" do
+          yield
+      - when "article"
+        = render "article" do
+          ~ yield
+      - else
+        ~ yield
 
 
-    -# Footer Ersatz
-    %h1< Anhang
+    %footer{role: "contentinfo"}
+      -# FIXME: The footer is not very … good.
 
-    -# FIXME: Why am I using `item` instead of `@item` from here?
-    - if item[:prev] or item[:next]
-      %p
-        - if item[:prev]
-          #{link_to item[:prev][:title], item[:prev].path}
-          ←
-        - if item[:next]
-          → #{link_to item[:next][:title], item[:next].path}
+      %h1< Anhang
 
-    - category_link = ""
-    - if item[:category]
-      - category_link = link_category item
+      -# FIXME: Why am I using `item` instead of `@item` from here?
+      - if item[:prev] or item[:next]
+        %p
+          - if item[:prev]
+            #{link_to item[:prev][:title], item[:prev].path}
+            ←
+          - if item[:next]
+            → #{link_to item[:next][:title], item[:next].path}
 
-    - if item[:tags] or category_link != "" or item[:created_at] or @item.github_url != ""
-      %h2{title: item[:title]} Dieser Beitrag …
+      - category_link = ""
+      - if item[:category]
+        - category_link = link_category item
 
-    - if item[:created_at]
-      %p … wurde veröffentlicht am #{item.linked_date_information}
+      - if item[:tags] or category_link != "" or @item.github_url != ""
+        %h2{title: item[:title]} Dieser Beitrag …
 
-    - if category_link != ""
-      %p … ist eingeordnet im Regal #{category_link}.
+      - if category_link != ""
+        %p … ist eingeordnet im Regal #{category_link}.
 
-    - if item[:tags]
-      %p … behandelt die Themen #{link_tags item}.
+      - if item[:tags]
+        %p … behandelt die Themen #{link_tags item}.
 
-    - unless @item.github_url == ""
-      %p … ist auf #{link_to "GitHub", @item.github_url} zu finden.
+      - unless @item.github_url == ""
+        %p … ist auf #{link_to "GitHub", @item.github_url} zu finden.
 
-    %h2 Sonst noch was?
+      %h2 Sonst noch was?
 
-    = load_snippet "Follow Me"
+      = load_snippet "Follow Me"

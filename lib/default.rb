@@ -143,10 +143,11 @@ module Nanoc
       month = german_month_name date
       day   = date.strftime "%-d"
 
+      time_elem = "<time datetime='#{date.iso8601}'>#{day}. #{month}</time>"
       year_link = link_to year, "/#{year}/"
       week_link = link_to "Woche #{date.strftime("%-V")}", "/#{year}/kw-#{date.strftime("%V")}/"
 
-      "#{day}. #{month} (#{year_link}, #{week_link})"
+      "#{time_elem} (#{year_link}, #{week_link})"
     end
   end
 end

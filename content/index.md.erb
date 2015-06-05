@@ -12,11 +12,9 @@ kurzen Absatz.
 
 <% sorted_articles.each do |article| %>
 
-# <%= link_to article[:title], article.path %>
-
-*Veröffentlicht am <%= article.linked_date_information %>.*
-
-<%= article.compiled_content %>
+<% render "article", item: article do %>
+  <%= article.compiled_content %>
+<% end %>
 
 <% if index == 0 %>
   <aside><%= load_snippet "Empfohlene Artikel" %></aside>
