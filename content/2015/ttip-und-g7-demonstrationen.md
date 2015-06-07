@@ -1,3 +1,20 @@
+---
+kind: article
+category: Politik
+title: Demonstrationen gegen TTIP und die G7
+created_at: 2015-06-07 23:10:42 +0200
+tags:
+  - TTIP
+  - G7-Gipfel
+  - Demonstrationen
+  - Tagesschau
+  - Polizei
+  - München
+  - Garmisch-Partenkirchen
+  - Alternativlos
+  - Felix von Leitner
+---
+
 Am Donnerstag war eine [große Demonstration gegen TTIP und den
 G7-Gipfel][munich] in München. Diese war friedlich und deswegen bin ich
 auch froh, dort ein Teil der Abschlusskundgebung gewesen zu sein. Die Polizei
