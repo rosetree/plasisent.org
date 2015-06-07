@@ -2,7 +2,7 @@
 kind: article
 category: Internet
 title: Priorisierte Artikel im Feedreader
-created_at: '2015-02-09 19:18:28 +0100'
+created_at: 2015-06-07 19:00:00 +0200
 tags:
   - Feedreader
   - Web-Feed
@@ -17,7 +17,7 @@ tags:
 Neulich, auf einer längeren Busfahrt, kam mir eine Idee zur besseren
 Organisation meiner RSS-Feeds. Ich könnte sie, statt nach Art oder Kategorie
 des gesamten Blogs, nach der Priorität des einzelnen Artikels ordnen. Als
-Vorlage dient mir dabei das [Weekview System][weekview] (mit Prioritäten von
+Vorlage dient mir das [Weekview System][weekview] (mit Prioritäten von
 „A“ bis „C“).
 
 * Priorität A: Fast immer lesenswert. *Almost always a must see.*
@@ -30,7 +30,7 @@ mal mehr, mal weniger gut – beschrieben wird. Diese Tags, den Link, Titel und
 tatsächlichen Inhalt der Artikel, kann ich für meine Filter nutzen.
 
 Als Beispiel für meinen Priorisierungsgedanken sei [netzpolitik.org][np]
-angeführt.  Den Artikeln dieses Blogs weise ich im Standardfall die Priorität
+angeführt. Den Artikeln dieses Blogs weise ich im Standard Fall die Priorität
 B zu. Diesen Blog lese ich sehr gerne, aber für die oberste Priorität
 schreiben sie zu viel. Gewisse Themen von netzpolitik.org, wie
 [Netzneutralität][] und [Vorratsdatenspeicherung][vds], interessieren mich
