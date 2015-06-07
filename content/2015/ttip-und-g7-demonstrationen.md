@@ -28,9 +28,13 @@ ziemlich interessant in Bezug auf das Polizei-Thema.
 
 
 [munich]: https://www.tagesschau.de/inland/gsieben-gipfel-101.html
+  "35.000 Menschen demonstrierten in München gegen TTIP und den G7-Gipfel."
 
 [garmisch]: http://www.tagesschau.de/inland/protest-garmisch-101.html
+  "In Garmisch gab es eine massive Polizeipräsenz."
 
 [20 Uhr Nachrichten]: http://www.ardmediathek.de/tv/Tagesschau/tagesschau-20-00-Uhr/Das-Erste/Video?documentId=28748174&bcastId=4326
+  "Tagesschau vom 6. Juni 2015 um 20 Uhr."
 
 [a6]: http://alternativlos.org/6/
+  "„alternativlos“ über Einsätze, Taktik und Ausrüstung der Polizei."
