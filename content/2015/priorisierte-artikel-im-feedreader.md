@@ -1,3 +1,19 @@
+---
+kind: article
+category: Internet
+title: Priorisierte Artikel im Feedreader
+created_at: '2015-02-09 19:18:28 +0100'
+tags:
+  - Feedreader
+  - Web-Feed
+  - RSS
+  - Atom
+  - Internet
+  - Produktivität
+  - Organisation
+  - netzpolitik.org
+---
+
 Neulich, auf einer längeren Busfahrt, kam mir eine Idee zur besseren
 Organisation meiner RSS-Feeds. Ich könnte sie, statt nach Art oder Kategorie
 des gesamten Blogs, nach der Priorität des einzelnen Artikels ordnen. Als
