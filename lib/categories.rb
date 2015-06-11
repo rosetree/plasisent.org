@@ -44,11 +44,6 @@ module Category
     categories
   end
   memoize :all_categories
-
-  #def all_category_items(category = "default", include_children = true)
-  #  category_items = []
-  #end
-  #memoize :all_category_items
 end
 
 include Category
