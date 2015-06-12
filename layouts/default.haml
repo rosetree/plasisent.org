@@ -44,7 +44,7 @@
 
       - case @item[:kind]
       - when "category"
-        - category_items = all_items_with_category item[:name] || item[:title]
+        - category_items = all_items_with_category
         = render "category", :category_items => category_items do
           = yield
       - when "tag"
