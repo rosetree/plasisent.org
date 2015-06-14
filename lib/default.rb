@@ -19,7 +19,7 @@ def generate_url base, title
     when "ß" then "ss"
     when "#" then "hashtag-"
     # Some chars have to be removed.
-    when "„", "“"
+    when "„", "“", ".", ",", "!", "?"
       ""
     end
   end
