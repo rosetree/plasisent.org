@@ -11,6 +11,9 @@ tags:
   - Flugzeugabsturz
 ---
 
+![Die Flugzeugkabine vom Set des Films „Big Game“. Zu besichtigen in der
+Bavaria Filmstadt.](/assets/images/20150613_115231_mr.jpg)
+
 Stellt euch folgendes Szenario vor: Während der Präsident der Vereinigten
 Staaten von Amerika in seinem Luxusflugzeug über Europa fliegt, wird seine
 Maschine von Terroristen angegriffen. Er überlebt und flieht mit Hilfe eines
