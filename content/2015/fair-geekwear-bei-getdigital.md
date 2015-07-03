@@ -1,4 +1,16 @@
-# Fair Geekwear bei getDigial
+---
+kind: article
+title: Fair Geekwear bei getDigial
+created_at: 2015-07-03 14:15:55 +0200
+tags:
+  - Kleidung
+  - Fairwear Foundation
+  - getDigital
+  - Continental Clothing
+  - Fairtrade
+  - Transparenz
+  - Humor
+---
 
 Halt STOP! Dieser Post sieht vielleicht wie Werbung aus, der Inhalt könnte
 auch ähnlich sein, ich schreibe hier aber wirklich nur, was ich denke und
@@ -16,6 +28,10 @@ sehr ausführlich. Laut den Angaben auf ihrer Internetseite werden die
 Arbeiter*innen fair bezahlt, es gibt akzeptable Arbeitszeiten und weder
 Kinder- noch Zwangsarbeit. Ich vertraue den Angaben von Continental Clothing,
 weil sie ein [Mitglied][] der [Fairwear Foundation][] ist.
+
+Mich freut’s, weil ich in Zukunft mit bestem Gewissen witzige T-Shirts bei
+getDigital kaufen kann. Außerdem ist es wichtig, dass immer mehr Shops auf die
+Herkunft ihrer Produkte achten.
 
 
 [glimpse]: /2014/saubere-kleidung/
