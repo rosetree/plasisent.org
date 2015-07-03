@@ -22,7 +22,19 @@ finnischen Jungen vor den Terroristen und dem Verräter in seinen Reihen.
 Willkommen in der Geschichte von „[Big Game][trailer]“ einem Film mit Samuel
 L. Jackson als Präsident der USA. Ein – dem Trailer nach zu urteilen – äußerst
 spannender und kurzweiliger Film, der auf mich aber wie ein Propaganda-Film
-aus dem Lehrbuch wirkt.
+aus dem Lehrbuch wirkt. Viele Elemente aus diesem Film ließen sich einfach
+wunderbar für politische Zwecke instrumentalisieren.
+
+0. Ein terroristisches Attentat auf den Präsidenten der USA.
+
+1. Ein Verräter aus den Reihen des Präsidenten.
+
+2. Ein Junge, der sich mit dem Präsidenten anfreundet.
+
+Nun möchte ich natürlich keiner Regierung vorwerfen, dass dieser Film aus
+ihrer Feder stammt. Genauso wenig möchte ich den Produzenten unterstellen, sie
+hätten mit voller Absicht einen Propaganda-Film in die Kinos gebracht. Aber
+ich bin bestürzt, mit welchen politischen Klischees Filme manipulieren können.
 
 
 [trailer]: https://www.youtube.com/watch?v=vR-0mwLXiow
