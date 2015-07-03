@@ -7,10 +7,25 @@ nicht, was mir – von irgendeiner erwähnten Firma – bezahlt wird.
 Seit einiger Zeit bemühe ich mich, neue Klamotten nur von Modelabels zu
 kaufen, [die ihre Angestellten fair bezahlen][glimpse] und die Kleidung
 ökologisch produzieren. Eine Ausnahme waren für mich T-Shirts mit humorvollen
-(meistens nerdigen) Sprüchen. Aber auch für diese gibt es keine Ausrede mehr,
-denn jetzt gibt es [„fair Geekwear“ bei getDigital][fair geekwear].
+(meistens nerdigen) Sprüchen. Aber auch für diese gibt es nun keine Ausrede
+mehr, denn jetzt gibt es [„fair Geekwear“ bei getDigital][fair geekwear].
+
+In einem Flyer gibt getDigital an, dass sie ihre Kleidung von [Continental
+Clothing][] beziehen. Diese Firma beschreibt ihre [soziale Verantwortung][]
+sehr ausführlich. Laut den Angaben auf ihrer Internetseite werden die
+Arbeiter*innen fair bezahlt, es gibt akzeptable Arbeitszeiten und weder
+Kinder- noch Zwangsarbeit. Ich vertraue den Angaben von Continental Clothing,
+weil sie ein [Mitglied][] der [Fairwear Foundation][] ist.
 
 
 [glimpse]: /2014/saubere-kleidung/
 
 [fair geekwear]: https://www.getdigital.de/infos/fairwear.html
+
+[Continental Clothing]: https://www.continentalclothing.de/
+
+[soziale Verantwortung]: https://www.continentalclothing.de/info/soziale-verantwortung
+
+[Mitglied]: http://www.fairwear.org/528/company/continental_clothing_company_ltd/?companyId=22
+
+[fairwear foundation]: http://www.fairwear.org/
