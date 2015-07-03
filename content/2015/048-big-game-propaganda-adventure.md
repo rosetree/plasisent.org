@@ -2,7 +2,7 @@
 kind: article
 category: Überwachung
 title: „Big Game“ ein Propaganda Adventure?
-created_at: 2015-06-14 00:00:00 +0200
+created_at: 2015-07-03 11:42:57 +0200
 tags:
   - Propaganda
   - Terrorismus
