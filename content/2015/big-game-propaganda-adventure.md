@@ -12,7 +12,8 @@ tags:
 ---
 
 ![Die Flugzeugkabine vom Set des Films „Big Game“. Zu besichtigen in der
-Bavaria Filmstadt.](/assets/images/20150613_115231_mr.jpg)
+Bavaria Filmstadt.](/assets/images/20150613_115231_mr.jpg "Das man sieht, wie
+ich fotografiere, hat übrigens keinen Hintergedanken ☺")
 
 Stellt euch folgendes Szenario vor: Während der Präsident der Vereinigten
 Staaten von Amerika in seinem Luxusflugzeug über Europa fliegt, wird seine
@@ -38,3 +39,4 @@ ich bin bestürzt, mit welchen politischen Klischees Filme manipulieren können.
 
 
 [trailer]: https://www.youtube.com/watch?v=vR-0mwLXiow
+  "Der Trailer von „Big Game“ auf YouTube."
