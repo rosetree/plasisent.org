@@ -21,13 +21,7 @@
         %link{rel: "next", title: item[:next][:title], href: item[:next].path}
   %body
 
-    %nav{role: "navigation"}
-      %p
-        = link_to "Plasisent", @items["/"].path, title: @items["/"][:title]
-        = link_to "Regale", @items["/regal/"].path
-        = link_to "Aktuelle Woche", last_week_archive.path, title: snippet_for_title("Title Nav Aktuelle Woche")
-        = link_to "Suche", @items["/suche/"].path, title: snippet_for_title("Title Nav Suche")
-        = link_to "Kontakt", "http://rosetree.de/micha/"
+    %h1= link_to "Plasisent", @items["/"].path
 
     - if @item[:cleaned?] == false
       = load_snippet("Warnung Unbereinigter Import") % link_to("Datei auf GitHub", @item.github_url)
