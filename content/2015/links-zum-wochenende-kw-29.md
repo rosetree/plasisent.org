@@ -78,7 +78,9 @@ Privatsphäre][1$] zahlen.
 
 ---
 
-Zum Glück gibt es Menschen. Danke euch!
+Zum Glück gibt es Menschen – bei Twitter und im Leben Abseits der Tastatur –,
+die mich verstehen und mir Hoffnung geben, weil nicht alles schlecht ist.
+Danke euch!
 
 
 [idwtlotpa]: http://knowyourmeme.com/memes/i-dont-want-to-live-on-this-planet-anymore
