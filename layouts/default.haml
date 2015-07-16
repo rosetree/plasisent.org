@@ -21,7 +21,7 @@
         %link{rel: "next", title: item[:next][:title], href: item[:next].path}
   %body
 
-    %h1= link_to "Plasisent", @items["/"].path
+    %h1= link_to "Plasisent", @items["/"].path, {rel: "home"}
 
     - if @item[:cleaned?] == false
       = load_snippet("Warnung Unbereinigter Import") % link_to("Datei auf GitHub", @item.github_url)

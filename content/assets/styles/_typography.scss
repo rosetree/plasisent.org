@@ -81,6 +81,20 @@ a:visited:hover {
 	color: $link;
 }
 
+a[rel=home] {
+	color: $link;
+	font-size: 1rem;
+
+	&:hover {
+		border: none;
+
+		&:after {
+			color: $text-secondary;
+			content: ".org";
+		}
+	}
+}
+
 /* Bilder */
 
 img {
