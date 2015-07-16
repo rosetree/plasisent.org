@@ -11,6 +11,12 @@ tags:
   - EU
   - Angela Merkel
   - Flüchtlinge
+  - Geld
+  - Privatsphäre
+  - Datenschutz
+  - Sascha Lobo
+  - Facebook
+  - Mark Zuckerberg
 ---
 
 Die folgenden Links werden präsentiert unter dem Motto: „Gott, bitte nehm’
@@ -23,6 +29,20 @@ deutsche Regierung gibt in der Europäischen „Union“ an wo’s lang geht. Al
 der evangelischen Kirche aufgewachsener Christ, halte ich mich aber lieber an
 die Bibel in der Übersetzung von Martin Luther: „Die ganze EU liegt im Argen.“
 (Frei nach [1. Johannes 5,19][].)
+
+Die meisten Punkte zum Thema Griechenland erfahre ich – fasts
+[tagesaktuell][rk16] im [Blog von Rainer König][rk].
+
+* Fefe hat ein [Interview mit Yanis Varoufakis kommentiert][fefe]. Dr.
+  Varoufakis ist übrigens Wirtschaftswissenschaftler. Was der zum Thema
+  Wirtschaft sagt hat Hand und Fuß. Wenn er als überfordert bei dem Thema
+  dargestellt wird ist das reine Propaganda.
+
+* Volker Birk schreibt [was er aus der Griechenlandkrise gelernt hat][fdik].
+
+* „[Kann mal bitte jemand unsere Regierung verhaften?][knast]“, fragt sich
+  Rainer, nachdem er sich einige Gedanken zu unserem Grundgesetz und den Taten
+  unserer Regierung gemacht hat.
 
 ---
 
@@ -51,6 +71,13 @@ lesen.
 
 ---
 
+An die Facebook-Nutzer: Mark Zuckerberg, der euch und eure Daten aus der
+Privatsphäre reist, [kauft sich Grundstücke][zucker] um sein Haus um
+Privatsphäre zu haben. Auch andere würden gerne [Geld für die eigene
+Privatsphäre][1$] zahlen.
+
+---
+
 Zum Glück gibt es Menschen. Danke euch!
 
 
@@ -58,6 +85,16 @@ Zum Glück gibt es Menschen. Danke euch!
 
 [1. johannes 5,19]: http://bibelserver.de/text/LUT/1.Johannes5,19
   "Die ganze Welt liegt im Argen."
+
+[rk]: http://koenig-haunstetten.de/2015/07/15/die-links-des-tages-2015-07-15/
+
+[rk16]: http://koenig-haunstetten.de/2015/07/16/die-links-des-tages-2015-07-16/
+
+[fefe]: http://blog.fefe.de/?ts=ab5b5280
+
+[fdik]: http://blog.fdik.org/2015-07/#s1436857892
+
+[knast]: http://koenig-haunstetten.de/2015/07/15/kann-mal-bitte-jemand-unsere-regierung-verhaften/
 
 [flirttipps]: http://www.fraumeike.de/2015/das-passive-maedchen-oder-flirtennachbravo/
 
@@ -72,3 +109,7 @@ Zum Glück gibt es Menschen. Danke euch!
 [yt-merkel]: https://www.youtube.com/watch?v=fRFzPvpJ6Kk
 
 [angst]: http://mspr0.de/?p=4338
+
+[zucker]: http://boingboing.net/2015/05/21/mark-zuckerberg-just-dropped-a.html
+
+[1$]: http://mobile.nytimes.com/2015/06/04/opinion/zeynep-tufekci-mark-zuckerberg-let-me-pay-for-facebook.html
