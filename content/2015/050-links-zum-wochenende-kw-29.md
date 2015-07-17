@@ -17,6 +17,7 @@ tags:
   - Sascha Lobo
   - Facebook
   - Mark Zuckerberg
+  - Julia Schönborn
 ---
 
 Die folgenden Links werden präsentiert unter dem Motto: „Gott, bitte nehm’
@@ -69,6 +70,10 @@ positives Bild. Dank einem [Tweet von Sascha Lobo][tweet] – in dem er ein
 Eine etwas [sachlichere Analyse][angst] lässt sich im Blog von Michael Seemann
 lesen.
 
+**Update**: Auch [Julia Schönborn hat sich etwas differenzierter mit dem Video
+befasst][enttäuschung], als ich auf Twitter. Dennoch ist das Fazit ihres
+lesenswerten Beitrags nicht weniger negativ – nur besser durchdacht.
+
 ---
 
 An die Facebook-Nutzer: Mark Zuckerberg, der euch und eure Daten aus der
@@ -111,6 +116,8 @@ Danke euch!
 [yt-merkel]: https://www.youtube.com/watch?v=fRFzPvpJ6Kk
 
 [angst]: http://mspr0.de/?p=4338
+
+[enttäuschung]: http://www.junaimnetz.de/unsere-kanzlerin-meine-enttaeuschung
 
 [zucker]: http://boingboing.net/2015/05/21/mark-zuckerberg-just-dropped-a.html
 
