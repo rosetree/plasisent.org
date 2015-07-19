@@ -4,8 +4,8 @@ body {
 	margin: 2rem auto;
 	color: $text;
 	background-color: $background;
-	// Boring default font list. (TODO: Think about font choice.)
-	font-family: 'Ubuntu', 'Open-Sans', 'DejaVu Sans', sans-serif;
+	// TODO: Think about sans-serif font choice.
+	font-family: sans-serif;
 }
 
 
@@ -16,8 +16,8 @@ header p {
 }
 
 h1, h2, h3 {
-	// Boring monospace font list. (TODO: Think about font choice.)
-	font-family: 'Ubuntu Mono', 'Fira Code', 'Courier New', monospace;
+	// TODO: Think about monospace font choice.
+	font-family: monospace;
 	margin: 1.7em 0 1em 0;
 }
 
@@ -81,6 +81,20 @@ a:visited:hover {
 	color: $link;
 }
 
+a[rel=home] {
+	color: $link;
+	font-size: 1rem;
+
+	&:hover {
+		border: none;
+
+		&:after {
+			color: $text-secondary;
+			content: ".org";
+		}
+	}
+}
+
 /* Bilder */
 
 img {
@@ -114,8 +128,8 @@ ol li {
 
 code {
 	background-color: $background-pre;
-	// Boring monospace font list. (TODO: Think about font choice.)
-	font-family: 'Ubuntu Mono', 'Fira Code', 'Courier New', monospace;
+	// TODO: Think about monospace font choice.
+	font-family: monospace;
 }
 
 pre {
