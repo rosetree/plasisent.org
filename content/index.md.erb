@@ -15,9 +15,11 @@ folgenden Absatz.
 
 <% sorted_articles.each do |article| %>
 
-<% render "article", item: article do %>
-  <%= article.compiled_content %>
-<% end %>
+<article>
+  <% render "article", item: article do %>
+    <%= article.compiled_content %>
+  <% end %>
+</article>
 
 <% if index == 0 %>
   <aside><%= load_snippet "Empfohlene Artikel" %></aside>
