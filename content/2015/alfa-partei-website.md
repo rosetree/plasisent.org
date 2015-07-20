@@ -1,4 +1,16 @@
-# Die Website der „Allianz für Fortschritt und Aufbruch“
+---
+kind: article
+category: politik
+title: Die Website der ALFA-Partei
+created_at: 2015-02-25 15:25:45 +0200
+tags:
+ - Alternative für Deutschland
+ - Allianz für Fortschritt und Aufbruch
+ - Bernd Lucke
+ - Website
+ - Typografie
+ - HTTPS
+---
 
 Am Sonntag, den 19. Juli, hat Bernd Lucke eine neue Partei gegründet, nachdem
 er aus seiner, im Jahr 2013 neugegründeten Partei, raus gemobbt wurde.  Die
