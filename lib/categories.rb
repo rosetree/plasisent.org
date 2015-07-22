@@ -26,9 +26,15 @@ end
 module Category
   extend Nanoc::Memoization
 
-  def all_items_with_category
-    return [] unless @item[:kind] == "category"
-    return [] unless @item[:tags]
+  def preprocess_categories
+    all_categories.each do |cat|
+      all_items_with_category cat
+    end
+  end
+
+  def all_items_with_category category = @item
+    return [] unless category[:kind] == "category"
+    return [] unless category[:tags]
 
     category_items = []
 
@@ -38,9 +44,22 @@ module Category
       article[:tags].each do |article_tag|
         # TODO: next in parent loop?
         next if category_items.include? article
-        next unless @item[:tags].include? article_tag
+        next unless category[:tags].include? article_tag
 
         category_items << article
+
+        # Before the representations of an item get build, all site data will
+        # be frozen and thus cannot be changed. Freezing the site data is the
+        # preprocessors last step.
+        #
+        # See also: https://github.com/nanoc/nanoc/wiki/The-Compilation-Process
+        if category.reps == []
+          if article[:categories] == nil
+            article[:categories] = []
+          end
+
+          article[:categories] << category
+        end
       end
     end
 

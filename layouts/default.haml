@@ -84,6 +84,13 @@
       - if category_link != ""
         %p … ist eingeordnet im Regal #{category_link}.
 
+      - if @item[:categories]
+        %p … ist eingeordnet in den Regalen:
+        %ul
+          - @item[:categories].each do |category|
+            - if category.is_a? Nanoc::Item
+              %li= link_to category[:title], category.path
+
       - if item[:tags]
         %p … behandelt die Themen #{link_tags item}.
 
