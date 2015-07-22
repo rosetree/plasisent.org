@@ -10,6 +10,9 @@ module Plasisent
       doc = Nokogiri::HTML::DocumentFragment.parse content
 
       doc.css("img").each do |img|
+        next if img.parent.matches? "figure"
+        next if img.parent.matches? "a" and img.parent.parent.matches? "figure"
+
         # If the <img> is surrounded by a link, that link should be the wrapped
         # inside the figure. Otherwise the <figure> and <figcaption> are
         # wrapped inside a link, causing HTML validation to fail.

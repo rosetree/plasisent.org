@@ -1,5 +1,7 @@
 DirectoryIndex <%= @config[:index_filenames].join(" ") %>
 
+ErrorDocument 404 /error/404/
+
 # Redirect the lonely ZIP file from the WordPress upload path to the assets
 # path. After that, you’re free to redirect every other file in the WordPress
 # upload path to assets/images, because I didn’t upload any more other files.

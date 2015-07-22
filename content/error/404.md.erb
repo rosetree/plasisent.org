@@ -1,0 +1,51 @@
+---
+title: "Seite nicht gefunden (Error 404)"
+---
+
+# Seite nicht gefunden
+
+<!-- Hier haben wir also jemand, der sich den Quelltext dieser Seite anschaut.
+Sehr schön! Sei belohnt mit einem „secret Link“ zu einem kleinen Film bei dem
+ich mitgewirkt habe: https://www.youtube.com/watch?v=uZGbOHpGsCA
+
+Den Quelltext der gesamten Seite findest du übrigens bei GitHub:
+https://github.com/rosetree/plasisent.org
+
+Viel Spaß noch beim Stöbern. -->
+
+
+## Error 404
+
+Es tut mir wirklich Leid, aber der Inhalt, den du angefordert hast, konnte
+nicht gefunden werden. Vielleicht kann ich dir auf dieser Seite ein bisschen
+weiter helfen.
+
+<nav role="navigation"><%= load_snippet "Navigation Homepage" %></nav>
+
+
+## Neue Artikel bei Plasisent
+
+<% count = 4 %>
+<% index = 0 %>
+
+<% sorted_articles.each do |article| %>
+
+- <%= link_to article[:title], article.path %>
+
+<% index += 1 %>
+<% break if index == count %>
+
+<% end %>
+
+
+## Empfohlene Blogs
+
+Keine Lust auf mich? Kein Problem, geht mir oft ähnlich. Dann schaue ich am
+liebsten bei einem der folgenden Blogs vorbei. Vielleicht gefällt dir auch
+einer davon?
+
+* [Bullenscheisse](https://bullenscheisse.de/)
+* [Juna im Netz](http://junaimnetz.de/)
+* [Netzpolitik.org](https://netzpolitik.org/)
+
+Weitere findest du in der [ausführlicheren Blogroll](/blogroll/).

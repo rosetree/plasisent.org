@@ -3,9 +3,10 @@
   %head
     %meta{charset: "utf-8"}
     %title #{@item[:title]} | Plasisent
-    %link{rel: "stylesheet", href: 'http://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700|Ubuntu:400,700,400italic,700italic'}
     %link{rel: "stylesheet", href: @items["/assets/styles/master/"].path}
     %link{rel: "alternate",  href: @items["/feed/"].path, type: "application/atom+xml"}
+    - unless @item.github_url == ""
+      %link{rel: "alternate",  href: @item.github_url, title: "Source Code on GitHub."}
     %link{rel: "profile", href: "http://osprotocol.com"}
     %meta{property: "os:repo", content: "https://github.com/rosetree/plasisent.org"}
     %meta{property: "os:rcs_type", content: "git"}
@@ -19,13 +20,7 @@
         %link{rel: "next", title: item[:next][:title], href: item[:next].path}
   %body
 
-    %nav{role: "navigation"}
-      %p
-        = link_to "Plasisent", @items["/"].path, title: @items["/"][:title]
-        = link_to "Regale", @items["/regal/"].path
-        = link_to "Aktuelle Woche", last_week_archive.path, title: snippet_for_title("Title Nav Aktuelle Woche")
-        = link_to "Suche", @items["/suche/"].path, title: snippet_for_title("Title Nav Suche")
-        = link_to "Kontakt", "http://rosetree.de/micha/"
+    %h1= link_to "Plasisent", @items["/"].path, {rel: "home"}
 
     - if @item[:cleaned?] == false
       = load_snippet("Warnung Unbereinigter Import") % link_to("Datei auf GitHub", @item.github_url)
@@ -61,10 +56,6 @@
 
 
     %footer{role: "contentinfo"}
-      -# FIXME: The footer is not very … good.
-
-      %h1< Anhang
-
       -# FIXME: Why am I using `item` instead of `@item` from here?
       - if item[:prev] or item[:next]
         %p
@@ -74,28 +65,29 @@
           - if item[:next]
             → #{link_to item[:next][:title], item[:next].path}
 
-      - category_link = ""
-      - if item[:category]
-        - category_link = link_category item
+      - if item[:tags] && item[:tags] != [] or @item[:categories] && @item[:categories] != [] or @item.github_url != ""
+        %h2{title: "Metadaten von „#{item[:title]}“."} Metadaten
 
-      - if item[:tags] or category_link != "" or @item.github_url != ""
-        %h2{title: item[:title]} Dieser Beitrag …
+        %p
 
-      - if category_link != ""
-        %p … ist eingeordnet im Regal #{category_link}.
+          - if @item[:categories] && @item[:categories] != []
+            #{link_to @item[:title], @item.path} ist eingeordnet
+            - if @item[:categories].count == 1
+              im Regal
+            - else
+              in den Regalen
+            #{link_categories @item}.
 
-      - if @item[:categories]
-        %p … ist eingeordnet in den Regalen:
-        %ul
-          - @item[:categories].each do |category|
-            - if category.is_a? Nanoc::Item
-              %li= link_to category[:title], category.path
+          - if @item[:tags] && @item[:tags] != []
+            Dieser Beitrag behandelt
+            - if @item[:tags].count == 1
+              das Thema
+            - else
+              die Themen
+            #{link_tags item}.
 
-      - if item[:tags]
-        %p … behandelt die Themen #{link_tags item}.
-
-      - unless @item.github_url == ""
-        %p … ist auf #{link_to "GitHub", @item.github_url} zu finden.
+          - unless @item.github_url == ""
+            Den Quelltext dieser Seite findest du auf #{link_to "GitHub", @item.github_url}.
 
       %h2 Sonst noch was?
 
