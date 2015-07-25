@@ -4,9 +4,9 @@
     %meta{charset: "utf-8"}
     %title #{@item[:title]} | Plasisent
     %link{rel: "stylesheet", href: @items["/assets/styles/master/"].path}
-    %link{rel: "alternate",  href: @items["/feed/"].path, type: "application/atom+xml"}
+    %link{rel: "alternate",  href: @items["/feed/"].path, type: "application/atom+xml", title: @config[:title]}
     - if @item[:feed]
-      %link{rel: "alternate",  href: @item[:feed].path, type: "application/atom+xml"}
+      %link{rel: "alternate",  href: @item[:feed].path, type: "application/atom+xml", title: @item[:feed][:title]}
     - unless @item.github_url == ""
       %link{rel: "alternate",  href: @item.github_url, title: "Source Code on GitHub."}
     %link{rel: "profile", href: "http://osprotocol.com"}

@@ -74,8 +74,8 @@ module Category
     feed_identifier = "/feed#{category.identifier}"
 
     @items << Nanoc::Item.new(
-      "<%= atom_feed({ title: '#{category[:title]} | #{@config[:title]}', articles: @item[:feed_articles] }) %>",
-      { feed_articles: feed_articles },
+      "<%= atom_feed({ title: @item[:title], articles: @item[:feed_articles] }) %>",
+      { feed_articles: feed_articles, title: "#{category[:title]} (Feed) | #{@config[:title]}" },
       feed_identifier
     )
 
