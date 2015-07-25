@@ -19,7 +19,7 @@ compile "/htaccess" do
   filter :erb
 end
 
-compile "/feed" do
+compile "/feed/*" do
   filter :erb
 end
 
@@ -57,8 +57,8 @@ route "/htaccess" do
   "/.htaccess"
 end
 
-route "/feed" do
-  "/feed/index.xml"
+route "/feed/*" do
+  item.identifier + "index.xml"
 end
 
 route "/snippets/*/" do

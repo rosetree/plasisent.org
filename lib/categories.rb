@@ -28,7 +28,7 @@ module Category
 
   def preprocess_categories
     all_categories.each do |cat|
-      all_items_with_category cat
+      create_category_feed(cat, all_items_with_category(cat))
     end
   end
 
@@ -66,6 +66,17 @@ module Category
     category_items
   end
   memoize :all_items_with_category
+
+  def create_category_feed category, feed_articles = []
+    return nil unless category[:kind] == "category"
+    return nil if feed_articles.count == 0
+
+    @items << Nanoc::Item.new(
+      "<%= atom_feed({ title: '#{category[:title]} | #{@config[:title]}', articles: @item[:feed_articles] }) %>",
+      { feed_articles: feed_articles },
+      "/feed#{category.identifier}"
+    )
+  end
 
   def all_categories
     categories = []
