@@ -3,6 +3,7 @@
 
 preprocess do
   move_post_identifiers
+  use_git_data
   create_tag_pages
   preprocess_categories
   generate_yearly_archive sorted_articles, :created_at, "Jahr"
