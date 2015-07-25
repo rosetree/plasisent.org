@@ -4,7 +4,9 @@
     %meta{charset: "utf-8"}
     %title #{@item[:title]} | Plasisent
     %link{rel: "stylesheet", href: @items["/assets/styles/master/"].path}
-    %link{rel: "alternate",  href: @items["/feed/"].path, type: "application/atom+xml"}
+    %link{rel: "alternate",  href: @items["/feed/"].path, type: "application/atom+xml", title: @config[:title]}
+    - if @item[:feed]
+      %link{rel: "alternate",  href: @item[:feed].path, type: "application/atom+xml", title: @item[:feed][:title]}
     - unless @item.github_url == ""
       %link{rel: "alternate",  href: @item.github_url, title: "Source Code on GitHub."}
     %link{rel: "profile", href: "http://osprotocol.com"}
@@ -39,7 +41,7 @@
 
       - case @item[:kind]
       - when "category"
-        - category_items = all_items_with_category item[:name] || item[:title]
+        - category_items = all_items_with_category
         = render "category", :category_items => category_items do
           = yield
       - when "tag"
@@ -65,17 +67,18 @@
           - if item[:next]
             → #{link_to item[:next][:title], item[:next].path}
 
-      - category_link = ""
-      - if item[:category]
-        - category_link = link_category item
-
-      - if item[:tags] && item[:tags] != [] or category_link != "" or @item.github_url != ""
+      - if item[:tags] && item[:tags] != [] or @item[:categories] && @item[:categories] != [] or @item.github_url != ""
         %h2{title: "Metadaten von „#{item[:title]}“."} Metadaten
 
         %p
 
-          - if category_link != ""
-            #{link_to @item[:title], @item.path} ist eingeordnet im Regal #{category_link}.
+          - if @item[:categories] && @item[:categories] != []
+            #{link_to @item[:title], @item.path} ist eingeordnet
+            - if @item[:categories].count == 1
+              im Regal
+            - else
+              in den Regalen
+            #{link_categories @item}.
 
           - if @item[:tags] && @item[:tags] != []
             Dieser Beitrag behandelt

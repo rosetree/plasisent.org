@@ -46,6 +46,16 @@ def link_tags(item, tag_attribute = :tags)
 end
 
 
+def link_categories(item, category_attribute = :categories)
+  linked_cats = []
+  item[category_attribute].map do |category|
+    next unless category.is_a? Nanoc::Item
+    linked_cats << link_to(category[:title], category, {rel: "category"})
+  end
+  linked_cats.join ', '
+end
+
+
 def move_post_identifiers
   @items.each do |item|
     item.identifier = item.identifier.gsub /(201[0-9]\/)\d{3}-/, "\\1"

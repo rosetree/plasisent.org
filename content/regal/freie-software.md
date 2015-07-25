@@ -2,6 +2,10 @@
 kind: category
 name: floss
 title: Freie Software
+tags:
+  - GnuPG
+  - Freie Software
+  - Nanoc
 ---
 
 # Freie Software
