@@ -71,11 +71,15 @@ module Category
     return nil unless category[:kind] == "category"
     return nil if feed_articles.count == 0
 
+    feed_identifier = "/feed#{category.identifier}"
+
     @items << Nanoc::Item.new(
       "<%= atom_feed({ title: '#{category[:title]} | #{@config[:title]}', articles: @item[:feed_articles] }) %>",
       { feed_articles: feed_articles },
-      "/feed#{category.identifier}"
+      feed_identifier
     )
+
+    category[:feed] = @items[feed_identifier]
   end
 
   def all_categories
