@@ -1,7 +1,6 @@
 ---
 kind: article
 title: Ehe für alle
-created_at: 2015-07-26
 tags:
   - Homosexualität
   - Christen
