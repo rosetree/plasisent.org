@@ -13,6 +13,12 @@
     %meta{property: "os:repo", content: "https://github.com/rosetree/plasisent.org"}
     %meta{property: "os:rcs_type", content: "git"}
     %meta{property: "os:src", content: "git@github.com:rosetree/plasisent.org"}
+    - if content_for @item, :tldr
+      %meta{name: "twitter:card", content: "summary"}
+      %meta{name: "twitter:site", content: "@r0setree"}
+      %meta{name: "twitter:title", content: "#{@item[:title]} | Plasisent"}
+      %meta{name: "twitter:description", content: content_for(@item, :tldr).strip}
+      %meta{name: "description", content: content_for(@item, :tldr).strip}
     %meta{name: "viewport",  content: "width=device-width,initial-scale=1"}
     %meta{name: "generator", content: "nanoc #{Nanoc::VERSION}"}
     - if item[:prev] or item[:next]

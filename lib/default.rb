@@ -2,6 +2,7 @@
 # before nanoc starts compiling.
 include Nanoc::Helpers::Rendering
 include Nanoc::Helpers::Blogging
+include Nanoc::Helpers::Capturing
 include Nanoc::Helpers::LinkTo
 include Nanoc::Helpers::Text
 
