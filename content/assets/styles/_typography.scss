@@ -39,8 +39,11 @@ h3 {
 
 /* Body Text */
 
-p, li, pre, form, figure, iframe {
+p, li, pre, form, figure, iframe, dl {
 	line-height: 1.5;
+}
+
+p, li, pre, form, figure, iframe, dt {
 	margin-top: 0.9em;
 }
 
@@ -121,6 +124,21 @@ ul li {
 
 ol li {
 	list-style-type: decimal;
+}
+
+
+/* Definition Lists */
+
+dl {
+	margin-left: 1.5em;
+}
+
+dt {
+	font-weight: bold;
+
+	&:after {
+		content: "?";
+	}
 }
 
 
