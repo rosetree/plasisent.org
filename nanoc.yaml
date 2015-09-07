@@ -12,7 +12,7 @@ output_dir: output
 # atom_feed function I use in content/feed.xml.erb
 #
 # The url that is used as prefix in the atom feed.
-base_url: http://plasisent.rosetree.de
+base_url: http://plasisent.org
 # That’s me and my homepage. Obviously.
 author_name: Micha Rosenbaum
 author_uri: http://rosetree.de/micha/
