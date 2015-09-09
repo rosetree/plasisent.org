@@ -32,7 +32,15 @@
         %link{rel: "next", title: item[:next][:title], href: item[:next].path}
   %body
 
-    %h1= link_to "Plasisent", @items["/"].path, {rel: "home"}
+    %h1{style: "display:none"} Plasisent
+
+    %nav
+      %ul
+        %li= link_to "Plasisent", @items["/"].path, {rel: "home"}
+        %li= link_to "Blogroll", @items["/blogroll/"].path
+        %li
+          %a{href: @config[:author_uri], rel: "author me"} Micha Rosenbaum
+        %li= link_to "Feed", @items["/feed/"].path, {rel: "alternate", type: "application/atom+xml"}
 
     - if @item[:cleaned?] == false
       = load_snippet("Warnung Unbereinigter Import") % link_to("Datei auf GitHub", @item.github_url)

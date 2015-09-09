@@ -84,19 +84,6 @@ a:visited:hover {
 	color: $link;
 }
 
-a[rel=home] {
-	color: $link;
-	font-size: 1rem;
-
-	&:hover {
-		border: none;
-
-		&:after {
-			color: $text-secondary;
-			content: ".org";
-		}
-	}
-}
 
 /* Bilder */
 
@@ -124,6 +111,22 @@ ul li {
 
 ol li {
 	list-style-type: decimal;
+}
+
+
+/* Navigationslisten */
+
+nav ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+nav ul li {
+	display: inline-block;
+}
+
+nav ul li + li:before {
+	content: " · ";
 }
 
 
