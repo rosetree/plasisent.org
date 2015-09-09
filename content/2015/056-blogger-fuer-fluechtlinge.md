@@ -2,6 +2,7 @@
 kind: article
 title: Blogger für Flüchtlinge
 tags:
+  - Blogger für Flüchtlinge
   - Flüchtlinge
   - Julia Schönborn
   - Carline Mohr
