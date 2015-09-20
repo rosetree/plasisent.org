@@ -64,24 +64,18 @@ blockquote {
 /* Links */
 
 a {
-	color: $link;
-	border-bottom: $link-hover dotted thin;
-}
-
-h1 a, h2 a, h3 a,
-a:visited {
-	color: $link-hover;
+	color: inherit;
+	border-bottom: $link dotted thin;
 }
 
 a:hover,
 a:focus {
-	color: $link-hover;
-	border-bottom: $text solid thin;
+	color: $link;
+	border-bottom: none;
 }
 
-h1 a:hover, h2 a:hover, h3 a:hover,
-a:visited:hover {
-	color: $link;
+a:focus {
+	border-bottom: $text-secondary solid thin;
 }
 
 
