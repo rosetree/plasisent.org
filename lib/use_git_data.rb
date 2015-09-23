@@ -12,9 +12,16 @@ def use_git_data
     next if item.binary?
     next unless item[:content_filename]
 
-    first_commit = git.log.path(item[:content_filename]).last
+    commits = git.log.path(item[:content_filename])
+
+    first_commit = commits.last
 
     next unless first_commit
+
+    item[:modified_at] = []
+    commits.each do |commit|
+      item[:modified_at] << commit.date.to_time
+    end
 
     item[:created_at]  = first_commit.date.to_time unless item[:created_at]
     item[:author_name] = first_commit.author.name  unless item[:author_name]

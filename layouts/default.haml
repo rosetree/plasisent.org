@@ -109,6 +109,9 @@
           - unless @item.github_url == ""
             Den Quelltext dieser Seite findest du auf #{link_to "GitHub", @item.github_url}.
 
+          - if @item[:modified_at] && @item[:modified_at].length > 1
+            Diese Seite wurde mehrmals bearbeitet, eine #{link_to 'Liste aller Änderungen', @item.github_url('history')} gibt es auf GitHub.
+
       %h2 Sonst noch was?
 
       = load_snippet "Follow Me"
