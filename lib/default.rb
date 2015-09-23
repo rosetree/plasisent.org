@@ -139,11 +139,16 @@ end
 
 module Nanoc
   class Item
-    def github_url
+    def github_url base = ''
       return "" unless self[:content_filename]
-      "https://github.com/rosetree/plasisent.org/blob/master/#{self[:content_filename]}"
-    end
 
+      case base
+      when 'history'
+        "https://github.com/rosetree/plasisent.org/commits/master/#{self[:content_filename]}"
+      else
+        "https://github.com/rosetree/plasisent.org/blob/master/#{self[:content_filename]}"
+      end
+    end
 
     def linked_date_information
       return "" unless self[:created_at]
