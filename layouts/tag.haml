@@ -5,4 +5,4 @@
 - if item[:posts] && item[:posts].length > 0
   %ul
     - item[:posts].each do |post|
-      %li= link_to post[:title], post.path
+      = render "partials/short_post_in_list", post: post
