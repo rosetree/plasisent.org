@@ -34,11 +34,12 @@ die Schufa *sehr hohes Risiko* bedeutet. Um herauszufinden, warum dies der
 Fall ist, habe ich bei der Schufa angerufen. Eine nette Dame erklärte mir am
 Telefon, dass es vermutlich an meinem Geschlecht und meinem Alter liegt. Von
 mir persönlich hat die Schufa noch nicht genug Daten, um mich besser bewerten
-zu können. Und junge Männer sind eben ein Risiko.
+zu können; und das ist natürlich äußerst verdächtig.
 
 Wie um mich zu trösten berichtete sie mir, dass es einer jungen Kollegin von
 ihr genauso erging wie mir. Auch wenn ich nicht verstehen, wie das die Sache
-verbessern soll.
+verbessern soll, schließe ich daraus, dass das Alter und die Datenmenge eine
+größere Rolle spielen als das Geschlecht.
 
 Das Ende der Geschichte
 -----------------------
@@ -46,8 +47,8 @@ Das Ende der Geschichte
 Aus Faulheit kümmerte ich mich nicht weiter darum. Meine Daten hatte ich
 angefordert und den Grund erfahren. Den Vertrag, den ich über meine Eltern
 hatte, konnte ich verändern lassen. Für die Zukunft habe ich mir vorgenommen,
-mein Recht in Anspruch zu nehmen. Deswegen werde ich in Zukunft einmal im Jahr
-[die Datenübersicht anfordern][formular].
+mein Recht in Anspruch zu nehmen. Deswegen werde ich einmal im Jahr
+[die Datenübersicht von der Schufa anfordern][formular].
 
 
 [schufa]: https://medium.com/deutsch/ich-kriege-keinen-vertrag-bei-vodafone-weil-ich-24-jahre-alt-und-m%C3%A4nnlich-bin-e35ed85ebd15
