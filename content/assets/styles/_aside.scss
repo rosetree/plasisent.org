@@ -9,6 +9,6 @@ aside {
 // This prevents a large gap, when the first element has a large margin to the
 // top. The padding to the top is done inside the aside, but if padding is
 // used, the margin of the inner element is also applied.
-aside *:first-child {
+aside > *:first-child {
 	margin-top:  0;
 }
