@@ -81,7 +81,7 @@ module PlasisentTags
           "",
           {
             :title => "Stichwort „#{tag}“",
-            :posts => posts,
+            :posts => posts.sort_by! { |a| attribute_to_time(a[:created_at]) }.reverse,
             :kind => 'tag'
           },
           tag_url

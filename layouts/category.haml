@@ -5,6 +5,4 @@
 - else
   %ul
     - @category_items.each do |category_item|
-      %li
-        %a{href: category_item.path}
-          = category_item[:title]
+      = render "partials/short_post_in_list", post: category_item

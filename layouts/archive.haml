@@ -1,10 +1,9 @@
 %h1= item[:title]
 
-- item[:posts].each do |i|
-  %p<
-    %em= i.linked_date_information
-    %br/
-    = link_to i[:title], i.path
+- if item[:posts] && item[:posts].length > 0
+  %ul
+    - item[:posts].each do |post|
+      = render "partials/short_post_in_list", post: post
 
 - if item[:referenced_tags]
   %h2 Angesprochene Themen
