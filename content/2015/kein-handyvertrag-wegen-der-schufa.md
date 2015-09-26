@@ -27,6 +27,8 @@ die Schufa gut zwischen ihren vielen kostenpflichtigen Angeboten versteckt. Als
 ich diese Datenübersicht bei mir Briefkasten fand, war mir klar, warum niemand
 ein Vertrag mit mir abschließen wollte.
 
+![Die Bedeutung meiner Wahrscheinlichkeitswerte: „sehr hohes Risiko“.][bild]
+
 *Meine Erfüllungswahrscheinlichkeit lag bei knapp über 65&nbsp;%*, was für
 die Schufa *sehr hohes Risiko* bedeutet. Um herauszufinden, warum dies der
 Fall ist, habe ich bei der Schufa angerufen. Eine nette Dame erklärte mir am
@@ -55,3 +57,5 @@ mein Recht in Anspruch zu nehmen. Deswegen werde ich in Zukunft einmal im Jahr
 [34bdsg]: http://dejure.org/gesetze/BDSG/34.html
 
 [formular]: https://www.meineschufa.de/index.php?site=11_3_1
+
+[bild]: /assets/images/20150918_101859_mr.jpg
