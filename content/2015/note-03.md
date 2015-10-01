@@ -2,6 +2,7 @@
 kind: note
 title: Ich Datenschutz Trampeltier
 created_at: 2015-09-28 22:03:00 +0200
+tags:
   - Datenschutz
   - Datensparsamkeit
 ---
