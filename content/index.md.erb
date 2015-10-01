@@ -9,14 +9,15 @@ an, die mir wichtig sind. Was mich aktuell so beschäftigt siehst du direkt
 unter diesem Absatz.
 
 
-<% count = 4 %>
+<% count = 7 %>
 <% index = 0 %>
 
-<% sorted_articles.each do |article| %>
+<% sorted_posts.each do |post| %>
 
+<% if post[:kind] == 'article' %>
 <article>
-  <% render "article", item: article do %>
-    <%= article.compiled_content %>
+  <% render "article", item: post do %>
+    <%= post.compiled_content %>
   <% end %>
 </article>
 
@@ -30,5 +31,12 @@ unter diesem Absatz.
 
 <% index += 1 %>
 <% break if index == count %>
+<% end %>
+
+<% if post[:kind] == 'note' %>
+  <% render 'note', item: post do %>
+    <%= post.compiled_content %>
+  <% end %>
+<% end %>
 
 <% end %>

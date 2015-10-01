@@ -4,7 +4,9 @@
     %meta{charset: "utf-8"}
     %title #{@item[:title]} · Plasisent
     %link{rel: "stylesheet", href: @items["/assets/styles/master/"].path}
-    %link{rel: "alternate",  href: @items["/feed/"].path, type: "application/atom+xml", title: @config[:title]}
+    %link{rel: "alternate",  href: @items["/feed/"].path,          type: "application/atom+xml", title: @config[:title]}
+    %link{rel: "alternate",  href: @items["/feed/notes/"].path,    type: "application/atom+xml", title: @items["/feed/notes/"][:title]}
+    %link{rel: "alternate",  href: @items["/feed/articles/"].path, type: "application/atom+xml", title: @items["/feed/articles/"][:title]}
     - if @item[:feed]
       %link{rel: "alternate",  href: @item[:feed].path, type: "application/atom+xml", title: @item[:feed][:title]}
     - unless @item.github_url == ""
@@ -68,6 +70,9 @@
       - when "archive"
         = render "archive" do
           yield
+      - when "note"
+        = render "note" do
+          ~ yield
       - when "article"
         = render "article" do
           ~ yield
