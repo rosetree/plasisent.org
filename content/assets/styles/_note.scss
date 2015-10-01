@@ -1,0 +1,11 @@
+article.note {
+	margin: 3rem 0;
+	padding: 1.5rem;
+	border: $background-pre solid thin;
+}
+
+article.note h1:first-child {
+	// no need for margin here as we have padding inside article.note
+	margin: 0;
+	font-size: 1.1rem;
+}

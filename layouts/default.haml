@@ -68,6 +68,9 @@
       - when "archive"
         = render "archive" do
           yield
+      - when "note"
+        = render "note" do
+          ~ yield
       - when "article"
         = render "article" do
           ~ yield
