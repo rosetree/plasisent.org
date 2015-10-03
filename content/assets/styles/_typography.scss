@@ -55,6 +55,11 @@ b, strong {
 	font-weight: bold;
 }
 
+del {
+	color: $text-secondary;
+	text-decoration: line-through;
+}
+
 blockquote {
 	color: $text-secondary;
 	padding-left: 1.5rem;
