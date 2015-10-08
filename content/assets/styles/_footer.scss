@@ -1,14 +1,7 @@
 footer {
 	color: $text-secondary;
-	border-left:  $text-secondary thin dotted;
-	border-right: $text-secondary thin dotted;
-	padding: 0 3rem;
+	border-left:  $background-pre thin solid;
+	border-right: $background-pre thin solid;
+	padding: 1.5rem 3rem;
 	margin: 6rem 0;
-	opacity: 0.6;
 }
-
-footer:hover {
-	opacity: 0.9;
-}
-
-// TODO: No opacity on touchscreens.
