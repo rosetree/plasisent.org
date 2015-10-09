@@ -28,4 +28,4 @@ Die SD-Karte meiner Kamera habe ich auch formatiert.
 
 [demo]: http://ttip-demo.de/home/
 
-[notwendig]: https://plasisent.local/2014/sind-handytipps-fuer-demos-notwendig/
+[notwendig]: //plasisent.org/2014/sind-handytipps-fuer-demos-notwendig/
