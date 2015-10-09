@@ -1,5 +1,4 @@
 ---
-created_at: 2015-09-20
 kind: article
 title: Interview in meiner Gemeinde zu Flüchtlingen
 tags:

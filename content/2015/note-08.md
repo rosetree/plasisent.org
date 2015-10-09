@@ -1,6 +1,6 @@
 ---
 kind: note
-title: #SquattyPotty Video
+title: SquattyPotty Video
 tags:
   - Video
   - Humor
