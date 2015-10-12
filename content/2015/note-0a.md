@@ -8,7 +8,7 @@ tags:
   - erzaehlmirnix
 ---
 
-Im [Fettlogik][]-Blog von [Nadja Hermann][] las ich – im Artikel
+Im [Fettlogik][]-Blog von [Nadja Hermann][nh] las ich – im Artikel
 „[Übergewichtige diskriminieren][post]“ – vor ein paar Wochen etwas
 zum Thema Alkohol.
 
