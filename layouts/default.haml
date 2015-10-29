@@ -25,11 +25,6 @@
       %meta{name: "description", content: desc}
     %meta{name: "viewport",  content: "width=device-width,initial-scale=1"}
     %meta{name: "generator", content: "nanoc #{Nanoc::VERSION}"}
-    - if item[:prev] or item[:next]
-      - if item[:prev]
-        %link{rel: "prev", title: item[:prev][:title], href: item[:prev].path}
-      - if item[:next]
-        %link{rel: "next", title: item[:next][:title], href: item[:next].path}
   %body
 
     %h1{style: "display:none"} Plasisent
@@ -73,13 +68,6 @@
 
     %footer{role: "contentinfo"}
       -# FIXME: Why am I using `item` instead of `@item` from here?
-      - if item[:prev] or item[:next]
-        %p
-          - if item[:prev]
-            #{link_to item[:prev][:title], item[:prev].path}
-            ←
-          - if item[:next]
-            → #{link_to item[:next][:title], item[:next].path}
 
       - if @item.github_url != ""
         %h2{title: "Metadaten von „#{item[:title]}“."} Metadaten

@@ -6,8 +6,6 @@ preprocess do
   use_git_data
   generate_yearly_archive sorted_posts, :created_at, "Jahr"
   generate_weekly_archive sorted_posts, :created_at, "KW"
-  # TODO: Create a “prev-next-link” cache.
-  # generate_prev_next_links
 end
 
 
