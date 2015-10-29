@@ -4,7 +4,7 @@ nur auf GitHub sondern auch bei einigen [Wikimedia-Projekten][wikimedia] –
 allen voran [Wikipedia].
 
 
-[twitter]: https://twitter.com/r0setree
+[twitter]: https://twitter.com/plasisent
 
 [github]: https://github.com/rosetree
 
