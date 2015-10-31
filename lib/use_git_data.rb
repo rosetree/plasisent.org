@@ -16,7 +16,7 @@ def use_git_data
 
     first_commit = commits.last
 
-    item[:created_at]  = Date.today unless item[:created_at] || first_commit
+    item[:created_at]  = Time.new unless item[:created_at] || first_commit
 
     next unless first_commit
 
