@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+alert() {
+  notify-send --urgency=low "Plasisent" "$@"
+}
+
+
+nanoc && alert "Build completed" || alert "Build failed"
+
