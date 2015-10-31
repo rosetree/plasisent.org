@@ -150,6 +150,35 @@ module Nanoc
       end
     end
 
+    def base_36_code
+      date = attribute_to_time self[:created_at]
+
+      if self[:base_36_code]
+        return self[:base_36_code]
+      end
+
+      unless date
+        return nil # TODO: Throw an error / warning?
+      end
+
+      # Special handling for year and time
+      #
+      # To save a character, I’m going to assume, we have write all articles in
+      # the 2000 millenium.
+      year = (date.year - 2000)
+      # This is smaller, than using base 36 versions of each, and I don’t
+      # think, my blog is going to need a hackable time url.
+      time = "#{date.hour}#{date.min}#{date.sec}".to_i
+
+      # Create short identifier with base 36
+      code =              year.to_s(36).rjust(2, "0")
+      code = code + date.month.to_s(36)
+      code = code +   date.day.to_s(36)
+      code = code +       time.to_s(36).rjust(4, "0")
+
+      return code
+    end
+
     def linked_date_information
       return "" unless self[:created_at]
 
