@@ -25,7 +25,7 @@ title: Plasisent
 # server when a directory is requested. Usually, index files are named
 # “index.html”, but depending on the web server, this may be something else,
 # such as “default.htm”. This list is used by nanoc to generate pretty URLs.
-index_filenames: [ 'index.html', 'index.xml' ]
+index_filenames: [ 'index.html', 'index.xml', 'index.php' ]
 
 # Whether or not to generate a diff of the compiled content when compiling a
 # site. The diff will contain the differences between the compiled content
