@@ -11,6 +11,8 @@
       %link{rel: "alternate",  href: @item[:feed].path, type: "application/atom+xml", title: @item[:feed][:title]}
     - unless @item.github_url == ""
       %link{rel: "alternate",  href: @item.github_url, title: "Source Code on GitHub."}
+    %link{rel: "webmention", href: "http://plasisent.org/webmention/"}
+    %link{rel: "pingback", href: "https://webmention.io/webmention?forward=http://plasisent.org/webmention/"}
     %link{rel: "profile", href: "http://osprotocol.com"}
     %meta{property: "os:repo", content: "https://github.com/rosetree/plasisent.org"}
     %meta{property: "os:rcs_type", content: "git"}
