@@ -179,6 +179,15 @@ module Nanoc
       return code
     end
 
+    def shortlink
+      return nil unless self.base_36_code
+      # Check if the shortlink is shorter than the long link.
+      return nil if self.path.length <= self.base_36_code.length
+      # We use File.join to make sure there is a slash between domain and page
+      # TODO: Make the domain configurable
+      File.join('http://plasisent.org/', self.base_36_code)
+    end
+
     def linked_date_information
       return "" unless self[:created_at]
 
