@@ -93,4 +93,3 @@ module Category
   memoize :all_categories
 end
 
-include Category

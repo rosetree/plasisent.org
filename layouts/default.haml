@@ -7,10 +7,6 @@
     %link{rel: "alternate",  href: @items["/feed/"].path,          type: "application/atom+xml", title: @config[:title]}
     %link{rel: "alternate",  href: @items["/feed/notes/"].path,    type: "application/atom+xml", title: @items["/feed/notes/"][:title]}
     %link{rel: "alternate",  href: @items["/feed/articles/"].path, type: "application/atom+xml", title: @items["/feed/articles/"][:title]}
-    - if @item[:feed]
-      %link{rel: "alternate",  href: @item[:feed].path, type: "application/atom+xml", title: @item[:feed][:title]}
-    - unless @item.github_url == ""
-      %link{rel: "alternate",  href: @item.github_url, title: "Source Code on GitHub."}
     %link{rel: "profile", href: "http://osprotocol.com"}
     %meta{property: "os:repo", content: "https://github.com/rosetree/plasisent.org"}
     %meta{property: "os:rcs_type", content: "git"}
@@ -29,11 +25,6 @@
     %meta{name: "generator", content: "nanoc #{Nanoc::VERSION}"}
     - if @item.shortlink
       %link{rel: "shortlink", href: @item.shortlink}
-    - if item[:prev] or item[:next]
-      - if item[:prev]
-        %link{rel: "prev", title: item[:prev][:title], href: item[:prev].path}
-      - if item[:next]
-        %link{rel: "next", title: item[:next][:title], href: item[:next].path}
   %body
 
     %h1{style: "display:none"} Plasisent
@@ -42,8 +33,6 @@
       %ul
         %li= link_to "Plasisent", @items["/"].path, {rel: "home"}
         %li= link_to "Blogroll", @items["/blogroll/"].path
-        %li
-          %a{href: @config[:author_uri], rel: "author me"} Micha Rosenbaum
         %li= link_to "Feed", @items["/feed/"].path, {rel: "alternate", type: "application/atom+xml"}
 
     - if @item[:cleaned?] == false
@@ -62,13 +51,6 @@
     %main{role: "main"}
 
       - case @item[:kind]
-      - when "category"
-        - category_items = all_items_with_category
-        = render "category", :category_items => category_items do
-          = yield
-      - when "tag"
-        = render "tag" do
-          = yield
       - when "archive"
         = render "archive" do
           yield
@@ -84,35 +66,11 @@
 
     %footer{role: "contentinfo"}
       -# FIXME: Why am I using `item` instead of `@item` from here?
-      - if item[:prev] or item[:next]
-        %p
-          - if item[:prev]
-            #{link_to item[:prev][:title], item[:prev].path}
-            ←
-          - if item[:next]
-            → #{link_to item[:next][:title], item[:next].path}
 
-      - if item[:tags] && item[:tags] != [] or @item[:categories] && @item[:categories] != [] or @item.github_url != "" or @item.shortlink
+      - if @item.github_url != "" or @item.shortlink
         %h2{title: "Metadaten von „#{item[:title]}“."} Metadaten
 
         %p
-
-          - if @item[:categories] && @item[:categories] != []
-            #{link_to @item[:title], @item.path} ist eingeordnet
-            - if @item[:categories].count == 1
-              im Regal
-            - else
-              in den Regalen
-            #{link_categories @item}.
-
-          - if @item[:tags] && @item[:tags] != []
-            Dieser Beitrag behandelt
-            - if @item[:tags].count == 1
-              das Thema
-            - else
-              die Themen
-            #{link_tags item}.
-
           - unless @item.github_url == ""
             Den Quelltext dieser Seite findest du auf #{link_to "GitHub", @item.github_url}.
 
