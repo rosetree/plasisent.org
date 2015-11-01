@@ -7,8 +7,6 @@
     %link{rel: "alternate",  href: @items["/feed/"].path,          type: "application/atom+xml", title: @config[:title]}
     %link{rel: "alternate",  href: @items["/feed/notes/"].path,    type: "application/atom+xml", title: @items["/feed/notes/"][:title]}
     %link{rel: "alternate",  href: @items["/feed/articles/"].path, type: "application/atom+xml", title: @items["/feed/articles/"][:title]}
-    - unless @item.github_url == ""
-      %link{rel: "alternate",  href: @item.github_url, title: "Source Code on GitHub."}
     %link{rel: "profile", href: "http://osprotocol.com"}
     %meta{property: "os:repo", content: "https://github.com/rosetree/plasisent.org"}
     %meta{property: "os:rcs_type", content: "git"}
@@ -33,8 +31,6 @@
       %ul
         %li= link_to "Plasisent", @items["/"].path, {rel: "home"}
         %li= link_to "Blogroll", @items["/blogroll/"].path
-        %li
-          %a{href: @config[:author_uri], rel: "author me"} Micha Rosenbaum
         %li= link_to "Feed", @items["/feed/"].path, {rel: "alternate", type: "application/atom+xml"}
 
     - if @item[:cleaned?] == false
