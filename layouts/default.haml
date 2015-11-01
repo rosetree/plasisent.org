@@ -27,6 +27,8 @@
       %meta{name: "description", content: desc}
     %meta{name: "viewport",  content: "width=device-width,initial-scale=1"}
     %meta{name: "generator", content: "nanoc #{Nanoc::VERSION}"}
+    - if @item.shortlink
+      %link{rel: "shortlink", href: @item.shortlink}
     - if item[:prev] or item[:next]
       - if item[:prev]
         %link{rel: "prev", title: item[:prev][:title], href: item[:prev].path}
@@ -90,7 +92,7 @@
           - if item[:next]
             → #{link_to item[:next][:title], item[:next].path}
 
-      - if item[:tags] && item[:tags] != [] or @item[:categories] && @item[:categories] != [] or @item.github_url != ""
+      - if item[:tags] && item[:tags] != [] or @item[:categories] && @item[:categories] != [] or @item.github_url != "" or @item.shortlink
         %h2{title: "Metadaten von „#{item[:title]}“."} Metadaten
 
         %p
@@ -116,6 +118,9 @@
 
           - if @item[:modified_at] && @item[:modified_at].length > 1
             Diese Seite wurde mehrmals bearbeitet, eine #{link_to 'Liste aller Änderungen', @item.github_url('history')} gibt es auf GitHub.
+
+          - if @item.shortlink
+            Willst du einen kürzeren Link zu dieser Seite? Bitte: #{link_to @item.shortlink, @item.shortlink}
 
       %h2 Sonst noch was?
 
