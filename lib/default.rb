@@ -138,6 +138,16 @@ end
 
 
 module Nanoc
+  module Helpers::Blogging
+    # TODO: Contribute to https://github.com/nanoc/nanoc
+    def attribute_to_time(time)
+      time = time.to_time if time.is_a?(DateTime)
+      time = Time.local(time.year, time.month, time.day) if time.is_a?(Date)
+      time = Time.parse(time) if time.is_a?(String)
+      time
+    end
+  end
+
   class Item
     def github_url base = ''
       return "" unless self[:content_filename]
