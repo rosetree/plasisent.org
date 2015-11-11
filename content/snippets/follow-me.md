@@ -1,7 +1,8 @@
 Folgen kannst du mir auf [Twitter] und [GitHub]. Dort gibt es auch das
-[Repository dieses Blogs][repo]. Bearbeitungen von mir findest du aber nicht
-nur auf GitHub sondern auch bei einigen [Wikimedia-Projekten][wikimedia] –
-allen voran [Wikipedia].
+[Repository dieses Blogs][repo]. Dieses Blog kannst du [per Web-Feed
+abonnieren][feed] und per E-Mail an
+<a href="mailto:micha@rosetree.de?subject=Ein%20Kommentar%20zu%20Plasisent&amp;body=Shalömchen%20und%20Moin%20Moin">micha@rosetree.de</a>
+kommentieren.
 
 
 [twitter]: https://twitter.com/plasisent
@@ -10,6 +11,4 @@ allen voran [Wikipedia].
 
 [repo]: https://github.com/rosetree/plasisent.org
 
-[wikimedia]: https://tools.wmflabs.org/guc/?user=MRosetree
-
-[wikipedia]: https://de.wikipedia.org/wiki/Special:Beiträge/MRosetree
+[feed]: //plasisent.org/feed/
