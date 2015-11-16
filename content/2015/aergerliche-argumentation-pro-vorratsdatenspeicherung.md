@@ -1,9 +1,14 @@
 ---
 title: Ärgerliche Argumentation pro VDS
 kind: article
+tags:
+- Vorratsdatenspeicherung
+- Überwachung
+- CSU
+- Bundestag
+- Rainer König
+- Geheimdienste
 ---
-
-<!-- TODO: Add Tags -->
 
 Rainer König schrieb einen [offenen Brief an Volker Ullrich][brief], der für
 die CSU im Bundestag sitzt. Er zitiert dabei aus dem Kommentar von Volker
