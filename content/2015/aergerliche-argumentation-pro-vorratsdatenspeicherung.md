@@ -104,6 +104,9 @@ Massenüberwachung für die VDS verwendeten, blicken.
 1. [Mindestspeicherdauer](http://neusprech.org/mindestspeicherdauer/)
 2. [private Vorsorgespeicherung](http://neusprech.org/private-vorsorgespeicherung/)
 3. [digitale Spurensicherung](http://neusprech.org/digitale-spurensicherung/)
+4. Am 11.&nbsp;November wurde die
+   [Verkehrsdatenspeicherung](http://neusprech.org/verkehrsdatenspeicherung/)
+   ergänzt.
 
 Und nochmal: Weg mit VDS
 ------------------------
