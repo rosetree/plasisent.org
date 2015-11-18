@@ -53,12 +53,15 @@ reibungslosen Ablauf der Spiele.
 
 Um einen Anschlag – [wie in Paris][paris] – zu verhindern, wurden in London
 tausende Soldaten vor den Spielstätten postiert. [Raketen in
-Wohnsiedlungen][rakten], die Marine in der Themse; <cite>The Guardian</cite>
+Wohnsiedlungen][raketen], die Marine in der Themse; <cite>The Guardian</cite>
 spricht von dem [größten Millitäraufgebot seit dem zweiten Weltkrieg][tg]. Hier
 in Hamburg erwarte ich vor, während und nach den olympischen Spielen ein
 gewaltiges Gefahrengebiet.
 
 [paris]: http://www.tagesschau.de/anschlaege-paris-111.html
+
+[raketen]: http://www.spiegel.de/video/olympia-sicherheit-militaer-in-london-mit-raketen-gegen-terrorismus-video-1194228.html
+  "Raketen auf Wohnhäusern"
 
 [tg]: http://www.theguardian.com/sport/2012/mar/12/london-olympics-security-lockdown-london
   "„London 2012 will see the UK's biggest mobilisation of military and security forces since the second world war“ – Das sind ja fabelhafte Aussichten."
@@ -72,9 +75,6 @@ Sicherheitsmaßnahmen nach den Olympischen Spielen wieder aufgegeben würden.
 
 [statement]: http://neinzuolympia.de/
   "Über den Einsatz des Militärs geht es im Abschnitt „5. Ein Fest des Friedens, bewaffnet bis an die Zähne?“"
-
-[raketen]: http://www.spiegel.de/video/olympia-sicherheit-militaer-in-london-mit-raketen-gegen-terrorismus-video-1194228.html
-  "Raketen auf Wohnhäusern"
 
 
 Zusammenhanglose Anmerkungen
