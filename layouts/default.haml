@@ -84,4 +84,4 @@
 
       %h2 Sonst noch was?
 
-      = load_snippet "Follow Me"
+      = load_snippet("Follow Me") % {mailtolink: @item.reply_to_mailto_link}

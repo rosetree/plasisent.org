@@ -157,6 +157,19 @@ module Nanoc
       end
     end
 
+    def reply_to_mailto_link
+      unless self[:author_email]
+        return 'keine E-Mailadresse'
+      end
+
+      e = self[:author_email]
+      s = "Re: #{self.title}"
+      c = "Shalömchen und Moin Moin"
+      l = "mailto:#{e}?subject=#{s}&amp;content=#{c}"
+
+      link_to e, l, {rel: 'reply-to'}
+    end
+
     def github_url base = ''
       return "" unless self[:content_filename]
 

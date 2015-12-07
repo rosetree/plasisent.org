@@ -25,7 +25,8 @@ def use_git_data
       item[:modified_at] << commit.date.to_time
     end
 
-    item[:created_at]  = first_commit.date.to_time unless item[:created_at]
-    item[:author_name] = first_commit.author.name  unless item[:author_name]
+    item[:created_at]   = first_commit.date.to_time unless item[:created_at]
+    item[:author_name]  = first_commit.author.name  unless item[:author_name]
+    item[:author_email] = first_commit.author.email unless item[:author_email]
   end
 end
