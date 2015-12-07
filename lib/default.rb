@@ -149,6 +149,14 @@ module Nanoc
   end
 
   class Item
+    def title
+      if self[:title]
+        "#{self[:title]} · Plasisent"
+      else
+        'Plasisent'
+      end
+    end
+
     def github_url base = ''
       return "" unless self[:content_filename]
 

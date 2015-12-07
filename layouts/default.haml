@@ -2,7 +2,7 @@
 %html{lang: "de"}
   %head
     %meta{charset: "utf-8"}
-    %title #{@item[:title]} · Plasisent
+    %title= @item.title
     %link{rel: "stylesheet", href: @items["/assets/styles/master/"].path}
     %link{rel: "alternate",  href: @items["/feed/"].path,          type: "application/atom+xml", title: @config[:title]}
     %link{rel: "alternate",  href: @items["/feed/notes/"].path,    type: "application/atom+xml", title: @items["/feed/notes/"][:title]}
@@ -20,7 +20,7 @@
         - desc = content_for(@item, :tldr).strip
       %meta{name: "twitter:card", content: "summary"}
       %meta{name: "twitter:site", content: "@r0setree"}
-      %meta{name: "twitter:title", content: "#{@item[:title]} | Plasisent"}
+      %meta{name: "twitter:title", content: @item.title}
       %meta{name: "twitter:description", content: desc}
       %meta{name: "description", content: desc}
     %meta{name: "viewport",  content: "width=device-width,initial-scale=1"}
