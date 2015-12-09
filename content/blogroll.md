@@ -27,6 +27,15 @@ kennen und schätzen gelernt. Beeindruckt bin ich immer wieder von seinem Mut,
 den er zum Beispiel bei [Veranstaltungen der *„Alternative“ für
 Deutschland*][afd] beweist.
 
+## [Dunkelangst](https://dunkelangst.org/)
+
+Helmut Roewer ist ein in Deutschland geborener Weltenbummler, der gerade in der
+Schweiz lebt und vorher schon einige Zeit in Taiwan lebte und arbeitete. Er hat
+dadurch einen besonderen Blick auf die Welt und kommuniziert diesen in seinem
+[Blog](https://dunkelangst.com/) und seinem
+[Microblog](https://microblog.dunkelangst.org/). Sein distanziertes Verhältnis
+zu sozialen Netzwerken beeindruckt mich und ist mir ein Vorbild.
+
 ## Weitere lesenswerte Blogs
 
 * [Rainer König](http://koenig-haunstetten.de/) ist kein Blog. Aber Rainer ist
