@@ -76,7 +76,7 @@ data_sources:
     encoding: utf-8
   -
     type: static
-    items_root: /static/
+    items_root: /
 
 # Configuration for the “check” command, which run unit tests on the site.
 checks:

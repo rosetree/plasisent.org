@@ -13,9 +13,6 @@ ignore '/regal/*'
 ignore '/themen/*'
 
 
-compile '/static/*/' do
-end
-
 compile "/htaccess" do
   filter :erb
 end
@@ -38,6 +35,8 @@ compile '*' do
     }
   elsif item.binary?
     # don’t filter binary items
+  elsif ['php'].include? item[:extension]
+    # don’t filter excluded filetypes
   else
     filter :erb
     filter :kramdown, {
@@ -48,11 +47,6 @@ compile '*' do
   end
 end
 
-
-route '/static/*/' do
-  # /static/foo.html/ → /foo.html
-  item.identifier[7..-2]
-end
 
 route "/htaccess" do
   "/.htaccess"
@@ -76,6 +70,8 @@ route '*' do
   elsif item.binary?
     # Write item with identifier /foo/ to /foo.ext
     item.identifier.chop + '.' + item[:extension]
+  elsif item[:extension] == 'php'
+    item.identifier + 'index.php'
   else
     # Write item with identifier /foo/ to /foo/index.html
     item.identifier + 'index.html'
