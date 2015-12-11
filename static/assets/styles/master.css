@@ -1,0 +1,231 @@
+@charset "UTF-8";
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, u, i, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+figure, figcaption,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+  text-decoration: none; }
+
+/* remember to define focus styles! */
+:focus {
+  outline: 0; }
+
+body {
+  line-height: 1;
+  color: #000;
+  background: #fff; }
+
+ol, ul {
+  list-style: none; }
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+  border-collapse: separate;
+  border-spacing: 0; }
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: ""; }
+
+blockquote, q {
+  quotes: "" ""; }
+
+body {
+  width: 98%;
+  max-width: 40rem;
+  margin: 2rem auto;
+  color: #ccc;
+  background-color: #111;
+  font-family: sans-serif; }
+
+/* Headlines */
+header p {
+  color: #aaa; }
+
+h1, h2, h3 {
+  font-family: monospace;
+  margin: 1.7em 0 1em 0; }
+
+h1 {
+  font-size: 1.7em;
+  margin-top: 2em; }
+
+h2 {
+  font-size: 1.1em;
+  font-weight: bold; }
+
+h3 {
+  font-size: 0.9em;
+  font-weight: bold; }
+
+/* Body Text */
+p, li, pre, form, figure, iframe, dl {
+  line-height: 1.5; }
+
+p, li, pre, form, figure, iframe, dt {
+  margin-top: 1em; }
+
+i, em, u {
+  font-style: italic; }
+
+b, strong {
+  font-weight: bold; }
+
+del {
+  color: #aaa;
+  text-decoration: line-through; }
+
+blockquote {
+  color: #aaa;
+  padding-left: 1.5rem;
+  border-left: #555 solid thin; }
+
+/* Links */
+a {
+  color: inherit;
+  border-bottom: #4b4 dotted thin; }
+
+a:hover,
+a:focus {
+  color: #4b4;
+  border-bottom: none; }
+
+a:focus {
+  border-bottom: #aaa solid thin; }
+
+/* Bilder */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 3px; }
+
+figcaption {
+  margin: 0.3em 0 1.3em 0;
+  padding-left: 1.1em;
+  color: #aaa; }
+
+/* Listen */
+ul, ol {
+  padding-left: 1.1em; }
+
+li {
+  padding-left: 0.4em; }
+
+ul li {
+  list-style-type: disc; }
+
+ol li {
+  list-style-type: decimal; }
+
+/* Navigationslisten */
+nav ul {
+  list-style-type: none;
+  padding: 0; }
+
+nav ul li {
+  display: inline-block;
+  padding: 0; }
+
+nav ul li + li:before {
+  content: " · "; }
+
+/* Definition Lists */
+dl {
+  margin-left: 1.5em; }
+
+dt {
+  font-weight: bold; }
+  dt:after {
+    content: "?"; }
+
+/* Code and Pre Elements */
+code {
+  background-color: #333;
+  font-family: monospace; }
+
+pre {
+  padding: 0.9em 1.1em;
+  background-color: #333;
+  border-top: #555 thin solid;
+  border-bottom: #555 thin solid; }
+
+/* Form Elements */
+input {
+  color: #ccc;
+  background: #333;
+  width: 70%;
+  padding: 0.3em 0.5em;
+  border: none;
+  border-top: #555 thin solid;
+  border-bottom: #555 thin solid; }
+
+input[type=submit] {
+  color: #111;
+  background-color: #4b4;
+  width: 20%;
+  cursor: pointer;
+  border-radius: 3px; }
+
+input[type=submit]:hover {
+  background-color: #7b7; }
+
+input[type=text]:focus {
+  border-top: #aaa thin solid;
+  border-bottom: #aaa thin solid; }
+
+/* Sonstiges */
+hr {
+  margin: 1.4em 0;
+  height: 1px;
+  border: none;
+  color: #555;
+  background-color: #555; }
+
+iframe[width], iframe[height] {
+  max-width: 100%;
+  max-height: auto; }
+
+aside {
+  margin: 1.5rem 0;
+  padding: 1.5rem;
+  background: #000;
+  border-top: #333 solid thin;
+  border-bottom: #333 solid thin; }
+
+footer {
+  color: #aaa;
+  border-left: #333 thin solid;
+  border-right: #333 thin solid;
+  padding: 1.5rem 3rem;
+  margin: 6rem 0; }
+
+article.note {
+  margin: 3rem 0;
+  padding: 1.5rem;
+  border: #333 solid thin; }
+
+article.note h1:first-child {
+  margin: 0;
+  font-size: 1.1rem; }
+
+article.note > *:first-child,
+aside > *:first-child,
+footer > *:first-child {
+  margin-top: 0; }

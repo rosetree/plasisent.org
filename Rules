@@ -27,13 +27,7 @@ compile "/snippets/*/" do
 end
 
 compile '*' do
-  if item[:extension] == 'scss'
-    next if item.identifier.split("/")[-1].start_with?("_")
-    filter :sass, {
-      :syntax => :scss,
-      :style => :compressed,
-    }
-  elsif item.binary?
+  if item.binary?
     # don’t filter binary items
   elsif ['php'].include? item[:extension]
     # don’t filter excluded filetypes
@@ -61,13 +55,7 @@ route "/snippets/*/" do
 end
 
 route '*' do
-  if item[:extension] == 'scss'
-    unless item.identifier.split("/")[-1].start_with?("_")
-      # Do nothing when a SCSS file starts with an underscore.
-      # Write item with identifier /foo/ to /foo.css
-      item.identifier.chop + '.css'
-    end
-  elsif item.binary?
+  if item.binary?
     # Write item with identifier /foo/ to /foo.ext
     item.identifier.chop + '.' + item[:extension]
   elsif item[:extension] == 'php'
