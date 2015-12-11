@@ -2,6 +2,14 @@ DirectoryIndex <%= @config[:index_filenames].join(" ") %>
 
 ErrorDocument 404 /error/404/
 
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType image/png  "access plus 1 year"
+    ExpiresByType image/jpg  "access plus 1 year"
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/icon "access plus 1 year"
+</IfModule>
+
 <% @items.each do |i| %>
   <% next unless i.path %>
   <% next unless i.base_36_code %>
