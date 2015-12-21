@@ -1,4 +1,5 @@
 #!/usr/bin/env ruby
+require "digest/sha1"
 
 
 preprocess do
@@ -12,9 +13,6 @@ end
 ignore '/regal/*'
 ignore '/themen/*'
 
-
-compile '/static/*/' do
-end
 
 compile "/htaccess" do
   filter :erb
@@ -30,14 +28,10 @@ compile "/snippets/*/" do
 end
 
 compile '*' do
-  if item[:extension] == 'scss'
-    next if item.identifier.split("/")[-1].start_with?("_")
-    filter :sass, {
-      :syntax => :scss,
-      :style => :compressed,
-    }
-  elsif item.binary?
+  if item.binary?
     # don’t filter binary items
+  elsif ['php', 'css'].include? item[:extension]
+    # don’t filter excluded filetypes
   else
     filter :erb
     filter :kramdown, {
@@ -49,9 +43,8 @@ compile '*' do
 end
 
 
-route '/static/*/' do
-  # /static/foo.html/ → /foo.html
-  item.identifier[7..-2]
+route '/assets/styles/master/' do
+  '/assets/styles/' + Digest::SHA1.hexdigest(item.raw_content) + '.css'
 end
 
 route "/htaccess" do
@@ -67,15 +60,11 @@ route "/snippets/*/" do
 end
 
 route '*' do
-  if item[:extension] == 'scss'
-    unless item.identifier.split("/")[-1].start_with?("_")
-      # Do nothing when a SCSS file starts with an underscore.
-      # Write item with identifier /foo/ to /foo.css
-      item.identifier.chop + '.css'
-    end
-  elsif item.binary?
+  if item.binary?
     # Write item with identifier /foo/ to /foo.ext
     item.identifier.chop + '.' + item[:extension]
+  elsif item[:extension] == 'php'
+    item.identifier + 'index.php'
   else
     # Write item with identifier /foo/ to /foo/index.html
     item.identifier + 'index.html'

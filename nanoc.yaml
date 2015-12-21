@@ -75,8 +75,20 @@ data_sources:
     # UTF-8 (which they should be!), change this.
     encoding: utf-8
   -
-    type: static
-    items_root: /static/
+    type: filesystem_unified
+
+    # Load items from static/ instead of content/
+    content_dir: static
+
+    # Mount all static items into “/” – like everything from “content/”.
+    items_root: /
+
+    # There are no static layouts.
+    layouts_dir:  nil
+    layouts_root: nil
+
+    allow_periods_in_identifiers: false
+    encoding: utf-8
 
 # Configuration for the “check” command, which run unit tests on the site.
 checks:
