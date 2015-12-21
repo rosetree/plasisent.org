@@ -1,4 +1,5 @@
 #!/usr/bin/env ruby
+require "digest/sha1"
 
 
 preprocess do
@@ -29,7 +30,7 @@ end
 compile '*' do
   if item.binary?
     # don’t filter binary items
-  elsif ['php'].include? item[:extension]
+  elsif ['php', 'css'].include? item[:extension]
     # don’t filter excluded filetypes
   else
     filter :erb
@@ -41,6 +42,10 @@ compile '*' do
   end
 end
 
+
+route '/assets/styles/master/' do
+  '/assets/styles/' + Digest::SHA1.hexdigest(item.raw_content) + '.css'
+end
 
 route "/htaccess" do
   "/.htaccess"

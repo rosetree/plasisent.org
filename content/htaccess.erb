@@ -4,6 +4,7 @@ ErrorDocument 404 /error/404/
 
 <IfModule mod_expires.c>
     ExpiresActive On
+    ExpiresByType text/css   "access plus 1 year"
     ExpiresByType image/png  "access plus 1 year"
     ExpiresByType image/jpg  "access plus 1 year"
     ExpiresByType image/jpeg "access plus 1 year"
