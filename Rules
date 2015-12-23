@@ -60,7 +60,7 @@ route "/snippets/*/" do
 end
 
 route '*' do
-  if item.binary?
+  if item.binary? || item[:extension] == 'css'
     # Write item with identifier /foo/ to /foo.ext
     item.identifier.chop + '.' + item[:extension]
   elsif item[:extension] == 'php'

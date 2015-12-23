@@ -3,6 +3,7 @@
   %head
     %meta{charset: "utf-8"}
     %title= @item.title
+    %style{type: "text/css"}= @items["/assets/styles/critical/"].raw_content
     %link{rel: "stylesheet", href: @items["/assets/styles/master/"].path}
     %link{rel: "alternate",  href: @items["/feed/"].path,          type: "application/atom+xml", title: @config[:title]}
     %link{rel: "alternate",  href: @items["/feed/notes/"].path,    type: "application/atom+xml", title: @items["/feed/notes/"][:title]}
