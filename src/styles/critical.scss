@@ -1,0 +1,25 @@
+// Critical CSS
+//
+// https://www.npmjs.com/package/criticalcss
+// https://bocoup.com/weblog/smaller-faster-websites
+
+@import "colors";
+
+* { text-decoration: none; }
+
+body {
+	max-width: 40rem;
+	margin: 2rem auto;
+	background-color: $background;
+	color: $text;
+}
+
+a {
+	color: $text;
+	border-bottom: dotted thin $link;
+}
+a:hover {
+	color: $link;
+	border-bottom: none;
+}
+

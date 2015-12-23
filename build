@@ -5,5 +5,8 @@ alert() {
 }
 
 
+sass --style compact src/styles/critical.scss > static/assets/styles/critical.css
+sass src/styles/master.scss > static/assets/styles/master.css
+
 nanoc && alert "Build completed" || alert "Build failed"
 
