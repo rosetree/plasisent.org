@@ -21,7 +21,7 @@ Blogs][0], den ich euch wärmstens empfehlen möchte.
 
 [0]: //rosetree.de/lisa/2015/6/
 
-[![Das frische Ehepaar Lisa und Micha präsentieren die Eheringe; nach der Hochzeit – vor dem Standesamt. (Klick öffnet das gesamte Bild.)](/2015/lisa-und-micha-mit-eheringen-crop.jpg)][selfie]
+[![Das frische Ehepaar Lisa und Micha präsentiert die Eheringe; nach der Hochzeit – vor dem Standesamt. (Klick öffnet das gesamte Bild.)](/2015/lisa-und-micha-mit-eheringen-crop.jpg)][selfie]
 
 [selfie]: /2015/lisa-und-micha-mit-eheringen.jpg
 
