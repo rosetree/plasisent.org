@@ -223,3 +223,12 @@ RedirectMatch 301 ^/edward-snowden-verschluesselung-wirkt/?$ /2014/edward-snowde
 RedirectMatch 301 ^/freihandelsabkommen-offener-austausch/?$ /2014/freihandelsabkommen-offener-austausch/
 RedirectMatch 301 ^/wer-hat-die-macht-in-deutschland/?$ /2014/wer-hat-die-macht-in-deutschland/
 RedirectMatch 301 ^/tante-jays-aufforderung-zum-bloggen/?$ /2014/tante-jays-aufforderung-zum-bloggen/
+
+<IfModule mod_rewrite.c>
+  RewriteEngine on
+  # If there’s no file or directory matching the request, redirect
+  # /9999/88/77/slug/ → /9999/slug/
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^(\d{4})/\d{2}/\d{2}/([^/]+)/?$ /$1/$2/ [R=301]
+</IfModule>
