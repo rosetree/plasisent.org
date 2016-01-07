@@ -11,9 +11,9 @@ ErrorDocument 404 /error/404/
     ExpiresByType image/icon "access plus 1 year"
 </IfModule>
 
-<% @items.each do |i| %>
-  <% next unless i.path %>
-  <% next unless i.base_36_code %>
+<% @items.each do |i|
+  next unless i.path
+  next unless i.base_36_code %>
   RedirectMatch 301 ^/<%= i.base_36_code %>/?$ <%= i.path %>
 <% end %>
 
