@@ -29,6 +29,9 @@ DEPENDENCIES
   git
   haml
   kramdown
-  nanoc
+  nanoc (= 3.7.5)
   nokogiri
   sass
+
+BUNDLED WITH
+   1.11.2
