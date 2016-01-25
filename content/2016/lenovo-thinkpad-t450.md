@@ -1,6 +1,7 @@
 ---
 kind: article
 title: Lenovo ThinkPad T450
+created_at: 2016-01-25 22:17:56 +0100
 ---
 
 Seit Ende 2011 nutzte ich einen schon damals nicht besonders leistungsstarkes
