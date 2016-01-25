@@ -11,6 +11,7 @@ tags:
   - Nazis
   - Rassismus
   - Blog
+  - globalcitizen
 ---
 
 
@@ -70,7 +71,7 @@ hier noch verlinken:
 
 [verbot]: http://www.radiohamburg.de/Nachrichten/Hamburg-aktuell/Menschen-in-Hamburg/2015/August/Tag-der-deutschen-Patrioten-Verbot-fuer-Neonazi-Demo-wird-geprueft
 
-[schweiz]: http://dunkelangst.org/2015/08/heidenau-shame-for-germany/
+[schweiz]: https://www.globalcitizen.red/2015/08/26/heidenau-shame-for-germany/
 
 [kelly]: http://www.junaimnetz.de/kelly
 
