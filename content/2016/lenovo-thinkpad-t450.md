@@ -3,10 +3,6 @@ kind: article
 title: Lenovo ThinkPad T450
 ---
 
-<!-- TODO-List:
-* Links checken
--->
-
 Seit Ende 2011 nutzte ich einen schon damals nicht besonders leistungsstarkes
 Notebook von Lenovo. Günstig sollte es damals sein, hauptsache klein und
 transportabel für die Berufsschule. Seinen Zweck hat es überlebt und auch lange
@@ -61,7 +57,7 @@ System-Benachrichtigung. Mit dieser Hilfe kann ich eine Nachrichtenseite lesen
 und bei der Benachrichtigung in den Local-Blog-Tab wechseln. Jetzt lohnt sich
 dieses Skript fast nicht mehr.
 
-[build-skript]: https://github.com/rosetree/plasisent.org/blob/master/build "TODO:Test"
+[build-skript]: https://github.com/rosetree/plasisent.org/blob/master/build
 
 Das Setup des T450
 ----
