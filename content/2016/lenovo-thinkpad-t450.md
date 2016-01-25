@@ -171,5 +171,7 @@ Der Umstieg hat sich total gelohnt und schon nach wenigen Stunden möchte ich
 mein neues T450 nicht mehr missen. Bleibt die Frage, was ich mit meinem alten
 Edge anfange (Vorschläge nehme ich gerne per Mail an
 <a href="mailto:micha@rosetree.de?subject=Vorschlag%20und%20Re:%20Lenovo%20ThinkPad%20T450">micha@rosetree.de</a>
-entgegen) und vor allem gilt es zu klären: Welcher Sticker wird das T450 als
-erstes personalisieren? Vorschläge per Mail ;)
+entgegen) und vor allem gilt es zu klären: Welcher [Sticker][] wird das T450
+als erstes personalisieren? Vorschläge per Mail ;)
+
+[sticker]: http://plasisent.org/2014/laptop-stickermania/
