@@ -19,7 +19,7 @@ schöner, schneller, schmaler
 
 Mein neues Laptop ist ein **Lenovo ThinkPad T450**, mit US-Tastatur,
 14&nbsp;Zoll Bildschirm-Diagonale und dabei sogar etwas leichter, als mein
-vorheriges ThinkPad&nbsp;Edge mit 13,3&nbsp;Zoll.
+vorheriges ThinkPad Edge&nbsp;325 (E325) mit 13,3&nbsp;Zoll.
 
 ![Höhenvergleich zwischen dem E325 und dem T450. Das unten liegende T450 ist schmaler und damit angenehmer beim Transport.](http://plasisent.org/2016/e325-vs-t450.jpg)
 
