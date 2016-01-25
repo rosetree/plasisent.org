@@ -9,7 +9,7 @@ tags:
   - Justus von Daniels
   - Microsoft
   - Vaterfreuden
-  - Dunkelangst
+  - globalcitizen
   - Martin Ingenhoven
 ---
 
@@ -30,7 +30,7 @@ Web. Viel Freude.
   Das ist falsch. Dir gehört was du zahlst, aber du zahlst nicht für die
   Musik. ([Via Fefe][].)
 
-* Heute hat mir ein [Retweet von Dunkelangst][retweet] wieder in Erinnerung
+* Heute hat mir ein [Retweet von Helmut][retweet] wieder in Erinnerung
   gerufen, dass ich mir einen digitalen Organspendeausweis anlegen wollte.
   Vielleicht sollte ich mir noch ein paar Gedanken darüber machen was nach
   meinem Tod passieren soll. Lovey Wymann sich diesem [Prozess][] unterzogen.
