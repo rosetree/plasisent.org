@@ -16,3 +16,8 @@ This is the source code of my blog [plasisent.org][]. It uses:
 [sass]: http://sass-lang.com/
 
 [haml]: http://haml.info/
+
+## Markdown-Style
+
+* Try to be as compatible as possible.
+* Break Markdown at column 80, except when doing an HTML block.
