@@ -1,12 +1,11 @@
-# plasisents [Nanoc] future
+# [plasisent.org][]
 
-This is the next version of my blog [plasisent.org]. It uses:
+This is the source code of my blog [plasisent.org][]. It uses:
 
-* The static site generator [Nanoc].
-* [kramdown] to compile markdown.
-* [SASS] as CSS preprocessor.
-* And [HAML] to create the layout.
-
+* The static site generator [Nanoc][].
+* [kramdown][] to compile markdown.
+* [SASS][] as CSS preprocessor.
+* [HAML][] to create the layout.
 
 [nanoc]: https://nanoc.ws
 
