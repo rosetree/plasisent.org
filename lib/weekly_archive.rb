@@ -49,7 +49,9 @@ def generate_weekly_archive(articles, date_attribute, title, week_url_prefix = "
       @items << Nanoc::Item.new(
         "",
         {
-          :title => "#{title} #{week}",
+          # TODO: Make title more configurable.
+          #   http://ruby-doc.org/core-2.3.0/String.html#method-i-25
+          :title => "#{year} #{title} #{week}",
           :kind => "archive",
           :posts => weekmap[week],
           :referenced_tags => articles_tags
