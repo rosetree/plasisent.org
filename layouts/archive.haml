@@ -4,7 +4,3 @@
   %ul
     - item[:posts].each do |post|
       = render "partials/short_post_in_list", post: post
-
-- if item[:referenced_tags]
-  %h2 Angesprochene Themen
-  %p= link_tags item, :referenced_tags
