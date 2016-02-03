@@ -53,22 +53,21 @@
       - else
         ~ yield
 
-
-    %footer{role: "contentinfo"}
-      -# FIXME: Why am I using `item` instead of `@item` from here?
-
       - if @item.github_url != "" or @item.shortlink
-        %h2{title: "Metadaten von „#{item[:title]}“."} Metadaten
+        %footer{role: "contentinfo"}
+          %nav
+            %h2 Hintergründe der aktuellen Seite
+            %ul
+              - unless @item.github_url == ""
+                %li= link_to 'Quelltext auf GitHub', @item.github_url
+              - if @item[:modified_at] && @item[:modified_at].length > 1
+                %li= link_to 'Liste aller Änderungen', @item.github_url('history')
+              - if @item.shortlink
+                %li Shortlink: #{link_to @item.shortlink, @item.shortlink}
+              %li Kommentare an #{@item.reply_to_mailto_link}
 
-        %p
-          - unless @item.github_url == ""
-            Den Quelltext dieser Seite findest du auf #{link_to "GitHub", @item.github_url}.
 
-          - if @item[:modified_at] && @item[:modified_at].length > 1
-            Diese Seite wurde mehrmals bearbeitet, eine #{link_to 'Liste aller Änderungen', @item.github_url('history')} gibt es auf GitHub.
 
-          - if @item.shortlink
-            Willst du einen kürzeren Link zu dieser Seite? Bitte: #{link_to @item.shortlink, @item.shortlink}
 
       %h2 Sonst noch was?
 
