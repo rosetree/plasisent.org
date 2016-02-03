@@ -13,16 +13,12 @@
     %meta{property: "os:repo", content: "https://github.com/rosetree/plasisent.org"}
     %meta{property: "os:rcs_type", content: "git"}
     %meta{property: "os:src", content: "git@github.com:rosetree/plasisent.org"}
-    - if content_for(@item, :description) || content_for(@item, :tldr)
-      - if content_for(@item, :description)
-        - desc = content_for(@item, :description).strip
-      - else
-        - desc = content_for(@item, :tldr).strip
+    - if @item[:description]
       %meta{name: "twitter:card", content: "summary"}
       %meta{name: "twitter:site", content: "@r0setree"}
       %meta{name: "twitter:title", content: @item.title}
-      %meta{name: "twitter:description", content: desc}
-      %meta{name: "description", content: desc}
+      %meta{name: "twitter:description", content: @item[:description]}
+      %meta{name: "description", content: @item[:description]}
     %meta{name: "viewport",  content: "width=device-width,initial-scale=1"}
     %meta{name: "generator", content: "nanoc #{Nanoc::VERSION}"}
     - if @item.shortlink
