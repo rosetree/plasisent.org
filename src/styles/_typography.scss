@@ -8,6 +8,14 @@ body {
 	font-family: sans-serif;
 }
 
+::selection {
+	background-color: $link;
+	color: $background;
+}
+::-moz-selection {
+	background-color: $link;
+	color: $background;
+}
 
 /* Headlines */
 
