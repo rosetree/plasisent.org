@@ -55,6 +55,14 @@ body {
   background-color: #111;
   font-family: sans-serif; }
 
+::selection {
+  background-color: #4b4;
+  color: #111; }
+
+::-moz-selection {
+  background-color: #4b4;
+  color: #111; }
+
 /* Headlines */
 header p {
   color: #aaa; }
@@ -75,7 +83,7 @@ h3 {
   font-weight: bold; }
 
 /* Body Text */
-p, li, pre, form, figure, iframe, dl {
+p, li, pre, form, figure, iframe, dl, h1, h2, h3 {
   line-height: 1.5; }
 
 p, li, pre, form, figure, iframe, dt {
@@ -87,6 +95,10 @@ i, em, u {
 b, strong {
   font-weight: bold; }
 
+mark {
+  background-color: #4b4;
+  color: #111; }
+
 del {
   color: #aaa;
   text-decoration: line-through; }
@@ -95,6 +107,10 @@ blockquote {
   color: #aaa;
   padding-left: 1.5rem;
   border-left: #555 solid thin; }
+
+blockquote mark {
+  background-color: #aaa;
+  color: #111; }
 
 /* Links */
 a {
