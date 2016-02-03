@@ -13,12 +13,6 @@ tags:
 description: "Mit der Verfassungsänderung zu den Referenden der Bürgerschaft in Hamburg, können Volksentscheide manipuliert werden. Alle Hamburger Bürger sollten das verhindern."
 ---
 
-
-<% content_for :tldr do %>
-Die Verfassungsänderung ist ein Angriff auf die Demokratie, deswegen bitte ich Hamburg: Rette den Volksentscheid!
-<% end %>
-
-
 Ende Mai änderten SPD, Grüne, CDU und AfD mit einem Schnellverfahren
 gemeinsam (!) die Verfassung von Hamburg. Die Verfassungsänderung soll
 Referenden von der Landesregierung und der Bürgerschaft (also dem

@@ -2,11 +2,4 @@
   %h1= link_to_unless_current item[:title], item.path, {rel: "bookmark"}
   %p Veröffentlicht am #{item.linked_date_information}.
 
-  - if content_for(@item, :tldr)
-    %aside
-      %h2{title: "too long; didn’t read"}
-        tl;dr »
-        = link_to "Tweet it", "https://twitter.com/share?text=#{content_for(@item, :tldr).strip.gsub(" ", "%20")}&url=http://plasisent.org#{@item.path}"
-      %p= content_for(@item, :tldr).strip
-
 ~ yield
