@@ -61,6 +61,11 @@ b, strong {
 	font-weight: bold;
 }
 
+mark {
+	background-color: $link;
+	color: $background;
+}
+
 del {
 	color: $text-secondary;
 	text-decoration: line-through;
@@ -70,6 +75,10 @@ blockquote {
 	color: $text-secondary;
 	padding-left: 1.5rem;
 	border-left: $delimiter solid thin;
+}
+blockquote mark {
+	background-color: $text-secondary;
+	color: $background;
 }
 
 /* Links */
