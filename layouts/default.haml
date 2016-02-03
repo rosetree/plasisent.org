@@ -3,7 +3,8 @@
   %head
     %meta{charset: "utf-8"}
     %title= @item.title
-    %style{type: "text/css"}= @items["/assets/styles/critical/"].raw_content
+    %style{type: "text/css"}
+      = @items["/assets/styles/critical/"].raw_content.gsub(/^$\n/, '')
     %link{rel: "stylesheet", href: @items["/assets/styles/master/"].path}
     %link{rel: "alternate",  href: @items["/feed/"].path, type: "application/atom+xml", title: @config[:title]}
     %link{rel: "webmention", href: "http://plasisent.org/webmention/"}
