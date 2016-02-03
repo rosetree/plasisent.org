@@ -25,14 +25,6 @@
       %link{rel: "shortlink", href: @item.shortlink}
   %body
 
-    %h1{style: "display:none"} Plasisent
-
-    %nav
-      %ul
-        %li= link_to "Plasisent", @items["/"].path, {rel: "home"}
-        %li= link_to "Blogroll", @items["/blogroll/"].path
-        %li= link_to "Feed", @items["/feed/"].path, {rel: "alternate", type: "application/atom+xml"}
-
     - if @item[:cleaned?] == false
       = load_snippet("Warnung Unbereinigter Import") % link_to("Datei auf GitHub", @item.github_url)
 
