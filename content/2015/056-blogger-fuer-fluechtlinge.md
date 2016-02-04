@@ -12,17 +12,8 @@ tags:
   - Rassismus
   - Blog
   - globalcitizen
+description: "Wir müssen uns aktiv für Flüchtlinge einsetzen, egal ob mit Sach-, Geld- oder Zeitspenden. Dafür steht die Aktion „Blogger für Flüchtlinge“."
 ---
-
-
-<% content_for :tldr do %>
-Ich bin ein Blogger für Flüchtlinge!
-<% end %>
-
-<% content_for :description do %>
-Wir müssen uns aktiv für Flüchtlinge einsetzen, egal ob mit Sach-, Geld- oder Zeitspenden. Dafür steht die Aktion „Blogger für Flüchtlinge“.
-<% end %>
-
 
 Auch ich bin ein **[Blogger für Flüchtlinge][bff]**. Es beschämt mich, wenn ich sehe,
 wie in unserem Land mit den Ärmsten umgegangen wird. Menschen, die ihre Heimat

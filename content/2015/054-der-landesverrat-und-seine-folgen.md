@@ -13,11 +13,8 @@ tags:
   - Geheimdienste
   - Überwachung
   - Demokratie
+description: "Wenn Journalismus als Landesverrat gilt, müssen wir als Gesellschaft die Gesetze ändern."
 ---
-
-<% content_for :tldr do %>
-Wenn Journalismus als Landesverrat gilt, müssen wir als Gesellschaft die Gesetze ändern.
-<% end %>
 
 Am 4. August wurde der Generalbundesanwalt (GBA) von Heiko Maas in den
 Ruhestand versetzt. Am Morgen desselben Tages, gab es eine [Erklärung von

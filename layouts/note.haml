@@ -1,6 +1,6 @@
 %article.note
   %header
     %h1 #{link_to @item[:title], @item.path, {rel: 'bookmark'}}
-    %p Am #{@item.linked_date_information} von #{link_to 'Micha Rosenbaum', @config[:author_uri]} kurz notiert.
+    %p Am #{@item.linked_date_information} bei #{link_to 'Plasisent', '#ueber-plasisent'} kurz notiert.
 
   ~ yield

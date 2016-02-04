@@ -3,40 +3,27 @@
   %head
     %meta{charset: "utf-8"}
     %title= @item.title
-    %style{type: "text/css"}= @items["/assets/styles/critical/"].raw_content
+    %style{type: "text/css"}
+      = @items["/assets/styles/critical/"].raw_content.gsub(/^$\n/, '')
     %link{rel: "stylesheet", href: @items["/assets/styles/master/"].path}
-    %link{rel: "alternate",  href: @items["/feed/"].path,          type: "application/atom+xml", title: @config[:title]}
-    %link{rel: "alternate",  href: @items["/feed/notes/"].path,    type: "application/atom+xml", title: @items["/feed/notes/"][:title]}
-    %link{rel: "alternate",  href: @items["/feed/articles/"].path, type: "application/atom+xml", title: @items["/feed/articles/"][:title]}
+    %link{rel: "alternate",  href: @items["/feed/"].path, type: "application/atom+xml", title: @config[:title]}
     %link{rel: "webmention", href: "http://plasisent.org/webmention/"}
     %link{rel: "pingback", href: "https://webmention.io/webmention?forward=http://plasisent.org/webmention/"}
     %link{rel: "profile", href: "http://osprotocol.com"}
     %meta{property: "os:repo", content: "https://github.com/rosetree/plasisent.org"}
     %meta{property: "os:rcs_type", content: "git"}
     %meta{property: "os:src", content: "git@github.com:rosetree/plasisent.org"}
-    - if content_for(@item, :description) || content_for(@item, :tldr)
-      - if content_for(@item, :description)
-        - desc = content_for(@item, :description).strip
-      - else
-        - desc = content_for(@item, :tldr).strip
+    - if @item[:description]
       %meta{name: "twitter:card", content: "summary"}
       %meta{name: "twitter:site", content: "@r0setree"}
       %meta{name: "twitter:title", content: @item.title}
-      %meta{name: "twitter:description", content: desc}
-      %meta{name: "description", content: desc}
+      %meta{name: "twitter:description", content: @item[:description]}
+      %meta{name: "description", content: @item[:description]}
     %meta{name: "viewport",  content: "width=device-width,initial-scale=1"}
     %meta{name: "generator", content: "nanoc #{Nanoc::VERSION}"}
     - if @item.shortlink
       %link{rel: "shortlink", href: @item.shortlink}
   %body
-
-    %h1{style: "display:none"} Plasisent
-
-    %nav
-      %ul
-        %li= link_to "Plasisent", @items["/"].path, {rel: "home"}
-        %li= link_to "Blogroll", @items["/blogroll/"].path
-        %li= link_to "Feed", @items["/feed/"].path, {rel: "alternate", type: "application/atom+xml"}
 
     - if @item[:cleaned?] == false
       = load_snippet("Warnung Unbereinigter Import") % link_to("Datei auf GitHub", @item.github_url)
@@ -66,23 +53,42 @@
       - else
         ~ yield
 
-
-    %footer{role: "contentinfo"}
-      -# FIXME: Why am I using `item` instead of `@item` from here?
-
       - if @item.github_url != "" or @item.shortlink
-        %h2{title: "Metadaten von „#{item[:title]}“."} Metadaten
+        %footer{role: "contentinfo"}
+          %nav
+            %h2 Hintergründe der aktuellen Seite
+            %ul
+              - unless @item.github_url == ""
+                %li= link_to 'Quelltext auf GitHub', @item.github_url
+              - if @item[:modified_at] && @item[:modified_at].length > 1
+                %li= link_to 'Liste aller Änderungen', @item.github_url('history')
+              - if @item.shortlink
+                %li Shortlink: #{link_to @item.shortlink, @item.shortlink}
+              %li Kommentare an #{@item.reply_to_mailto_link}
 
-        %p
-          - unless @item.github_url == ""
-            Den Quelltext dieser Seite findest du auf #{link_to "GitHub", @item.github_url}.
+    %footer#ueber-plasisent
+      %h1 Über #{link_to 'Plasisent', @items['/'].path, {rel: 'home'}}
 
-          - if @item[:modified_at] && @item[:modified_at].length > 1
-            Diese Seite wurde mehrmals bearbeitet, eine #{link_to 'Liste aller Änderungen', @item.github_url('history')} gibt es auf GitHub.
+      %p
+        Das politische und persönliche
+        = succeed '.' do
+          %mark<>
+            Blog von
+            %b Micha Rosenbaum
+        Themen sind das Web, Überwachung, Politik, Gesellschaft und alles was mir
+        sonst auf dem Herzen liegt.
 
-          - if @item.shortlink
-            Willst du einen kürzeren Link zu dieser Seite? Bitte: #{link_to @item.shortlink, @item.shortlink}
+      %nav
+        %h2{style: 'display:none'} Plasisent Navigation
+        %ul
+          %li= link_to 'Aktuelle Posts', @items['/'].path, {rel: 'home'}
+          %li= link_to 'Blogroll', @items['/blogroll/'].path
+          %li= link_to 'Feed', 'http://plasisent.org/feed/'
 
-      %h2 Sonst noch was?
-
-      = load_snippet("Follow Me") % {mailtolink: @item.reply_to_mailto_link}
+      %nav
+        %h2 Folge Blog und Blogger
+        %ul
+          %li= link_to 'Web-Feed', 'http://plasisent.org/feed/'
+          %li= link_to 'Quellcode', 'https://github.com/rosetree/plasisent.org'
+          %li= link_to 'Twitter', 'https://twitter.com/plasisent'
+          %li= link_to 'Github', 'https://github.com/rosetree'
