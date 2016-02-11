@@ -33,7 +33,7 @@ if (stristr($source, $_POST['target'])) {
   $source_url = $_POST['source'];
   $target_url = $_POST['target'];
 
-  mail(/* to      = */ 'plasisent',
+  mail(/* to      = */ 'micha@rosetree.de',
        /* subject = */ "[Webmention] from $source_url",
        /* message = */ "$source_url\nmentioned $target_url");
 }
