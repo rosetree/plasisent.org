@@ -29,9 +29,6 @@ an der nächsten Überschrift.
 <% if index == 1 %>
   <aside><%= load_snippet "Empfohlene Blogs" %></aside>
 <% end %>
-
-<% index += 1 %>
-<% break if index == count %>
 <% end %>
 
 <% if post[:kind] == 'note' %>
@@ -40,4 +37,14 @@ an der nächsten Überschrift.
   <% end %>
 <% end %>
 
+<% index += 1 %>
+<% break if index == count %>
 <% end %>
+
+<h2>Vorher erschienene Artikel</h2>
+<ul>
+<% until index > count*2 do %>
+  <%= render 'partials/short_post_in_list', post: sorted_posts[index] %>
+  <% index += 1 %>
+<% end %>
+</ul>
