@@ -3,6 +3,8 @@ title: Blog von Micha Rosenbaum
 description: Das mehr oder weniger politische Blog von Micha Rosenbaum.
 ---
 
+# Blog von Micha Rosenbaum
+
 Herzlich Willkommen auf meiner Blogwiese. Schau dich ruhig um, mach’s dir
 bequem, nehm’ dir einen Kaffee. Bei **Plasisent** spreche ich ein paar Themen
 an, die mir wichtig sind. Was mich aktuell so beschäftigt erkennst du direkt
@@ -48,3 +50,12 @@ an der nächsten Überschrift.
   <% index += 1 %>
 <% end %>
 </ul>
+
+<nav>
+  <h3>Jahres-Archive von Plasisent</h3>
+  <ul>
+    <li><%= link_to '2016', @items['/2016/'].path %></li>
+    <li><%= link_to '2015', @items['/2015/'].path %></li>
+    <li><%= link_to '2014', @items['/2014/'].path %></li>
+  </ul>
+</nav>
