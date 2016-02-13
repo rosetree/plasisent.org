@@ -225,12 +225,13 @@ module Nanoc
       date = self[:created_at]
 
       year  = date.strftime "%Y"
+      wyear = date.strftime "%G"
       month = german_month_name date
       day   = date.strftime "%-d"
 
       time_elem = "<time datetime='#{date.iso8601}'>#{day}. #{month}</time>"
       year_link = link_to year, "/#{year}/"
-      week_link = link_to "Woche #{date.strftime("%-V")}", "/#{year}/kw-#{date.strftime("%V")}/"
+      week_link = link_to "Woche #{date.strftime("%-V")}", "/#{wyear}/kw-#{date.strftime("%V")}/"
 
       "#{time_elem} (#{year_link}, #{week_link})"
     end

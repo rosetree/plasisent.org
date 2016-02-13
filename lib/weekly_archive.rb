@@ -11,7 +11,7 @@
 #
 def generate_weekly_archive(articles, date_attribute, title, week_url_prefix = "kw-")
   today = Time.now
-  currentyear = today.year
+  currentyear = today.strftime('%G').to_i
 
   # FIXME: It shouldn’t be necessary to check type of the date_attribute here.
   articles.each do |item|
@@ -20,7 +20,7 @@ def generate_weekly_archive(articles, date_attribute, title, week_url_prefix = "
     end
   end
 
-  yearmap = articles.group_by { |item| item[date_attribute].year }
+  yearmap = articles.group_by { |i| i[date_attribute].strftime('%G').to_i }
 
   if !yearmap.has_key?(currentyear)
     yearmap[currentyear] = []
