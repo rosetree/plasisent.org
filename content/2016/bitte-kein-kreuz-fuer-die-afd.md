@@ -41,7 +41,7 @@ die AfD jedoch anderes, hasserfülltes Gesicht. Und das nicht erst seit
 
 [clausnitz]: http://kattascha.de/?p=2091
 
-Selbstbeschreibung mit Widersprüchen und Aluhut
+Selbstbeschreibung mit Widersprüchen
 -----
 
 Wenn du nicht den Plakaten vertrauen kannst, wonach lässt sich diese Partei
