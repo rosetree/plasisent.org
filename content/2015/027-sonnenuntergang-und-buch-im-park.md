@@ -33,7 +33,7 @@ Stadtpark auf einer Bank gemacht.
 [sunset-hh]: /assets/images/20150307_183011_mr.jpg
   "Sonnenuntergang in Hamburg"
 
-[tweet]: https://twitter.com/r0setree/status/574132453465591808
+[tweet]: https://twitter.com/plasisent/status/574132453465591808
 
 [buch]: /assets/images/20150307_110312_mr.jpg
   "Micha mit einem Buch im Park"

@@ -15,5 +15,5 @@ oder auf [Twitter] geschrieben werden.
 [e-mail]: http://rosetree.de/micha/
   "Hier findest du, neben E-Mail, noch eine Reihe von Kontaktmöglichkeiten."
 
-[twitter]: https://twitter.com/r0setree
+[twitter]: https://twitter.com/plasisent
   "Mein Twitter Account."

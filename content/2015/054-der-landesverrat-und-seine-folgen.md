@@ -119,7 +119,7 @@ abgesetzt werden können.
 [getdigital]: https://www.getdigital.de/Landesverrat.html
   "Das T-Shirt von getDigital hat die Aufschrift „Ich helfe Landesverrätern und das ist gut so.“"
 
-[tweet]: https://twitter.com/r0setree/status/628626988396343296
+[tweet]: https://twitter.com/plasisent/status/628626988396343296
   "Das T-Shirt von getDigital habe ich mir sofort gekauft. Dieser Tweet wird das beweisen ☺"
 
 [einstellen]: https://netzpolitik.us/
