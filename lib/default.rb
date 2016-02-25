@@ -28,15 +28,6 @@ def generate_url base, title
 end
 
 
-def link_tags(item, tag_attribute = :tags)
-  linked_tags = []
-  item[tag_attribute].map do |tag|
-    linked_tags << link_to(tag, generate_url('/themen/', tag), {rel: "tag"})
-  end
-  linked_tags.join ', '
-end
-
-
 def move_post_identifiers
   @items.each do |item|
     item.identifier = item.identifier.gsub /(201[0-9]\/)\d{3}-/, "\\1"

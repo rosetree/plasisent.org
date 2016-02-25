@@ -40,12 +40,6 @@ def generate_weekly_archive(articles, date_attribute, title, week_url_prefix = "
 
       weekmap[week].sort! { |a,b| b[date_attribute].to_datetime <=> a[date_attribute].to_datetime }
 
-      articles_tags = []
-      weekmap[week].each do |a|
-        articles_tags << a[:tags] if a[:tags]
-      end
-      articles_tags = articles_tags.flatten.compact.uniq
-
       @items << Nanoc::Item.new(
         "",
         {
@@ -53,8 +47,7 @@ def generate_weekly_archive(articles, date_attribute, title, week_url_prefix = "
           #   http://ruby-doc.org/core-2.3.0/String.html#method-i-25
           :title => "#{year} #{title} #{week}",
           :kind => "archive",
-          :posts => weekmap[week],
-          :referenced_tags => articles_tags
+          :posts => weekmap[week]
         },
         "/#{year}/#{week_url_prefix}#{week}/")
     end
