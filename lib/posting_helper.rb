@@ -3,9 +3,11 @@
 
 module Plasisent
   module Posting
-    def posts
-      post_kinds = ['article', 'note']
+    def post_kinds
+      ['article', 'note']
+    end
 
+    def posts
       blk = -> { @items.select { |item| post_kinds.include? item[:kind] } }
 
       if @items.frozen?
@@ -25,7 +27,25 @@ module Plasisent
       end
     end
 
+    def link_to_prev_post(post)
+      return nil unless post_kinds.include? post[:kind]
 
+      index = sorted_posts.index(post)
+      return nil if index + 1 == sorted_posts.length
+
+      previous = sorted_posts[index + 1]
+      return link_to previous[:title], previous, {rel: 'prev'}
+    end
+
+    def link_to_next_post(post)
+      return nil unless post_kinds.include? post[:kind]
+
+      index = sorted_posts.index(post)
+      return nil if index == 0
+
+      next_post = sorted_posts[index - 1]
+      return link_to next_post[:title], next_post, {rel: 'next'}
+    end
 
     module Noting
       def notes

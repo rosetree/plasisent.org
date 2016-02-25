@@ -65,6 +65,15 @@
               - if @item.shortlink
                 %li Shortlink: #{link_to @item.shortlink, @item.shortlink}
               %li Kommentare an #{@item.reply_to_mailto_link}
+          - if link_to_prev_post(@item) || link_to_next_post(@item)
+            %nav
+              %p
+                - if link_to_prev_post(@item)
+                  «&nbsp;#{link_to_prev_post(@item)}
+                  - if link_to_next_post(@item)
+                    ·
+                - if link_to_next_post(@item)
+                  #{link_to_next_post(@item)}&nbsp;»
 
     %footer#ueber-plasisent
       %h1 Über #{link_to 'Plasisent', @items['/'].path, {rel: 'home'}}
