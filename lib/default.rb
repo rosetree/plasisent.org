@@ -28,32 +28,12 @@ def generate_url base, title
 end
 
 
-def link_category(item)
-  link_to_category = ""
-  all_categories.each do |cat|
-    next unless item.has_category? cat[:name] || cat[:title]
-    link_to_category = link_to cat[:title], cat.path
-  end
-  return link_to_category
-end
-
-
 def link_tags(item, tag_attribute = :tags)
   linked_tags = []
   item[tag_attribute].map do |tag|
     linked_tags << link_to(tag, generate_url('/themen/', tag), {rel: "tag"})
   end
   linked_tags.join ', '
-end
-
-
-def link_categories(item, category_attribute = :categories)
-  linked_cats = []
-  item[category_attribute].map do |category|
-    next unless category.is_a? Nanoc::Item
-    linked_cats << link_to(category[:title], category, {rel: "category"})
-  end
-  linked_cats.join ', '
 end
 
 

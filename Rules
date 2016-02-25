@@ -10,7 +10,6 @@ preprocess do
 end
 
 
-ignore '/regal/*'
 ignore '/themen/*'
 
 

@@ -1,8 +1,0 @@
-= yield
-
-- if @category_items == []
-  %p Bisher wurden in diesem Regal keine Inhalte hinterlegt.
-- else
-  %ul
-    - @category_items.each do |category_item|
-      = render "partials/short_post_in_list", post: category_item
