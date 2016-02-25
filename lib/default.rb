@@ -57,13 +57,6 @@ def link_categories(item, category_attribute = :categories)
 end
 
 
-def move_post_identifiers
-  @items.each do |item|
-    item.identifier = item.identifier.gsub /(201[0-9]\/)\d{3}-/, "\\1"
-  end
-end
-
-
 # TODO: Document load_snippet.
 def load_snippet name
   snippet = generate_url "/snippets/", name

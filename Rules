@@ -3,7 +3,6 @@ require "digest/sha1"
 
 
 preprocess do
-  move_post_identifiers
   use_git_data
   generate_yearly_archive sorted_posts, :created_at, "Jahr"
   generate_weekly_archive sorted_posts, :created_at, "KW"
@@ -66,8 +65,11 @@ route '*' do
   elsif item[:extension] == 'php'
     item.identifier + 'index.php'
   else
+    # Posts written in 2014 and 2015 have a prefixed number before their slug.
+    # Write item with identifier /2014/255-bar/ to /2014/bar/index.html
+    # Other posts are not affected by the following gsub regex.
     # Write item with identifier /foo/ to /foo/index.html
-    item.identifier + 'index.html'
+    item.identifier.gsub(/(201[45]\/)\d{3}-/, "\\1") + 'index.html'
   end
 end
 
