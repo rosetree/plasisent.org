@@ -65,7 +65,7 @@ module Nanoc
     end
   end
 
-  class Item
+  class ItemWithRepsView
     def title
       if self[:title]
         "#{self[:title]} · Plasisent"
