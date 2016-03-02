@@ -53,9 +53,3 @@ def generate_weekly_archive(articles, date_attribute, title, week_url_prefix = "
     end
   end
 end
-
-
-def last_week_archive
-  week_archives = @items.find_all { |i| i[:kind] == "archive" }
-  week_archives.last
-end
