@@ -9,10 +9,6 @@ preprocess do
 end
 
 
-ignore '/regal/*'
-ignore '/themen/*'
-
-
 compile "/htaccess" do
   filter :erb
 end
