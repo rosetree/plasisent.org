@@ -3,4 +3,4 @@
 - if item[:posts] && item[:posts].length > 0
   %ul
     - item[:posts].each do |post|
-      = render "partials/short_post_in_list", post: post
+      = render "partials/short_post_in_list", post: @items[post.identifier.to_s]

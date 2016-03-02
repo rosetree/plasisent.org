@@ -65,7 +65,7 @@ route '*' do
     # Write item with identifier /2014/255-bar/ to /2014/bar/index.html
     # Other posts are not affected by the following gsub regex.
     # Write item with identifier /foo/ to /foo/index.html
-    item.identifier.gsub(/(201[45]\/)\d{3}-/, "\\1") + 'index.html'
+    item.identifier.to_s.gsub(/(201[45]\/)\d{3}-/, "\\1") + 'index.html'
   end
 end
 

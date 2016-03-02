@@ -40,7 +40,7 @@ def generate_weekly_archive(articles, date_attribute, title, week_url_prefix = "
 
       weekmap[week].sort! { |a,b| b[date_attribute].to_datetime <=> a[date_attribute].to_datetime }
 
-      @items << Nanoc::Item.new(
+      @items.create(
         "",
         {
           # TODO: Make title more configurable.
@@ -52,10 +52,4 @@ def generate_weekly_archive(articles, date_attribute, title, week_url_prefix = "
         "/#{year}/#{week_url_prefix}#{week}/")
     end
   end
-end
-
-
-def last_week_archive
-  week_archives = @items.find_all { |i| i[:kind] == "archive" }
-  week_archives.last
 end

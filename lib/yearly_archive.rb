@@ -32,7 +32,7 @@ def generate_yearly_archive(articles, date_attribute, title)
     year = yearlist[i]
     yearmap[year].sort! { |a,b| b[date_attribute].to_datetime <=> a[date_attribute].to_datetime }
 
-    @items << Nanoc::Item.new(
+    @items.create(
       "",
       {
         :title => "#{title} #{year}",
