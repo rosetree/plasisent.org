@@ -107,7 +107,7 @@ Nochmal klargestellt
 -----
 
 Sachbeschädigung ist nicht nett, aber im Vergleich zu den vielen
-Brandanschlägen, die durch die [geistliche Brandstiftung][wirsindafd] dieser
+Brandanschlägen, die durch die [geistige Brandstiftung][wirsindafd] dieser
 Partei provoziert werden, fällt ein so kleines Delikt in meinen Augen nicht ins
 Gewicht.
 
