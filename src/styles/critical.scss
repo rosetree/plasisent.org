@@ -20,6 +20,6 @@ a {
 }
 a:hover {
 	color: $link;
-	border-bottom: none;
+	border-bottom: $text-secondary dotted 2px;
 }
 

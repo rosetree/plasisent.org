@@ -115,15 +115,15 @@ blockquote mark {
 /* Links */
 a {
   color: inherit;
-  border-bottom: #4b4 dotted thin; }
+  border-bottom: #4b4 dotted 1px; }
 
-a:hover,
-a:focus {
+a:focus,
+a:hover {
   color: #4b4;
-  border-bottom: none; }
+  border-bottom: #aaa dotted 2px; }
 
-a:focus {
-  border-bottom: #aaa solid thin; }
+a:hover {
+  border-bottom-style: solid; }
 
 /* Bilder */
 img {

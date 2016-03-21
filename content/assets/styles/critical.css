@@ -4,4 +4,4 @@ body { max-width: 40rem; margin: 2rem auto; background-color: #111; color: #ccc;
 
 a { color: #ccc; border-bottom: dotted thin #4b4; }
 
-a:hover { color: #4b4; border-bottom: none; }
+a:hover { color: #4b4; border-bottom: #aaa dotted 2px; }
