@@ -220,9 +220,10 @@ iframe[width], iframe[height] {
   max-height: auto; }
 
 aside {
-  margin: 1.5rem 0;
+  margin: 3rem 0;
   padding: 1.5rem;
-  background: #000;
+  color: #aaa;
+  background: #191919;
   border-top: #333 solid thin;
   border-bottom: #333 solid thin; }
 
