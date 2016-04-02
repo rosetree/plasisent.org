@@ -57,7 +57,7 @@ der Daten – wie bei PGP-Signaturen – ist nicht vorgesehen.
 > is safe, but if an attacker is actively modifying the .ct file while you're
 > using it in one way or another, you've got trouble.
 
-Der Entwickler hat ctmg übrigens erst vor wenigen Tagen [in einer Mailing-List
+Der Entwickler hat ctmg übrigens erst im Februar [in einer Mailing-List
 bekannt gegeben][announcement]. Es ist also relativ jung und es kann damit
 gerechnet werden, dass es sich noch weiter entwickeln wird. Der Quelltext ist
 aber gut aufgeräumt und auch eine Überprüfung mit [ShellCheck][] liefert keine
