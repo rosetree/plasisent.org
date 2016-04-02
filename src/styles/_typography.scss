@@ -85,17 +85,15 @@ blockquote mark {
 
 a {
 	color: inherit;
-	border-bottom: $link dotted thin;
+	border-bottom: $link dotted 1px;
 }
-
-a:hover,
-a:focus {
+a:focus,
+a:hover {
 	color: $link;
-	border-bottom: none;
+	border-bottom: $text-secondary dotted 2px;
 }
-
-a:focus {
-	border-bottom: $text-secondary solid thin;
+a:hover {
+	border-bottom-style: solid;
 }
 
 

@@ -115,15 +115,15 @@ blockquote mark {
 /* Links */
 a {
   color: inherit;
-  border-bottom: #4b4 dotted thin; }
+  border-bottom: #4b4 dotted 1px; }
 
-a:hover,
-a:focus {
+a:focus,
+a:hover {
   color: #4b4;
-  border-bottom: none; }
+  border-bottom: #aaa dotted 2px; }
 
-a:focus {
-  border-bottom: #aaa solid thin; }
+a:hover {
+  border-bottom-style: solid; }
 
 /* Bilder */
 img {
@@ -220,9 +220,10 @@ iframe[width], iframe[height] {
   max-height: auto; }
 
 aside {
-  margin: 1.5rem 0;
+  margin: 3rem 0;
   padding: 1.5rem;
-  background: #000;
+  color: #aaa;
+  background: #191919;
   border-top: #333 solid thin;
   border-bottom: #333 solid thin; }
 
