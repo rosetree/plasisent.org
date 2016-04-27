@@ -35,6 +35,13 @@ if (stristr($source, $_POST['target'])) {
 
   $msg = date('c')."\t$source_url\t$target_url\n";
 
+  if ($fpointer = fopen('webmentions.csv', 'a')) {
+    flock($fpointer, LOCK_EX);
+    fputs($fpointer, $msg);
+    flock($fpointer, LOCK_UN);
+    fclose($fpointer);
+  }
+
   mail(/* to      = */ 'micha@rosetree.de',
        /* subject = */ "[Webmention] from $source_url",
        /* message = */ $msg);
