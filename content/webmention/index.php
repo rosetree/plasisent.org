@@ -27,15 +27,27 @@ curl_close($ch);
 $source = ob_get_contents();
 ob_end_clean();
 
+// FIXME: This accepts everything. TODO: Check if target matches //plasisent.org
 header($_SERVER['SERVER_PROTOCOL'] . ' 202 Accepted');
 
 if (stristr($source, $_POST['target'])) {
   $source_url = $_POST['source'];
   $target_url = $_POST['target'];
 
+  $msg = date('c')."\t$source_url\t$target_url\n";
+
+  // TODO: Configurable file location?
+  if ($fpointer = fopen('webmentions.csv', 'a')) {
+    flock($fpointer, LOCK_EX);
+    fputs($fpointer, $msg);
+    flock($fpointer, LOCK_UN);
+    fclose($fpointer);
+  }
+
+  // TODO: Use the server administrators email address.
   mail(/* to      = */ 'micha@rosetree.de',
        /* subject = */ "[Webmention] from $source_url",
-       /* message = */ "$source_url\nmentioned $target_url");
+       /* message = */ $msg);
 }
 
 ?>
