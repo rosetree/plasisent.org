@@ -27,6 +27,8 @@ compile '*' do
     # don’t filter binary items
   elsif ['php', 'css'].include? item[:extension]
     # don’t filter excluded filetypes
+  elsif item[:extension] == 'html'
+    layout 'default'
   else
     filter :erb
     filter :kramdown, {
