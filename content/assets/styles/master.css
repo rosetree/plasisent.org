@@ -172,6 +172,9 @@ dt {
   dt:after {
     content: "?"; }
 
+dt + dt {
+  margin-top: 0; }
+
 /* Code and Pre Elements */
 code {
   background-color: #333;
