@@ -1,6 +1,7 @@
 ---
 title: URL-Muster von Politiker Websites
 kind: article
+description: "Meine Gedanken zum URL-Design von Internetseiten von Politikern."
 ---
 
 Inzwischen zähle ich *Nachdenken über das Design von URLs verschiedenster,
