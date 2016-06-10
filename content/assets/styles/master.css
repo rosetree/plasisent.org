@@ -96,7 +96,7 @@ b, strong {
   font-weight: bold; }
 
 mark {
-  background-color: #4b4;
+  background-color: #7b7;
   color: #111; }
 
 del {
@@ -104,7 +104,6 @@ del {
   text-decoration: line-through; }
 
 blockquote {
-  color: #aaa;
   padding-left: 1.5rem;
   border-left: #555 solid thin; }
 
@@ -133,7 +132,6 @@ img {
 
 figcaption {
   margin: 0.3em 0 1.3em 0;
-  padding-left: 1.1em;
   color: #aaa; }
 
 /* Listen */

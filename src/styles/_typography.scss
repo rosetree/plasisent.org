@@ -62,7 +62,7 @@ b, strong {
 }
 
 mark {
-	background-color: $link;
+	background-color: $link-hover;
 	color: $background;
 }
 
@@ -72,7 +72,6 @@ del {
 }
 
 blockquote {
-	color: $text-secondary;
 	padding-left: 1.5rem;
 	border-left: $delimiter solid thin;
 }
@@ -107,7 +106,6 @@ img {
 
 figcaption {
 	margin: 0.3em 0 1.3em 0;
-	padding-left: 1.1em;
 	color: $text-secondary;
 }
 
