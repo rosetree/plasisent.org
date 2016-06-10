@@ -53,23 +53,22 @@
       - else
         ~ yield
 
+    %footer{role: "contentinfo"}
       - if @item.github_url != "" or @item.shortlink
-        %footer{role: "contentinfo"}
-          %nav
-            %h2 Hintergründe der aktuellen Seite
-            %ul
-              - unless @item.github_url == ""
-                %li= link_to 'Quelltext auf GitHub', @item.github_url
-              - if @item[:modified_at] && @item[:modified_at].length > 1
-                %li= link_to 'Liste aller Änderungen', @item.github_url('history')
-              - if @item.shortlink
-                %li Shortlink: #{link_to @item.shortlink, @item.shortlink}
-              %li Kommentare an #{@item.reply_to_mailto_link}
+        %nav
+          %h2 Hintergründe der aktuellen Seite
+          %ul
+            - unless @item.github_url == ""
+              %li= link_to 'Quelltext auf GitHub', @item.github_url
+            - if @item[:modified_at] && @item[:modified_at].length > 1
+              %li= link_to 'Liste aller Änderungen', @item.github_url('history')
+            - if @item.shortlink
+              %li Shortlink: #{link_to @item.shortlink, @item.shortlink}
+            %li Kommentare an #{@item.reply_to_mailto_link}
 
-    %footer#ueber-plasisent
-      %h1 Über #{link_to 'Plasisent', @items['/'].path, {rel: 'home'}}
-
-      %p
+      %h1#ueber-plasisent Über Plasisent
+      / You’re going to hate me for the next line. Sorry :D
+      %p{style: 'margin-top:0;'}
         Das politische und persönliche
         = succeed '.' do
           %mark<>
@@ -79,16 +78,8 @@
         sonst auf dem Herzen liegt.
 
       %nav
-        %h2{style: 'display:none'} Plasisent Navigation
+        %h2 Plasisent Navigation
         %ul
           %li= link_to 'Aktuelle Posts', @items['/'].path, {rel: 'home'}
           %li= link_to 'Blogroll', @items['/blogroll/'].path
           %li= link_to 'Feed', 'http://plasisent.org/feed/'
-
-      %nav
-        %h2 Folge Blog und Blogger
-        %ul
-          %li= link_to 'Web-Feed', 'http://plasisent.org/feed/'
-          %li= link_to 'Quellcode', 'https://github.com/rosetree/plasisent.org'
-          %li= link_to 'Twitter', 'https://twitter.com/plasisent'
-          %li= link_to 'Github', 'https://github.com/rosetree'
