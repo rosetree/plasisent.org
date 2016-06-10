@@ -3,5 +3,12 @@ footer {
 	border-left:  $background-pre thin solid;
 	border-right: $background-pre thin solid;
 	padding: 0 3rem;
-	margin: 3rem 0 7rem 0;
+	margin: 5rem 0 9rem 0;
+}
+
+footer h1,
+footer h2,
+footer h3 {
+	font-size: 1em;
+	margin-bottom: 0;
 }
