@@ -66,6 +66,10 @@ mark {
 	color: $background;
 }
 
+q {
+	quotes: "»" "«" "›" "‹";
+}
+
 del {
 	color: $text-secondary;
 	text-decoration: line-through;

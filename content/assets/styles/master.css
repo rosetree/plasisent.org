@@ -40,8 +40,7 @@ caption, th, td {
   text-align: left;
   font-weight: normal; }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
+blockquote:before, blockquote:after {
   content: ""; }
 
 blockquote, q {
@@ -98,6 +97,9 @@ b, strong {
 mark {
   background-color: #7b7;
   color: #111; }
+
+q {
+  quotes: "»" "«" "›" "‹"; }
 
 del {
   color: #aaa;
