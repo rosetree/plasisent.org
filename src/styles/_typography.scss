@@ -61,6 +61,10 @@ b, strong {
 	font-weight: bold;
 }
 
+small {
+	font-size: smaller;
+}
+
 mark {
 	background-color: $link-hover;
 	color: $background;

@@ -94,6 +94,9 @@ i, em, u {
 b, strong {
   font-weight: bold; }
 
+small {
+  font-size: smaller; }
+
 mark {
   background-color: #7b7;
   color: #111; }
