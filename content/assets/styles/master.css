@@ -256,6 +256,21 @@ article.note h1:first-child {
   margin: 0;
   font-size: 1.1rem; }
 
+.list-of-short-posts {
+  padding: 0;
+  margin: 0; }
+
+.short-post-in-list {
+  list-style: none; }
+
+.short-post-in-list time {
+  color: #aaa; }
+
+.short-post-in-list + .short-post-in-list {
+  padding-top: 1.5em;
+  margin-top: 1.5em;
+  border-top: #555 thin solid; }
+
 article.note > *:first-child,
 aside > *:first-child,
 footer > *:first-child {

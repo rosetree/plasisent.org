@@ -1,0 +1,18 @@
+.list-of-short-posts {
+	padding: 0;
+	margin: 0;
+}
+
+.short-post-in-list {
+	list-style: none;
+}
+
+.short-post-in-list time {
+	color: $text-secondary;
+}
+
+.short-post-in-list + .short-post-in-list {
+	padding-top: 1.5em;
+	margin-top: 1.5em;
+	border-top: $delimiter thin solid;
+}
