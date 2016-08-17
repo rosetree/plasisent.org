@@ -24,6 +24,13 @@ der nächsten Überschrift.
     <%= post.compiled_content %>
   <% end %>
 </article>
+<% end %>
+
+<% if post[:kind] == 'note' %>
+  <% render 'note', item: post do %>
+    <%= post.compiled_content %>
+  <% end %>
+<% end %>
 
 <% if index == 0 %>
   <aside><%= load_snippet "Empfohlene Artikel" %></aside>
@@ -31,13 +38,6 @@ der nächsten Überschrift.
 
 <% if index == 1 %>
   <aside><%= load_snippet "Empfohlene Blogs" %></aside>
-<% end %>
-<% end %>
-
-<% if post[:kind] == 'note' %>
-  <% render 'note', item: post do %>
-    <%= post.compiled_content %>
-  <% end %>
 <% end %>
 
 <% index += 1 %>
