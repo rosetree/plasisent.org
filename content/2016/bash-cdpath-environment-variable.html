@@ -1,0 +1,31 @@
+---
+title: "Bash: Die `CDPATH` Environment Variable"
+kind: article
+---
+
+<p>Diese Woche habe ich die Bash Environment Variable <code>CDPATH</code> kennengelernt. Ein sehr nützliches Feature! Kurz erklärt: <code>cd</code> wird alle angegebenen Verzeichnise wie das aktuelle Verzeichnis <small>(siehe <code>.</code> oder <code>pwd</code>)</small> verwenden. Dadurch werden alle deren Unterverzeichnisse in der Tab-Vervollständigung angeboten.</p>
+
+<p>Aktuell verwende ich diese Zeile in meiner <code>.bashrc</code> um den <code>CDPATH</code> zu setzen:</p>
+
+<pre><code>export CDPATH=/home/micha/Documents/:/home/micha/Documents/projects/</code></pre>
+
+<p>Das folgende Beispiel demonstriert die Funktionsweise von <code>cd</code> mit angegebenem <code>CDPATH</code>. Spannend in dem Zusammenhang: Sowohl in <code>Documents</code>, als auch in <code>projects</code> habe ich einen Ordner <code>codemaschine</code>.</p>
+
+<pre><code># Aktuell befinde ich mich im Home-Verzeichnis.
+# Hier lasse ich mir alle Unterordner anzeigen.
+~ $ <kbd>find . -maxdepth 1 -type d \( ! -iname &quot;.*&quot; \)</kbd>
+./bin ./Music ./Videos ./Desktop ./Downloads ./Documents ./public_html ./tmp ./Pictures
+
+<mark>~ $ <kbd>cd codemaschine/Kunde/</kbd>
+/home/micha/Documents/codemaschine/Kunde
+
+~/Documents/codemaschine/Kunde $ <kbd>cd codemaschine/kunden_project_code/</kbd>
+/home/micha/Documents/projects/codemaschine/kunden_project_code</mark>
+
+~/Documents/projects/codemaschine/kunden_project_code $</code></pre>
+
+<h2>Weitere Informationen zu <code>CDPATH</code></h2>
+<ul>
+<li><code>$ <kbd>man bash</kbd></code> (dort die Suchfunktion bemühen)</li>
+<li><a href="http://www.theunixschool.com/2012/04/what-is-cdpath.html">The UNIX School: What is <code>CDPATH</code>?</a></li>
+</ul>
