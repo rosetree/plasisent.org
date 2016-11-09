@@ -137,9 +137,9 @@ module Nanoc
       day   = date.strftime "%-d"
 
       year_link = link_to year, "/#{year}/"
-      week_text = "Woche #{date.strftime("%-V in %G")}"
+      week_text = date.strftime("%G-W%-V") # e.g. 2016-W47
       week_link = link_to week_text, "/#{wyear}/kw-#{date.strftime("%V")}/"
-      time_text = "#{day}. #{month} #{year_link} (#{week_link})"
+      time_text = "#{day}. #{month} #{year_link} · #{week_link}"
 
       "<time datetime='#{date.iso8601}'>#{time_text}</time>"
     end
