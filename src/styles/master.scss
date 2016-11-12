@@ -10,6 +10,7 @@
 // elements inside block elements.
 article.note > *:first-child,
 aside        > *:first-child,
+blockquote   > *:first-child,
 footer       > *:first-child {
 	margin-top:  0;
 }

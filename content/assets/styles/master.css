@@ -85,7 +85,7 @@ h3 {
 p, li, pre, form, figure, iframe, dl, h1, h2, h3 {
   line-height: 1.5; }
 
-p, nav, li, pre, form, figure, iframe, dt {
+p, nav, li, pre, form, blockquote, figure, iframe, dt {
   margin-top: 1em; }
 
 i, em, u {
@@ -109,7 +109,7 @@ del {
   text-decoration: line-through; }
 
 blockquote {
-  padding-left: 1.5rem;
+  padding: 0.5rem 1.5rem;
   border-left: #555 solid thin; }
 
 blockquote mark {
@@ -227,9 +227,9 @@ iframe[width], iframe[height] {
 
 aside {
   margin: 3rem 0;
-  padding: 1.5rem;
+  padding: 1.5rem 3rem;
+  font-size: smaller;
   color: #aaa;
-  background: #191919;
   border-top: #333 solid thin;
   border-bottom: #333 solid thin; }
 
@@ -250,7 +250,8 @@ footer h3 {
 article.note {
   margin: 3rem 0;
   padding: 1.5rem;
-  border: #333 solid thin; }
+  border: #333 solid thin;
+  background: #15192d; }
 
 article.note h1:first-child {
   margin: 0;
@@ -273,5 +274,6 @@ article.note h1:first-child {
 
 article.note > *:first-child,
 aside > *:first-child,
+blockquote > *:first-child,
 footer > *:first-child {
   margin-top: 0; }

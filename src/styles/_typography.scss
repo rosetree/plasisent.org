@@ -49,7 +49,7 @@ p, li, pre, form, figure, iframe, dl, h1, h2, h3 {
 	line-height: 1.5;
 }
 
-p, nav, li, pre, form, figure, iframe, dt {
+p, nav, li, pre, form, blockquote, figure, iframe, dt {
 	margin-top: 1em;
 }
 
@@ -80,7 +80,7 @@ del {
 }
 
 blockquote {
-	padding-left: 1.5rem;
+	padding: 0.5rem 1.5rem;
 	border-left: $delimiter solid thin;
 }
 blockquote mark {
