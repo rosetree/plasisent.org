@@ -65,6 +65,10 @@ small {
 	font-size: smaller;
 }
 
+abbr[title] {
+	border-bottom: $delimiter dotted medium;
+}
+
 mark {
 	background-color: $link-hover;
 	color: $background;

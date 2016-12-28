@@ -45,6 +45,8 @@ b, strong { font-weight: bold; }
 
 small { font-size: smaller; }
 
+abbr[title] { border-bottom: #555 dotted medium; }
+
 mark { background-color: #7b7; color: #111; }
 
 q { quotes: "»" "«" "›" "‹"; }
