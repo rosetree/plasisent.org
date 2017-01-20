@@ -25,16 +25,6 @@
       %link{rel: "shortlink", href: @item.shortlink}
   %body
 
-    -#
-      After the header is done, load a different layout for each kind of
-      content you want to create. The kind could be one of the following:
-
-      * page
-      * article
-      * category / tag
-      * quicky
-      * archive
-
     %main{role: "main"}
 
       - case @item[:kind]
