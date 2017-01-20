@@ -1,5 +1,5 @@
 %header
   %h1= link_to_unless_current item[:title], item.path, {rel: "bookmark"}
-  %p Am #{item.linked_date_information} bei #{link_to 'Plasisent', '#ueber-plasisent'} veröffentlicht.
+  %p Am #{item.linked_date_information} bei #{link_to 'Plasisent', '/'} veröffentlicht.
 
 ~ yield
