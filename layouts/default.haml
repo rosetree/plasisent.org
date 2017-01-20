@@ -25,9 +25,6 @@
       %link{rel: "shortlink", href: @item.shortlink}
   %body
 
-    - if @item[:cleaned?] == false
-      = load_snippet("Warnung Unbereinigter Import") % link_to("Datei auf GitHub", @item.github_url)
-
     -#
       After the header is done, load a different layout for each kind of
       content you want to create. The kind could be one of the following:
@@ -66,6 +63,8 @@
               %li Shortlink: #{link_to @item.shortlink, @item.shortlink}
             %li Kommentare an #{@item[:author_name]} (#{@item.reply_to_mailto_link})
 
+      - if @item[:cleaned?] == false
+        = load_snippet("Warnung Unbereinigter Import") % link_to("Datei auf GitHub", @item.github_url)
 
       %nav
         %h1 Plasisent Navigation
