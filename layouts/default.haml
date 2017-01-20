@@ -43,10 +43,10 @@
     %footer{role: "contentinfo"}
       - if @item.github_url != "" or @item.shortlink
         %nav
-          %h2 Hintergründe der aktuellen Seite
+          %h2 Über die aktuelle Seite
           %ul
             - unless @item.github_url == ""
-              %li= link_to 'Quelltext auf GitHub', @item.github_url, {rel: 'nofollow'}
+              %li= link_to 'Quelltext bei GitHub', @item.github_url, {rel: 'nofollow'}
             - if @item[:modified_at] && @item[:modified_at].length > 1
               %li= link_to 'Liste aller Änderungen', @item.github_url('history'), {rel: 'nofollow'}
             - if @item.shortlink
