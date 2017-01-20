@@ -114,7 +114,7 @@ iframe[width], iframe[height] { max-width: 100%; max-height: auto; }
 
 aside { margin: 3rem 0; padding: 1.5rem 3rem; font-size: smaller; color: #aaa; border-top: #333 solid thin; border-bottom: #333 solid thin; }
 
-footer { color: #aaa; border-left: #333 thin solid; border-right: #333 thin solid; padding: 0 3rem; margin: 5rem 0 9rem 0; }
+footer { color: #aaa; border-top: #333 thin solid; margin: 9rem 0; }
 
 footer h1, footer h2, footer h3 { font-size: 1em; font-weight: bold; margin-bottom: 0; }
 
