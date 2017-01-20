@@ -46,15 +46,15 @@
           %h2 Hintergründe der aktuellen Seite
           %ul
             - unless @item.github_url == ""
-              %li= link_to 'Quelltext auf GitHub', @item.github_url
+              %li= link_to 'Quelltext auf GitHub', @item.github_url, {rel: 'nofollow'}
             - if @item[:modified_at] && @item[:modified_at].length > 1
-              %li= link_to 'Liste aller Änderungen', @item.github_url('history')
+              %li= link_to 'Liste aller Änderungen', @item.github_url('history'), {rel: 'nofollow'}
             - if @item.shortlink
               %li Shortlink: #{link_to @item.shortlink, @item.shortlink}
             %li Kommentare an #{@item[:author_name]} (#{@item.reply_to_mailto_link})
 
       - if @item[:cleaned?] == false
-        = load_snippet("Warnung Unbereinigter Import") % link_to("Datei auf GitHub", @item.github_url)
+        = load_snippet("Warnung Unbereinigter Import") % link_to("Datei auf GitHub", @item.github_url, {rel: 'nofollow'})
 
       %nav
         %h1 Plasisent Navigation
