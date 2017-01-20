@@ -8,10 +8,14 @@
 * { text-decoration: none; }
 
 body {
-	max-width: 40rem;
-	margin: 2rem auto;
+	width: 94vw;
+	margin: 4vh auto;
 	background-color: $background;
 	color: $text;
+}
+
+main p {
+	max-width: 40rem;
 }
 
 a {

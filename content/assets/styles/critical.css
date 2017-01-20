@@ -1,6 +1,8 @@
 * { text-decoration: none; }
 
-body { max-width: 40rem; margin: 2rem auto; background-color: #111; color: #ccc; }
+body { width: 94vw; margin: 4vh auto; background-color: #111; color: #ccc; }
+
+main p { max-width: 40rem; }
 
 a { color: #ccc; border-bottom: dotted thin #4b4; }
 
