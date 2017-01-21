@@ -9,67 +9,81 @@ preprocess do
 end
 
 
-compile "/htaccess" do
+compile "/htaccess.*" do
   filter :erb
 end
 
-compile "/feed/*" do
+compile "/feed/**/*" do
   filter :erb
 end
 
-compile "/snippets/*/" do
+compile "/snippets/**/*" do
   filter :erb
   filter :kramdown
 end
 
-compile '*' do
+compile '/' do
+  filter :erb
+  filter :kramdown, {
+    :smart_quotes => 'sbquo,lsquo,bdquo,ldquo',
+  }
+  filter :add_figure_to_img
+  layout '/default.*'
+end
+
+compile '/**/*' do
   if item.binary?
     # don’t filter binary items
   elsif ['php', 'css'].include? item[:extension]
     # don’t filter excluded filetypes
   elsif item[:extension] == 'html'
-    layout 'default'
+    layout '/default.*'
   else
     filter :erb
     filter :kramdown, {
       :smart_quotes => 'sbquo,lsquo,bdquo,ldquo',
     }
     filter :add_figure_to_img
-    layout 'default'
+    layout '/default.*'
   end
 end
 
 
-route '/assets/styles/master/' do
+route '/assets/styles/master.*' do
   '/assets/styles/' + Digest::SHA1.hexdigest(item.raw_content) + '.css'
 end
 
-route "/htaccess" do
+route "/htaccess.*" do
   "/.htaccess"
 end
 
-route "/feed/*" do
-  item.identifier + "index.xml"
+route "/webmention/index.php" do
+  "/webmention/index.php"
 end
 
-route "/snippets/*/" do
+route "/snippets/**/*" do
   nil
 end
 
-route '*' do
-  if item.binary? || item[:extension] == 'css'
+route '/**/index.*' do
+  item.identifier.without_exts + '.html'
+end
+
+route '/**/*' do
+  # if item.binary? || item.identifier.exts.include?  == 'css'
+  if item.binary? || (['css'] & item.identifier.exts).any?
     # Write item with identifier /foo/ to /foo.ext
-    item.identifier.chop + '.' + item[:extension]
-  elsif item[:extension] == 'php'
-    item.identifier + 'index.php'
+    item.identifier.to_s
+  elsif item.identifier.exts.include? 'xml'
+    item.identifier.without_exts + '/index.xml'
   else
     # Posts written in 2014 and 2015 have a prefixed number before their slug.
     # Write item with identifier /2014/255-bar/ to /2014/bar/index.html
     # Other posts are not affected by the following gsub regex.
     # Write item with identifier /foo/ to /foo/index.html
-    item.identifier.to_s.gsub(/(201[45]\/)\d{3}-/, "\\1") + 'index.html'
+    item.identifier.without_exts.gsub(/(201[45]\/)\d{3}-/, "\\1") + '/index.html'
   end
 end
 
 
-layout '*', :haml
+layout '/**/*', :haml

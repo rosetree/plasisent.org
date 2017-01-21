@@ -49,7 +49,7 @@ def generate_weekly_archive(articles, date_attribute, title, week_url_prefix = "
           :kind => "archive",
           :posts => weekmap[week]
         },
-        "/#{year}/#{week_url_prefix}#{week}/")
+        "/#{year}/#{week_url_prefix}#{week}.html")
     end
   end
 end
