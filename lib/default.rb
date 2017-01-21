@@ -8,7 +8,7 @@ include Nanoc::Helpers::Text
 
 
 def generate_url base, title
-  title = title.downcase.gsub /[ äÄöÖüÜß#„“]/ do |match|
+  title = title.downcase.gsub(/[ äÄöÖüÜß#„“]/) do |match|
     case match
     when " " then "-"
     when "ä" then "ae"
@@ -24,7 +24,7 @@ def generate_url base, title
       ""
     end
   end
-  return "#{base}#{title}/"
+  return "#{base}#{title}.*"
 end
 
 # TODO: Document load_snippet.

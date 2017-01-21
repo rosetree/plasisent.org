@@ -39,6 +39,6 @@ def generate_yearly_archive(articles, date_attribute, title)
         :kind => "archive",
         :posts => yearmap[year],
       },
-      "/#{year}/")
+      "/#{year}.html")
   end
 end

@@ -20,14 +20,14 @@ der nächsten Überschrift.
 
 <% if post[:kind] == 'article' %>
 <article>
-  <% render "/article/", item: post do %>
+  <% render "/article.*", item: post do %>
     <%= post.compiled_content %>
   <% end %>
 </article>
 <% end %>
 
 <% if post[:kind] == 'note' %>
-  <% render '/note/', item: post do %>
+  <% render '/note.*', item: post do %>
     <%= post.compiled_content %>
   <% end %>
 <% end %>
@@ -49,7 +49,7 @@ der nächsten Überschrift.
 <h2>Vorher erschienene Artikel</h2>
 <ol class="list-of-short-posts">
 <% until index > count*2 do %>
-  <%= render '/partials/short_post_in_list/', post: sorted_posts[index] %>
+  <%= render '/partials/short_post_in_list.*', post: sorted_posts[index] %>
   <% index += 1 %>
 <% end %>
 </ol>
@@ -57,8 +57,8 @@ der nächsten Überschrift.
 <nav>
   <h3>Jahres-Archive von Plasisent</h3>
   <ul>
-    <li><%= link_to '2016', @items['/2016/'].path %></li>
-    <li><%= link_to '2015', @items['/2015/'].path %></li>
-    <li><%= link_to '2014', @items['/2014/'].path %></li>
+    <li><%= link_to '2016', @items['/2016.*'].path %></li>
+    <li><%= link_to '2015', @items['/2015.*'].path %></li>
+    <li><%= link_to '2014', @items['/2014.*'].path %></li>
   </ul>
 </nav>

@@ -4,9 +4,9 @@
     %meta{charset: "utf-8"}
     %title= @item.title
     %style{type: "text/css"}
-      = @items["/assets/styles/critical/"].raw_content.gsub(/^$\n/, '')
-    %link{rel: "stylesheet", href: @items["/assets/styles/master/"].path}
-    %link{rel: "alternate",  href: @items["/feed/"].path, type: "application/atom+xml", title: @config[:title]}
+      = @items["/assets/styles/critical.*"].raw_content.gsub(/^$\n/, '')
+    %link{rel: "stylesheet", href: @items["/assets/styles/master.*"].path}
+    %link{rel: "alternate",  href: @items["/feed.*"].path, type: "application/atom+xml", title: @config[:title]}
     %link{rel: "webmention", href: "http://plasisent.org/webmention/"}
     %link{rel: "pingback", href: "https://webmention.io/webmention?forward=http://plasisent.org/webmention/"}
     %link{rel: "profile", href: "http://osprotocol.com"}
@@ -29,13 +29,13 @@
 
       - case @item[:kind]
       - when "archive"
-        = render "/archive/" do
+        = render "/archive.*" do
           yield
       - when "note"
-        = render "/note/" do
+        = render "/note.*" do
           ~ yield
       - when "article"
-        = render "/article/" do
+        = render "/article.*" do
           ~ yield
       - else
         ~ yield
@@ -59,6 +59,6 @@
       %nav
         %h1 Plasisent Navigation
         %ul
-          %li= link_to 'Aktuelle Posts', @items['/'].path, {rel: 'home'}
-          %li= link_to 'Blogroll', @items['/blogroll/'].path
-          %li= link_to 'Feed', 'http://plasisent.org/feed/'
+          %li= link_to 'Aktuelle Posts', @items['/index.*'].path, {rel: 'home'}
+          %li= link_to 'Blogroll', @items['/blogroll.*'].path
+          %li= link_to 'Feed', @items['/feed.*'].path
