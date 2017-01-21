@@ -9,33 +9,42 @@ preprocess do
 end
 
 
-compile "/htaccess" do
+compile "/htaccess/" do
   filter :erb
 end
 
-compile "/feed/*" do
+compile "/feed/**/*/" do
   filter :erb
 end
 
-compile "/snippets/*/" do
+compile "/snippets/**/*/" do
   filter :erb
   filter :kramdown
 end
 
-compile '*' do
+compile '/' do
+  filter :erb
+  filter :kramdown, {
+    :smart_quotes => 'sbquo,lsquo,bdquo,ldquo',
+  }
+  filter :add_figure_to_img
+  layout '/default/'
+end
+
+compile '/**/*/' do
   if item.binary?
     # don’t filter binary items
   elsif ['php', 'css'].include? item[:extension]
     # don’t filter excluded filetypes
   elsif item[:extension] == 'html'
-    layout 'default'
+    layout '/default/'
   else
     filter :erb
     filter :kramdown, {
       :smart_quotes => 'sbquo,lsquo,bdquo,ldquo',
     }
     filter :add_figure_to_img
-    layout 'default'
+    layout '/default/'
   end
 end
 
@@ -44,19 +53,23 @@ route '/assets/styles/master/' do
   '/assets/styles/' + Digest::SHA1.hexdigest(item.raw_content) + '.css'
 end
 
-route "/htaccess" do
+route "/htaccess/" do
   "/.htaccess"
 end
 
-route "/feed/*" do
+route "/feed/**/*/" do
   item.identifier + "index.xml"
 end
 
-route "/snippets/*/" do
+route "/snippets/**/*/" do
   nil
 end
 
-route '*' do
+route '/' do
+  item.identifier.to_s + 'index.html'
+end
+
+route '/**/*/' do
   if item.binary? || item[:extension] == 'css'
     # Write item with identifier /foo/ to /foo.ext
     item.identifier.chop + '.' + item[:extension]
@@ -72,4 +85,4 @@ route '*' do
 end
 
 
-layout '*', :haml
+layout '/**/*/', :haml

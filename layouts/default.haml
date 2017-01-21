@@ -29,13 +29,13 @@
 
       - case @item[:kind]
       - when "archive"
-        = render "archive" do
+        = render "/archive/" do
           yield
       - when "note"
-        = render "note" do
+        = render "/note/" do
           ~ yield
       - when "article"
-        = render "article" do
+        = render "/article/" do
           ~ yield
       - else
         ~ yield
