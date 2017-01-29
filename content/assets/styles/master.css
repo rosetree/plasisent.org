@@ -17,7 +17,7 @@ blockquote:before, blockquote:after { content: ""; }
 
 blockquote, q { quotes: "" ""; }
 
-body { width: 94vw; margin: 4vh auto; color: #ccc; background-color: #111; }
+body { width: 94vw; margin: 4vh auto; color: #ccc; background-color: #111; font-family: 'Go', sans-serif; }
 
 ::selection { background-color: #4b4; color: #111; }
 
@@ -98,7 +98,7 @@ dt:after { content: "?"; }
 dt + dt { margin-top: 0; }
 
 /* Code and Pre Elements */
-code { background-color: #333; font-family: monospace; }
+code { background-color: #333; font-family: 'Go Mono', monospace; }
 
 pre { padding: 0.9em 1.1em; background-color: #333; border-top: #555 thin solid; border-bottom: #555 thin solid; }
 
