@@ -7,6 +7,7 @@
       = @items["/assets/styles/critical.*"].raw_content.gsub(/^$\n/, '')
     %link{rel: "stylesheet", href: @items["/assets/styles/master.*"].path}
     %link{rel: "alternate",  href: @items["/feed.*"].path, type: "application/atom+xml", title: @config[:title]}
+    %link{rel: "stylesheet", href: @items["/assets/fonts/go/stylesheet.*"].path}
     %link{rel: "webmention", href: "http://plasisent.org/webmention/"}
     %link{rel: "pingback", href: "https://webmention.io/webmention?forward=http://plasisent.org/webmention/"}
     %link{rel: "profile", href: "http://osprotocol.com"}

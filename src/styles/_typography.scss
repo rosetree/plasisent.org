@@ -3,8 +3,7 @@ body {
 	margin: 4vh auto;
 	color: $text;
 	background-color: $background;
-	// TODO: Think about sans-serif font choice.
-	font-family: sans-serif;
+	font-family: 'Go', sans-serif;
 }
 
 ::selection {
@@ -190,7 +189,7 @@ dt + dt {
 code {
 	background-color: $background-pre;
 	// TODO: Think about monospace font choice.
-	font-family: monospace;
+	font-family: 'Go Mono', monospace;
 }
 
 pre {
