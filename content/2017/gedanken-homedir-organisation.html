@@ -1,0 +1,65 @@
+---
+title: "Gedanken über die Home-Verzeichnis Organisation"
+kind: article
+---
+
+<p>Dieses Wochenende habe ich zwei Artikel über die Struktur/Organisation des eigenen Homedirs gelesen. Von <a href="https://joeyh.name/">Joey</a>, der dieses Verzeichnis schon seit vielen Jahren versioniert. Anders als er, würde ich nicht CVS oder SVN verwenden, sondern gleich <a href="https://git-annex.branchable.com/">git-annex</a>. Aber er musste diese geile Software auch erst einmal entwickeln.</p>
+
+<ul>
+<li><a href="https://joeyh.name/cvshome/">CVS Homedir, or keeping your live in CVS</a></li>
+<li><a href="https://joeyh.name/svnhome/">SVN Homedir, or keeping your live in SVN</a></li>
+</ul>
+
+<h2>Mögliche Homedir/annex Struktur</h2>
+
+<p>Wenn ich mein Homedir in ein Git-Repository einchecke, möchte ich auch eine andere Verzeichnis-Struktur als aktuell verwenden. Eine Idee ist die folgende:</p>
+
+<pre><code>/home/micha/
+    ./annex/
+        ./code/
+        ./docs/
+        ./gtd/
+        ./media/
+            ./audios/
+            ./videos/
+            ./pictures/
+    ./Documents → /home/micha/annex/docs/
+    ./Downloads → /home/micha/tmp/downloads/
+    ./Music → /home/micha/annex/media/audios/
+    ./Pictures → /home/micha/annex/media/pictures/
+    ./Videos → /home/micha/annex/media/videos/
+    ./tmp/
+</code></pre>
+
+<h3>Erklärung der einzelnen Ordner</h3>
+
+<p>Der <code>annex</code>-Ordner enthält alle Daten. Die Ordner <code>~/Documents</code>, <code>~/Music</code>, <code>~/Pictures</code> und <code>~/Videos</code> werden als <a href="https://de.wikipedia.org/wiki/Symbolische_Verkn%C3%BCpfung">Symlinks</a> angelegt. Dadurch können auch dumme Standard-Programme ohne große Konfiguration verwendet werden. In <code>~/tmp</code> kann ich Dateien anlegen, ohne sie gleich einsortieren zu müssen. (Sollte natürlich nicht oft geschehen.)</p>
+
+<p>Software-Projekte an denen ich arbeite, landen in <code>~/annex/code/</code>. Vielleicht als subtree, vielleicht als submodule. Dieses Verzeichnis ist mir noch nicht ganz klar. Auf jeden Fall ist dies ein Verzeichnis, in dem alle darunterliegenden Ordner ein eigenes Repository enthalten sollten.</p>
+
+<p>In <code>~/annex/docs/</code> liegt privater Kram: Briefe, Steuererklärung, Gedanken, Blog-Post-Drafts, <a href="http://ledger-cli.org/">ledger</a>-files, Anspiele, Gemeinde-Dateien. Hauptsächlich Kram, der bei der normalen Computer-Nutzung anfällt, der aber nicht unbedingt einem Projekt zugeordnet werden kann. (Vielleicht ist das auch ein »stuff«-Ordner, der sortiert werden sollte.)</p>
+
+<p>Um an ein paar Sachen schneller ran zu kommen, würde ich einen <code>~/annex/gtd/</code> Ordner anlegen. Darin beispielsweise mein <a href="http://todotxt.com/">todo.txt</a>-file (hoffentlich nur mit Next Actions gefüllt), ein eigenes <code>projects</code>-file, ein <code>read-and-review</code>-Ordner und andere Nettigkeiten, die man für <a href="https://gtdfh.branchable.com/">Getting Things Done</a> brauchen könnte.</p>
+
+<p>Die Struktur von <code>~/annex/media</code> finde ich selbsterklärend. Warum <em>audio</em> und nicht Musik? Weil ich dort auch Podcasts und Predigten speichere. Ich bin mir noch nicht ganz sicher, ob ich Videos und Bilder trennen möchte. Ab und an mache ich doch den ein oder anderen Handy-Film, der als Erinnerung bei den Bildern gespeichert werden soll. Vielleicht wird daraus ein <code>visuals</code>-Ordner. Stattdessen könnten Talks und Mediathek-Videos im GTD Read/Review Verzeichnis aufbewahrt werden. Dieser Gedanke gefällt mir eigentlich gut.</p>
+
+<h2>Fragen und Aufgaben</h2>
+
+<p>Generell freue ich mich über Feedback. Hier wären ein paar Fragen, die ich mir zu diesem Thema gerade stelle. Vielleicht hast du ja ein ähnliches Setup oder zumindest Ideen dazu. Dann freue ich mich über eine Mail.</p>
+
+<h3>Fünf Jahre alte „temporäre“ Dateien verhindern</h3>
+<p>Kann ich <code>~/tmp</code> regelmäßig automatisiert leeren? Zum Beispiel per cronjob alle Dateien, die länger als vier Wochen nicht angefasst wurden. Denkbar wäre auch eine neue GTD-Inbox; <code>mv notUsed ~/tmp/toDelete/</code>. Wenn es dort länger als eine Woche nicht angefasst wird löschen. Oder eine andere Regel?</p>
+
+<h3>git annex und subtrees/submodules</h3>
+<p>Wie geht git-annex mit <a href="https://git-scm.com/book/en/v2/Git-Tools-Submodules">git submodules</a> oder <a href="https://git-scm.com/book/en/v1/Git-Tools-Subtree-Merging">git subtrees</a> um?</p>
+
+<h3>Was denn nun? Subtree oder Submodule?</h3>
+<p>Welche Technik wäre für <code>~/annex/code/</code> am besten geeignet? Aktuell denke ich, dass Submodules die richtige Wahl wären. Wobei, nein. Eigentlich bin ich mir unsicher. Subtrees könnten auch gut funktionieren. Mist. (<a href="http://stackoverflow.com/a/571715">Vergleich zwischen Subtrees und Submodules.</a>)</p>
+
+<h3>Habe ich irgendetwas vergessen?</h3>
+<ul>
+<li><code>dotfiles</code>, die vermutlich gerade via <a href="https://github.com/rosetree/tildeslash">tildeslash-repo</a> in code liegen würden</li>
+<li>private/geheime Dateien (wie <a href="https://de.wikipedia.org/wiki/GnuPG">GnuPG</a>- oder SSH-Keys)</li>
+<li>mein <code>~/bin</code>-Ordner (viellecht <code>~/annex/code/</code>?)</li>
+<li>E-Mails und meine mutt-Konfiguration (ein spezieller Fall von geheimen Dateien)</li>
+</ul>
