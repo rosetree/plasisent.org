@@ -1,0 +1,64 @@
+---
+title: Emacs statt Vim – Mai Challenge
+kind: article
+description: "Im Mai 2017 möchte ich Emacs im Evil-Mode ausprobieren."
+---
+
+<p>Nachdem ich mir im April keine Herausforderung formuliert habe, mache ich im fünften Monat dieses Jahres wieder weiter. Diesmal nichts mit Essen oder Lebens-Qualität, sondern ein Thema, das meine Arbeit betrifft: <strong>Im Mai verwende ich Emacs (im Evil-Mode) statt Vim.</strong></p>
+
+<aside>
+<p>Die Frage <b>Emacs versus Vim</b> war lange ein heiß diskuttiertes Thema. Es gibt sogar einen <a href="https://de.wikipedia.org/wiki/Editor_War">Wikipedia-Artikel über den »Editor Krieg«</a>.</p>
+</aside>
+
+<h2>Die Vorteile von Vim</h2>
+
+<p>Während meiner Ausbildung habe ich bereits mit Emacs gearbeitet. Anfang 2014 bin ich dann auf Vim umgestiegen. Ich bin immer noch fasziniert von der Art und Weise, wie mit Vim Dateien bearbeitet werden. Vim verwendet dafür verschiedene Befehle. Ich erkläre hier kurz zwei Arten davon:</p>
+
+<ol>
+  <li><p>Befehle, die mit dem Text arbeiten. Sie löschen, kopieren, markieren, … den Text.</p></li>
+  <li><p>Befehle, die deine Position in der Datei verändern. Damit kannst du zum Beispiel an das Ende der Zeile, des Wortes, des Satzes, Absatzes oder der ganzen Datei springen. Natürlich auch in die andere Richtung. Und viel mehr.</p></li>
+</ol>
+
+<p>Diese beiden Befehls-Arten können beliebig miteinander verknüpft werden. Dadurch wird bei Vim durch jeden Bewegungs-Befehl, jeder Bearbeitungs-Befehl mächtiger. Lösche bis zum Ende der Zeile, markiere bis zum Anfang des Wortes, kopiere bis zum Ende des Absatzes und vieles mehr. Siehe dazu auch, <a href="https://medium.com/@mkozlows/why-atom-cant-replace-vim-433852f4b4d1" hreflang="en">warum ein neuer Text-Editor Vim nicht ersetzen kann</a>.</p>
+
+<h2>Die Vorteile von Emacs</h2>
+
+<p>Vim hat bisher nur einen Maintainer. <a href="http://www.moolenaar.net/">Bram Moolenaar</a> ist der Haupt-Entwickler. Sein Plan um Vim für die längere Zukunft zu bewahren ist „am Leben zu bleiben“. Während Bram dies scherzhaft <a href="http://www.binpress.com/blog/2014/11/19/vim-creator-bram-moolenaar-interview/">in einem Interview</a> sagte, empfinde ich dies nicht als besonders gutes Zeichen. Emacs wird von einem größeren Team entwickelt und der ursprüngliche Initiator ist nicht mehr aktiv beteiligt.</p>
+
+<p>Der Text-Editor Emacs wird oft kritisiert: <q>Emacs ist ein großartiges Betriebssystem – allerdings fehlt ein guter Editor.</q> Es steckt etwas Wahrheit in diesem witzigen Spruch. Emacs kann sehr frei und vielfältig entwickelt werden. Große Teile der Funktionalität wurden in <a href="https://de.wikipedia.org/wiki/Emacs_Lisp">Emacs Lisp</a> umgesetzt; eine gute Programmier-Sprache, die auch zur alltäglichen Konfiguration des Editors verwendet wird. Plugins können mit der <a href="http://www.gnu.org/software/emacs/elisp-manual/elisp.html"><abbr title="GNU’s Not Unix">GNU</abbr> Emacs Lisp Reference</a> programmiert werden. <a href="http://learnvimscriptthehardway.stevelosh.com/">Vimscript</a> wirkt eher wie eine Frankenstein „Programmier-Sprache“.</p>
+
+<p>Emacs Lisp kann auch für Shell-Scripts verwendet werden! Also kann ich meinen Text-Editor programmieren und in eigenen Scripten die Funktionen verwenden, die auch er anbietet? Das ist großartig :D Für eine Kleinigkeit habe ich das bereits genutzt. Ich könnte mir vorstellen, das ich dies häufiger vorkommen wird.</p>
+
+<p>Der <a href="http://orgmode.org/">Org mode für Emacs</a> ist ein fantastisches Stück Software. Zumindest höre ich das immer wieder. Zum Beispiel in <a href="https://koenig-haunstetten.de/tag/orgmode">Rainers OrgMode Tutorial</a>. Dieses Plain-Text-Format möchte ich auch gerne ausprobieren. Möglicherweise hilft es mir, mein <a href="https://hamberg.no/gtd/">Getting Things Done</a> Prozess weiter zu verfeinern. Das erste Projekt für meine Gemeinde plane ich bereits vollständig mit Org-Mode. Es macht mir sehr viel Spaß.</p>
+
+<h2>Also: Emacs <em>und</em> Vim</h2>
+
+<p><q>Der beste Editor ist weder Emacs noch Vim; es ist Emacs <em>und</em> Vim!</q> Das zumindest schreiben die Entwickler auf der <a hreflang="en" href="http://spacemacs.org/">Spacemacs Website</a>. Tatsächlich glaube ich ihnen. In den letzten Tagen las ich (oft zufällig) von einigen Personen, die <a hreflang="en" href="https://www.emacswiki.org/emacs/Evil">Emacs im Evil-Mode</a> verwenden:</p>
+
+<ul>
+  <li><a hreflang="en" href="https://www.youtube.com/watch?v=JWD1Fpdd4Pc">Evil Mode: Or, How I Learned to Stop Worrying and Love Emacs</a></li>
+  <li><a hreflang="en" href="http://whatthefuck.computer/blog/2014/08/02/evil-and-emacs-an-uholy-matrimony/">Evil and Emacs: An Uholy Matrimony</a></li>
+  <li><a hreflang="en" href="https://honza.ca/2017/04/should-i-finally-drop-qwerty">Honza Pokorny: Should I finally drop QWERTY?</a></li>
+  <li><a hreflang="en" href="https://eklitzke.org/dotfiles">Evan Klitzke: My Philosophy on “Dot Files”</a></li>
+</ul>
+
+<p>Auch bei meinen ersten Tests konnte ich wie gewohnt meine Text-Dateien bearbeiten. Der Evil-Mode ist eine außerordentlich gute Vim-Emulation. Ich freue mich darauf weiter mit Emacs zu arbeiten, Plugins zu testen und hoffentlich auch mit Org-Mode anbandeln zu können. Für die folgenden dreißig Tage gehe ich aber über den schnellen Emacs-Test hinaus.</p>
+
+<pre><code>alias vim="emacs"</code></pre>
+
+<h2>Sonstiges</h2>
+
+<p>Keine Herausforderung ohne Ausnahme. Von Berufswegen arbeite ich gelegentlich auf Web-Servern. Vim ist bei diesen immer installiert, Emacs eigentlich nie. Da dies mehrere Server sind, die auch nicht nur unter meiner Kontrolle stehen, werde ich dort mit Vim arbeiten und nicht auf jedem Emacs installieren.</p>
+  
+<p>Ein paar Dinge werde ich im Laufe der dreißig Tage noch (neu) herausfinden müssen.</p>
+<ul>
+  <li><p>Wie kann ich verhindern, dass Emacs nervige Backup-Dateien im gleichen Verzeichnis ablegt? Okay finde ich, wenn sie gesammelt in einem Verzeichnis landen, aber sie sollen nicht meine Dokumente durch mischen.</p></li>
+  <li><p>Gibt es etwas wie <a href="https://github.com/vim-syntastic/syntastic">Syntastic</a>? Also Programme zur statischen Code-Analyse im Editor, die mir helfen meinen Code im Firmen-Stil zu schreiben.</p></li>
+  <li><p>Wie kann ich Emacs sinvolles Whitespace-Verhalten beibringen? Kein Whitespace am Ende einer Zeile! Duh.</p></li>
+</ul>
+
+<p>Eine Frage jedoch, gehört zu den wichtigsten; bei all den Möglichkeiten, die Emacs bietet, und den vielen Dingen, die ich lernen kann: Schaffe ich es mir nicht die Produktivität zu versauen? :D</p>
+
+<aside>
+  <p>Danke an meine Korrekturleser: Lisa und Manuel.</p>
+</aside>
