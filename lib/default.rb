@@ -1,3 +1,4 @@
+# coding: utf-8
 # All files in the 'lib' directory will be loaded
 # before nanoc starts compiling.
 include Nanoc::Helpers::Rendering
@@ -55,7 +56,7 @@ end
 
 
 module Nanoc
-  class ItemWithRepsView
+  class CompilationItemView
     def title
       if self[:title]
         "#{self[:title]} · Plasisent"

@@ -6,7 +6,7 @@ SASS_CMD = sass --style compact
 all: style build
 
 build:
-	nanoc
+	bundle exec nanoc
 
 # output/: style content/* content/**/* layout/* layout/**/*
 # 	nanoc
