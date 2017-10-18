@@ -2,7 +2,7 @@
 %html{lang: "de"}
   %head
     %meta{charset: "utf-8"}
-    %title= @item.title
+    %title= page_title
     %style{type: "text/css"}
       = @items["/assets/styles/critical.*"].raw_content.gsub(/^$\n/, '')
     %link{rel: "stylesheet", href: @items["/assets/styles/master.*"].path}
@@ -17,7 +17,7 @@
     - if @item[:description]
       %meta{name: "twitter:card", content: "summary"}
       %meta{name: "twitter:site", content: "@plasisent"}
-      %meta{name: "twitter:title", content: @item.title}
+      %meta{name: "twitter:title", content: page_title}
       %meta{name: "twitter:description", content: @item[:description]}
       %meta{name: "description", content: @item[:description]}
     %meta{name: "viewport",  content: "width=device-width,initial-scale=1"}

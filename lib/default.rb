@@ -7,7 +7,6 @@ include Nanoc::Helpers::Capturing
 include Nanoc::Helpers::LinkTo
 include Nanoc::Helpers::Text
 
-
 def generate_url base, title
   title = title.downcase.gsub(/[ äÄöÖüÜß#„“]/) do |match|
     case match
@@ -54,24 +53,19 @@ def german_month_name date
   german_months[date.strftime("%m").to_i - 1]
 end
 
+def page_title
+  @item[:title] ? "#{@item[:title]} · Plasisent" : 'Plasisent'
+end
 
 module Nanoc
   class CompilationItemView
-    def title
-      if self[:title]
-        "#{self[:title]} · Plasisent"
-      else
-        'Plasisent'
-      end
-    end
-
     def reply_to_mailto_link
       unless self[:author_email]
         return 'keine E-Mailadresse'
       end
 
       e = self[:author_email]
-      s = "Re: #{self.title}"
+      s = "Re: #{self[:title]}"
       c = "Shalömchen und Moin Moin"
       l = "mailto:#{e}?subject=#{s}&amp;content=#{c}"
 
