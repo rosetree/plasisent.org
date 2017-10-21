@@ -57,6 +57,17 @@ def page_title
   @item[:title] ? "#{@item[:title]} · Plasisent" : 'Plasisent'
 end
 
+def page_github_url(base = '')
+  return '' unless @item[:content_filename]
+
+  case base
+  when 'history'
+    "https://github.com/rosetree/plasisent.org/commits/master/#{@item[:content_filename]}"
+  else
+    "https://github.com/rosetree/plasisent.org/blob/master/#{@item[:content_filename]}"
+  end
+end
+
 def reply_to_mailto_link
   return 'keine E-Mailadresse' unless @item[:author_email]
 
@@ -68,20 +79,9 @@ def reply_to_mailto_link
   link_to e, l, {rel: 'reply-to'}
 end
 
+
 module Nanoc
   class CompilationItemView
-
-    def github_url base = ''
-      return "" unless self[:content_filename]
-
-      case base
-      when 'history'
-        "https://github.com/rosetree/plasisent.org/commits/master/#{self[:content_filename]}"
-      else
-        "https://github.com/rosetree/plasisent.org/blob/master/#{self[:content_filename]}"
-      end
-    end
-
     def base_36_code
       date = attribute_to_time self[:created_at]
 

@@ -42,20 +42,20 @@
         ~ yield
 
     %footer{role: "contentinfo"}
-      - if @item.github_url != "" or @item.shortlink
+      - if page_github_url != "" or @item.shortlink
         %nav
           %h2 Über die aktuelle Seite
           %ul
-            - unless @item.github_url == ""
-              %li= link_to 'Quelltext bei GitHub', @item.github_url, {rel: 'nofollow'}
+            - unless page_github_url == ""
+              %li= link_to 'Quelltext bei GitHub', page_github_url, {rel: 'nofollow'}
             - if @item[:modified_at] && @item[:modified_at].length > 1
-              %li= link_to 'Liste aller Änderungen', @item.github_url('history'), {rel: 'nofollow'}
+              %li= link_to 'Liste aller Änderungen', page_github_url('history'), {rel: 'nofollow'}
             - if @item.shortlink
               %li Shortlink: #{link_to @item.shortlink, @item.shortlink}
             %li Kommentare an #{@item[:author_name]} (#{reply_to_mailto_link})
 
       - if @item[:cleaned?] == false
-        = load_snippet("Warnung Unbereinigter Import") % link_to("Datei auf GitHub", @item.github_url, {rel: 'nofollow'})
+        = load_snippet("Warnung Unbereinigter Import") % link_to("Datei auf GitHub", page_github_url, {rel: 'nofollow'})
 
       %nav
         %h1 Plasisent Navigation
