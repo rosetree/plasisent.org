@@ -22,8 +22,8 @@
       %meta{name: "description", content: @item[:description]}
     %meta{name: "viewport",  content: "width=device-width,initial-scale=1"}
     %meta{name: "generator", content: "nanoc #{Nanoc::VERSION}"}
-    - if @item.shortlink
-      %link{rel: "shortlink", href: @item.shortlink}
+    - if page_shortlink
+      %link{rel: "shortlink", href: page_shortlink}
   %body
 
     %main{role: "main"}
@@ -42,7 +42,7 @@
         ~ yield
 
     %footer{role: "contentinfo"}
-      - if page_github_url != "" or @item.shortlink
+      - if page_github_url != "" or page_shortlink
         %nav
           %h2 Über die aktuelle Seite
           %ul
@@ -50,8 +50,8 @@
               %li= link_to 'Quelltext bei GitHub', page_github_url, {rel: 'nofollow'}
             - if @item[:modified_at] && @item[:modified_at].length > 1
               %li= link_to 'Liste aller Änderungen', page_github_url('history'), {rel: 'nofollow'}
-            - if @item.shortlink
-              %li Shortlink: #{link_to @item.shortlink, @item.shortlink}
+            - if page_shortlink
+              %li Shortlink: #{link_to page_shortlink, page_shortlink}
             %li Kommentare an #{@item[:author_name]} (#{reply_to_mailto_link})
 
       - if @item[:cleaned?] == false
