@@ -1,6 +1,6 @@
 %article.note
   %header
     %h1 #{link_to @item[:title], @item.path, {rel: 'bookmark'}}
-    %p Am #{@item.linked_date_information} bei #{link_to 'Plasisent', '/'} kurz notiert.
+    %p Am #{linked_date_information(@item)} bei #{link_to 'Plasisent', '/'} kurz notiert.
 
   ~ yield

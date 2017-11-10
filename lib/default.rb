@@ -117,23 +117,18 @@ def page_shortlink
   File.join('http://plasisent.org/', base_36_code)
 end
 
+def linked_date_information(item = @item)
+  return "" unless item[:created_at]
 
-module Nanoc
-  class CompilationItemView
-    def linked_date_information
-      return "" unless self[:created_at]
+  date = item[:created_at]
 
-      date = self[:created_at]
+  year  = date.strftime "%Y"
+  month = german_month_name date
+  day   = date.strftime "%-d"
+  time  = date.strftime "%-k:%M"
 
-      year  = date.strftime "%Y"
-      month = german_month_name date
-      day   = date.strftime "%-d"
-      time  = date.strftime "%-k:%M"
+  year_link = link_to year, "/#{year}/"
+  time_text = "#{day}. #{month} #{year_link} (#{time} Uhr)"
 
-      year_link = link_to year, "/#{year}/"
-      time_text = "#{day}. #{month} #{year_link} (#{time} Uhr)"
-
-      "<time datetime='#{date.iso8601}'>#{time_text}</time>"
-    end
-  end
+  "<time datetime='#{date.iso8601}'>#{time_text}</time>"
 end

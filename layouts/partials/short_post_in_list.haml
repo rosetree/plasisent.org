@@ -1,7 +1,7 @@
 %li.short-post-in-list
   %strong= link_to post[:title], post.path
   %br/
-  = post.linked_date_information
+  = linked_date_information(post)
   - if post[:description]
     %br/
     = post[:description]
