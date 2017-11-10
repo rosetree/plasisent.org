@@ -13,8 +13,8 @@ ErrorDocument 404 /error/404/
 
 <% @items.each do |i|
   next unless i.path
-  next unless i.base_36_code %>
-  RedirectMatch 301 ^/<%= i.base_36_code %>/?$ <%= i.path %>
+  next unless base_36_code(i) %>
+  RedirectMatch 301 ^/<%= base_36_code(i) %>/?$ <%= i.path %>
 <% end %>
 
 # Redirect the lonely ZIP file from the WordPress upload path to the assets

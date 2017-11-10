@@ -2,7 +2,7 @@
 %html{lang: "de"}
   %head
     %meta{charset: "utf-8"}
-    %title= @item.title
+    %title= page_title
     %style{type: "text/css"}
       = @items["/assets/styles/critical.*"].raw_content.gsub(/^$\n/, '')
     %link{rel: "stylesheet", href: @items["/assets/styles/master.*"].path}
@@ -17,13 +17,13 @@
     - if @item[:description]
       %meta{name: "twitter:card", content: "summary"}
       %meta{name: "twitter:site", content: "@plasisent"}
-      %meta{name: "twitter:title", content: @item.title}
+      %meta{name: "twitter:title", content: page_title}
       %meta{name: "twitter:description", content: @item[:description]}
       %meta{name: "description", content: @item[:description]}
     %meta{name: "viewport",  content: "width=device-width,initial-scale=1"}
     %meta{name: "generator", content: "nanoc #{Nanoc::VERSION}"}
-    - if @item.shortlink
-      %link{rel: "shortlink", href: @item.shortlink}
+    - if page_shortlink
+      %link{rel: "shortlink", href: page_shortlink}
   %body
 
     %main{role: "main"}
@@ -42,20 +42,20 @@
         ~ yield
 
     %footer{role: "contentinfo"}
-      - if @item.github_url != "" or @item.shortlink
+      - if page_github_url != "" or page_shortlink
         %nav
           %h2 Über die aktuelle Seite
           %ul
-            - unless @item.github_url == ""
-              %li= link_to 'Quelltext bei GitHub', @item.github_url, {rel: 'nofollow'}
+            - unless page_github_url == ""
+              %li= link_to 'Quelltext bei GitHub', page_github_url, {rel: 'nofollow'}
             - if @item[:modified_at] && @item[:modified_at].length > 1
-              %li= link_to 'Liste aller Änderungen', @item.github_url('history'), {rel: 'nofollow'}
-            - if @item.shortlink
-              %li Shortlink: #{link_to @item.shortlink, @item.shortlink}
-            %li Kommentare an #{@item[:author_name]} (#{@item.reply_to_mailto_link})
+              %li= link_to 'Liste aller Änderungen', page_github_url('history'), {rel: 'nofollow'}
+            - if page_shortlink
+              %li Shortlink: #{link_to page_shortlink, page_shortlink}
+            %li Kommentare an #{@item[:author_name]} (#{reply_to_mailto_link})
 
       - if @item[:cleaned?] == false
-        = load_snippet("Warnung Unbereinigter Import") % link_to("Datei auf GitHub", @item.github_url, {rel: 'nofollow'})
+        = load_snippet("Warnung Unbereinigter Import") % link_to("Datei auf GitHub", page_github_url, {rel: 'nofollow'})
 
       %nav
         %h1 Plasisent Navigation
