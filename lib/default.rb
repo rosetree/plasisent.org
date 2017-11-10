@@ -79,11 +79,11 @@ def reply_to_mailto_link
   link_to e, l, {rel: 'reply-to'}
 end
 
-def base_36_code
-  date = attribute_to_time @item[:created_at]
+def base_36_code(item = @item)
+  date = attribute_to_time item[:created_at]
 
-  if @item[:base_36_code]
-    return @item[:base_36_code]
+  if item[:base_36_code]
+    return item[:base_36_code]
   end
 
   unless date
