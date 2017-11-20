@@ -79,31 +79,32 @@ def reply_to_mailto_link
   link_to e, l, {rel: 'reply-to'}
 end
 
+# base_36_code returns the :base_36_code attribute of the current
+# item. If this is nil, it creates an unique code, based on the items
+# publication date and time.
+#
+# Special handling for year and time:
+# 1. To save a character, I’m going to assume, that all articles are
+# written in the 2000 millenium.
+# 2. Concatenating hours, minutes and seconds as string and turning
+# the resulting number into its base 36 representation is shorter than
+# base 36 of each individual. Drawback: The time code is not hackable.
+#
+# TODO: What if the item has no date? Raise an error? Returns nil at
+# the moment.
 def base_36_code(item = @item)
-  date = attribute_to_time item[:created_at]
+  return item[:base_36_code] if item[:base_36_code]
 
-  if item[:base_36_code]
-    return item[:base_36_code]
-  end
+  date = attribute_to_time(item[:created_at])
+  return nil unless date
 
-  unless date
-    return nil # TODO: Throw an error / warning?
-  end
-
-  # Special handling for year and time
-  #
-  # To save a character, I’m going to assume, we have write all articles in
-  # the 2000 millenium.
-  year = (date.year - 2000)
-  # This is smaller, than using base 36 versions of each, and I don’t
-  # think, my blog is going to need a hackable time url.
+  year = date.year - 2000
   time = "#{date.hour}#{date.min}#{date.sec}".to_i
 
-  # Create short identifier with base 36
-  code =              year.to_s(36).rjust(2, "0")
+  code = year.to_s(36).rjust(2, "0")
   code = code + date.month.to_s(36)
-  code = code +   date.day.to_s(36)
-  code = code +       time.to_s(36).rjust(4, "0")
+  code = code + date.day.to_s(36)
+  code = code + time.to_s(36).rjust(4, "0")
 
   return code
 end
