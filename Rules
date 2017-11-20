@@ -4,6 +4,7 @@ require "digest/sha1"
 
 preprocess do
   use_git_data
+  @items.each { |item| item[:base_36_code] = base_36_code(item) }
   generate_yearly_archive sorted_posts, :created_at, "Jahr"
   generate_weekly_archive sorted_posts, :created_at, "KW"
 end
