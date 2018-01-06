@@ -1,54 +1,34 @@
 ---
 title: Blog von Micha Rosenbaum
-description: Das politische und persönliche Blog von Micha Rosenbaum.
 ---
 
 # Blog von Micha Rosenbaum
 
-Herzlich Willkommen auf meiner Blogwiese. Schau dich ruhig um, mach’s dir
-bequem, nehm’ dir einen Kaffee. Bei **Plasisent** spreche ich ein paar Themen
-an, die mir wichtig sind. Ich schreibe zum Beispiel über das Web, Überwachung,
-Politik und Gesellschaft. Was mich aktuell so beschäftigt erkennst du direkt an
-der nächsten Überschrift.
+Herzlich Willkommen auf meiner Blogwiese. Schau dich ruhig um, mach’s
+dir bequem, nehm’ dir einen Kaffee. Was ein Blog ist, weißt du
+bestimmt. Es gibt bei Plasisent keine Kommentare. Ich freue mich
+dennoch darüber mit dir in Kontakt zu kommen. Schreibe mir gerne eine
+Mail oder antworte in deinem eigenen Blog.
 
 <p><b>Micha Rosenbaum</b><br />grüßt freundlich.</p>
 
-<% count = 7 %>
+<% count = 3 %>
 <% index = 0 %>
 
-<% sorted_posts.each do |post| %>
-
-<% if post[:kind] == 'article' %>
-<article>
-  <% render "/article.*", item: post do %>
-    <%= post.compiled_content %>
-  <% end %>
-</article>
-<% end %>
-
-<% if post[:kind] == 'note' %>
-  <% render '/note.*', item: post do %>
-    <%= post.compiled_content %>
-  <% end %>
-<% end %>
-
-<% if index == 0 %>
-  <aside><%= load_snippet "Empfohlene Artikel" %></aside>
-<% end %>
-
-<% if index == 1 %>
-  <aside><%= load_snippet "Empfohlene Blogs" %></aside>
-<% end %>
-
-<% index += 1 %>
-<% break if index == count %>
-<% end %>
-
-<hr />
-
-<h2>Vorher erschienene Artikel</h2>
+<h2>Die drei neusten Artikel</h2>
 <ol class="list-of-short-posts">
-<% until index > count*2 do %>
+<% sorted_posts.each do |post| %>
+  <%= render '/partials/short_post_in_list.*', post: post %>
+  <% index += 1 %>
+  <% break if index == count %>
+<% end %>
+</ol>
+
+<%= load_snippet "Empfohlene Artikel" %>
+
+<h2>Vorher veröffentlichte Artikel</h2>
+<ol class="list-of-short-posts">
+<% until index > count**2 do %>
   <%= render '/partials/short_post_in_list.*', post: sorted_posts[index] %>
   <% index += 1 %>
 <% end %>
@@ -63,3 +43,5 @@ der nächsten Überschrift.
     <li><%= link_to '2014', @items['/2014.*'].path %></li>
   </ol>
 </nav>
+
+<%= load_snippet "Empfohlene Blogs" %>
