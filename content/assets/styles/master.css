@@ -17,14 +17,14 @@ blockquote:before, blockquote:after { content: ""; }
 
 blockquote, q { quotes: "" ""; }
 
-body { width: 94vw; margin: 4vh auto; color: #ccc; background-color: #111; font-family: 'Go', sans-serif; }
+body { width: 94vw; margin: 4vh auto; color: #111; background-color: #fff; font-family: 'Go', sans-serif; }
 
-::selection { background-color: #4b4; color: #111; }
+::selection { background-color: #272; color: #fff; }
 
-::-moz-selection { background-color: #4b4; color: #111; }
+::-moz-selection { background-color: #272; color: #fff; }
 
 /* Headlines */
-header p { color: #aaa; }
+header p { color: #222; }
 
 h1, h2, h3 { margin: 1.7em 0 1em 0; }
 
@@ -47,31 +47,31 @@ b, strong { font-weight: bold; }
 
 small { font-size: smaller; }
 
-abbr[title] { border-bottom: #555 dotted medium; }
+abbr[title] { border-bottom: #aaa dotted medium; }
 
-mark { background-color: #7b7; color: #111; }
+mark { background-color: #cfc; }
 
 q { quotes: "»" "«" "›" "‹"; }
 
-del { color: #aaa; text-decoration: line-through; }
+del { color: #222; text-decoration: line-through; }
 
-blockquote { padding: 0.5rem 1.5rem; border-left: #555 solid thin; }
+blockquote { padding: 0.5rem 1.5rem; border-left: #aaa solid thin; }
 
-blockquote mark { background-color: #aaa; color: #111; }
+blockquote mark { background-color: #222; color: #fff; }
 
 main p { max-width: 40rem; }
 
 /* Links */
-a { color: inherit; border-bottom: #4b4 dotted 1px; }
+a { color: inherit; border-bottom: #272 dotted 1px; }
 
-a:focus, a:hover { color: #4b4; border-bottom: #aaa dotted 2px; }
+a:focus, a:hover { background: #cfc; border-bottom: #222 dotted 2px; }
 
 a:hover { border-bottom-style: solid; }
 
 /* Bilder */
 img { max-width: 100%; height: auto; border-radius: 3px; }
 
-figcaption { margin: 0.3em 0 1.3em 0; color: #aaa; }
+figcaption { margin: 0.3em 0 1.3em 0; color: #222; }
 
 /* Listen */
 ul, ol { padding-left: 1.1em; }
@@ -98,31 +98,31 @@ dt:after { content: "?"; }
 dt + dt { margin-top: 0; }
 
 /* Code and Pre Elements */
-code { background-color: #333; font-family: 'Go Mono', monospace; }
+code { background-color: #eef5ee; font-family: 'Go Mono', monospace; }
 
-pre { padding: 0.9em 1.1em; background-color: #333; border-top: #555 thin solid; border-bottom: #555 thin solid; }
+pre { padding: 0.9em 1.1em; background-color: #eef5ee; border-top: #aaa thin solid; border-bottom: #aaa thin solid; }
 
 /* Form Elements */
-input { color: #ccc; background: #333; width: 70%; padding: 0.3em 0.5em; border: none; border-top: #555 thin solid; border-bottom: #555 thin solid; }
+input { color: #111; background: #eef5ee; width: 70%; padding: 0.3em 0.5em; border: none; border-top: #aaa thin solid; border-bottom: #aaa thin solid; }
 
-input[type=submit] { color: #111; background-color: #4b4; width: 20%; cursor: pointer; border-radius: 3px; }
+input[type=submit] { color: #fff; background-color: #272; width: 20%; cursor: pointer; border-radius: 3px; }
 
-input[type=submit]:hover { background-color: #7b7; }
+input[type=submit]:hover { background-color: #282; }
 
-input[type=text]:focus { border-top: #aaa thin solid; border-bottom: #aaa thin solid; }
+input[type=text]:focus { border-top: #222 thin solid; border-bottom: #222 thin solid; }
 
 /* Sonstiges */
-hr { margin: 1.4em 0; height: 1px; border: none; color: #555; background-color: #555; }
+hr { margin: 1.4em 0; height: 1px; border: none; color: #aaa; background-color: #aaa; }
 
 iframe[width], iframe[height] { max-width: 100%; max-height: auto; }
 
-aside { margin: 3rem 0; padding: 1.5rem 3rem; font-size: smaller; color: #aaa; border-top: #333 solid thin; border-bottom: #333 solid thin; }
+aside { margin: 3rem 0; padding: 1.5rem 3rem; font-size: smaller; color: #222; border-top: #aaa solid thin; border-bottom: #aaa solid thin; }
 
-footer { color: #aaa; border-top: #333 thin solid; margin: 9rem 0; }
+footer { color: #222; border-top: #aaa thin solid; margin: 9rem 0; }
 
 footer h1, footer h2, footer h3 { font-size: 1em; font-weight: bold; margin-bottom: 0; }
 
-article.note { margin: 3rem 0; padding: 1.5rem; border: #333 solid thin; background: #15192d; }
+article.note { margin: 3rem 0; padding: 1.5rem; border: #eef5ee solid thin; background: #15192d; }
 
 article.note h1:first-child { margin: 0; font-size: 1.1rem; }
 
@@ -130,8 +130,8 @@ article.note h1:first-child { margin: 0; font-size: 1.1rem; }
 
 .short-post-in-list { list-style: none; }
 
-.short-post-in-list time { color: #aaa; }
+.short-post-in-list time { color: #222; }
 
-.short-post-in-list + .short-post-in-list { padding-top: 1.5em; margin-top: 1.5em; border-top: #555 thin solid; }
+.short-post-in-list + .short-post-in-list { padding-top: 1.5em; margin-top: 1.5em; border-top: #aaa thin solid; }
 
 article.note > *:first-child, aside > *:first-child, blockquote > *:first-child, footer > *:first-child { margin-top: 0; }

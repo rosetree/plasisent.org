@@ -72,8 +72,7 @@ abbr[title] {
 }
 
 mark {
-	background-color: $link-hover;
-	color: $background;
+	background-color: $mark-color;
 }
 
 q {
@@ -106,7 +105,7 @@ a {
 }
 a:focus,
 a:hover {
-	color: $link;
+	background: $mark-color;
 	border-bottom: $text-secondary dotted 2px;
 }
 a:hover {
