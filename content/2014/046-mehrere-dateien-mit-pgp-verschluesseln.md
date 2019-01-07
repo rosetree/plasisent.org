@@ -7,7 +7,6 @@ created_at: '2014-04-22 06:51:13 +0200'
 tags:
 - PGP
 - Dateien verschlüsseln
-cleaned?: false
 ---
 
 Inzwischen habe ich mich intensiv damit auseinander gesetzt, wie man
@@ -80,5 +79,4 @@ Artikel](http://www.openpgp-schulungen.de/grafiken/gepruefter_artikel.png)](http
 überprüft und signiert. ([Signatur und signierte Datei
 herunter­la­den](https://plasisent.org/assets/files/mehrere-dateien-mit-pgp-verschluesseln.zip "Beide Dateien sind in einer ZIP-Datei gespeichert.").)
 Im Nachhinein wurden von mir noch kleinere Ver­bes­se­rungen
-vorgenommen, die den Inhalt aber nicht änderten.\
-*
+vorgenommen, die den Inhalt aber nicht änderten.*
