@@ -34,15 +34,15 @@ dem richtigen Private Key entschlüsselt werden, es muss nicht erst ein
 Passwort übermittelt werden, dass zum Ver- und Entschlüsseln genutzt
 wird. PGP verwendet somit ein asymmetrisches Kryptosystem.
 
-~~Schlecht für mehrere Benutzer und Dateien~~
+<del cite="https://plasisent.org/0e4d0frw">Schlecht für mehrere Benutzer und Dateien</del>
 ---------------------------------------------
 
-~~Der Nachteil dieses Systems ist sein Vorteil. Eine Datei wird genau
-für eine Person verschlüsselt und kann nur von einer Person
-entschlüsselt werden. Soll eine Datei an mehrere Benutzer verteilt
-werden, bietet sich dieses System nicht mehr an, da die Datei in diesem
-Fall für jeden Benutzer speziell verschlüsselt und übertragen werden
-muss.~~
+<del cite="https://plasisent.org/0e4d0frw">Der Nachteil dieses Systems
+ist sein Vorteil. Eine Datei wird genau für eine Person verschlüsselt
+und kann nur von einer Person entschlüsselt werden. Soll eine Datei an
+mehrere Benutzer verteilt werden, bietet sich dieses System nicht mehr
+an, da die Datei in diesem Fall für jeden Benutzer speziell
+verschlüsselt und übertragen werden muss.</del>
 
 **Update:** Hauke Laging hat mich in einem
 [Kommentar](http://plasisent.org/dateien-verschluesseln-pgp/#comment-71 "Haukes Kommentar, der mich auf meinen Fehler hinweist.")
@@ -54,10 +54,11 @@ das System bleibt auch für mehrere Benutzer praktikabel. Ich bitte darum
 meinen Fehler zu ent­schul­digen und danke Hauke für den Hinweis.
 
 Es gibt ein weiteres Problem. Wem ist aufgefallen, dass ich bisher immer
-von „einer Datei“ schrieb? ~~Das hat einen Grund. PGP kann nämlich nur
-einzelne Dateien verschlüsseln. Wer mehrere Urlaubsbilder verschlüsselt
-an seine Freunde weiter geben möchte, muss diese demnach nicht nur für
-jede Person verschlüsseln, sondern auch jede Datei extra.~~
+von „einer Datei“ schrieb? <del cite="https://plasisent.org/0e4d0frw">Das
+hat einen Grund. PGP kann nämlich nur einzelne Dateien verschlüsseln.
+Wer mehrere Urlaubsbilder verschlüsselt an seine Freunde weiter geben
+möchte, muss diese demnach nicht nur für jede Person verschlüsseln,
+sondern auch jede Datei extra.</del>
 
 **Update:** Und in einem [weiteren
 Kommentar](http://plasisent.org/dateien-verschluesseln-pgp/#comment-73)
@@ -102,10 +103,11 @@ Fazit
 Die Verschlüsselung von Dateien mit PGP kann gut verwendet werden, wenn
 einzelne Dateien mit anderen ausgetauscht werden sollen. Durch die
 Beschränkung auf den jeweiligen Private Key, ist dies eine sehr sichere
-Variante. ~~Nicht geeignet ist dieses System dagegen um mehrere Dateien
-zu teilen, oder um Dateien an viele Leute zu schicken.~~ Auch die
-Oberfläche unter Linux lässt viele Wünsche offen; mit der Windows
-Version lässt sich dagegen gut arbeiten.
+Variante. <del cite="https://plasisent.org/0e4d0frw">Nicht geeignet
+ist dieses System dagegen um mehrere Dateien zu teilen, oder um
+Dateien an viele Leute zu schicken.</del> Auch die Oberfläche unter
+Linux lässt viele Wünsche offen; mit der Windows Version lässt sich
+dagegen gut arbeiten.
 
 Weiterführende Links
 --------------------
