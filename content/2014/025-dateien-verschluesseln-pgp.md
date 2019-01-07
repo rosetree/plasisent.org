@@ -109,9 +109,5 @@ dagegen gut arbeiten.
 Weiterführende Links
 --------------------
 
--   [Schlüsselpaar im CLI
-    erzeugen](http://www.email-nur-an-dich.de/anleitungen/gnupg/schluesselpaar-erzeugen)
--   [Anleitung zu GnuPG im
-    Terminal](http://wiki.ubuntuusers.de/GnuPG#Dateioperationen)
--   [Anleitung für
-    Windows](http://gpg4win.org/doc/de/gpg4win-compendium_24.html#id6)
+- [Anleitung zu GnuPG im Terminal](http://wiki.ubuntuusers.de/GnuPG#Dateioperationen)
+- [Anleitung für Windows](http://gpg4win.org/doc/de/gpg4win-compendium_24.html#id6)
