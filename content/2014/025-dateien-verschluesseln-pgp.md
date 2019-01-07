@@ -10,27 +10,24 @@ tags:
 cleaned?: false
 ---
 
-In der [Themenreihe „Dateien
-verschlüsseln“](http://plasisent.org/tag/dateien-verschluesseln/ "Themenreihe: Dateien verschlüsseln")
-beschäftige ich mich mit verschiedenen Programmen und Möglichkeiten, um
-Dateien vor dem Zugriff Unbefugter zu schützen. Wer schon seine [E-Mails
-mit PGP
-verschlüsselt](http://www.email-nur-an-dich.de/ "Anleitungen und Erklärungen zum Verschlüsseln von E-Mails mit PGP"),
-für den bietet sich eine Verschlüsselung einzelner Dateien mit OpenPGP
-definitiv an. Aber auch für alle anderen hat PGP viele Vorteile zu
-bieten.
+In einer Themenreihe „Dateien verschlüsseln“ beschäftige ich mich mit
+verschiedenen Programmen und Möglichkeiten, um Dateien vor dem Zugriff
+Unbefugter zu schützen. Wer schon seine [E-Mails mit PGP
+verschlüsselt](http://www.email-nur-an-dich.de/ "Anleitungen und
+Erklärungen zum Verschlüsseln von E-Mails mit PGP"), für den bietet
+sich eine Verschlüsselung einzelner Dateien mit OpenPGP definitiv an.
+Aber auch für alle anderen hat PGP viele Vorteile zu bieten.
 
 OpenPGP ist ein offener Standard, der weit verbreitet ist. Freie
 Implementationen sind für alle großen Betriebssysteme vor­handen; somit
 können verschlüsselte Dateien ohne Probleme zwischen Linux, Windows und
 Mac ausgetauscht werden.
 
-Das ist besonders wichtig, wenn eine Datei an einen Freund weitergegeben
-werden soll, der ein anderes Betriebssystem hat.
-[PGP](http://plasisent.org/tag/pgp/ "Artikel auf Plasisent, die etwas mit PGP zu tun haben.")
-ist genau dafür gemacht, für die Kommunikation zwischen zwei Stellen.
-Die Datei wird mit dem Public Key verschlüsselt und kann nur noch mit
-dem richtigen Private Key entschlüsselt werden, es muss nicht erst ein
+Das ist besonders wichtig, wenn eine Datei an einen Freund
+weitergegeben werden soll, der ein anderes Betriebssystem hat. PGP ist
+genau dafür gemacht, für die Kommunikation zwischen zwei Stellen. Die
+Datei wird mit dem Public Key verschlüsselt und kann nur noch mit dem
+richtigen Private Key entschlüsselt werden, es muss nicht erst ein
 Passwort übermittelt werden, dass zum Ver- und Entschlüsseln genutzt
 wird. PGP verwendet somit ein asymmetrisches Kryptosystem.
 
@@ -44,14 +41,14 @@ mehrere Benutzer verteilt werden, bietet sich dieses System nicht mehr
 an, da die Datei in diesem Fall für jeden Benutzer speziell
 verschlüsselt und übertragen werden muss.</del>
 
-**Update:** Hauke Laging hat mich in einem
-[Kommentar](http://plasisent.org/dateien-verschluesseln-pgp/#comment-71 "Haukes Kommentar, der mich auf meinen Fehler hinweist.")
-darauf hingewiesen, dass der obere Absatz falsch ist. PGP verschlüsselt
-Dateien symmetrisch (also mit einem Schlüssel, der immer gleich ist) und
-verschlüsselt diesen Schlüssel mit dem Public Key des Empfängers.
+**Update:** Hauke Laging hat mich in einem Kommentar darauf
+hingewiesen, dass der obere Absatz falsch ist. PGP verschlüsselt
+Dateien symmetrisch (also mit einem Schlüssel, der immer gleich ist)
+und verschlüsselt diesen Schlüssel mit dem Public Key des Empfängers.
 Dadurch wird die zu übertragende Datei nur sehr geringfügig größer und
-das System bleibt auch für mehrere Benutzer praktikabel. Ich bitte darum
-meinen Fehler zu ent­schul­digen und danke Hauke für den Hinweis.
+das System bleibt auch für mehrere Benutzer praktikabel. Ich bitte
+darum meinen Fehler zu ent­schul­digen und danke Hauke für den
+Hinweis.
 
 Es gibt ein weiteres Problem. Wem ist aufgefallen, dass ich bisher immer
 von „einer Datei“ schrieb? <del cite="https://plasisent.org/0e4d0frw">Das
@@ -60,14 +57,12 @@ Wer mehrere Urlaubsbilder verschlüsselt an seine Freunde weiter geben
 möchte, muss diese demnach nicht nur für jede Person verschlüsseln,
 sondern auch jede Datei extra.</del>
 
-**Update:** Und in einem [weiteren
-Kommentar](http://plasisent.org/dateien-verschluesseln-pgp/#comment-73)
-hat mich
-[Hauke](http://www.openpgp-schulungen.de/ "Mehr über OpenPGP Schulungen.")
-darauf aufmerksam gemacht, dass ich auch das in Unwissenheit geschrieben
-habe. Man kann also auch mehrere Dateien auf einmal mit PGP
-verschlüsseln. (Es werden allerdings immer noch einzelne Dateien
-angelegt.)
+**Update:** Und in einem weiteren Kommentar hat mich
+[Hauke](http://www.openpgp-schulungen.de/ "Mehr über OpenPGP
+Schulungen.") darauf aufmerksam gemacht, dass ich auch das in
+Unwissenheit geschrieben habe. Man kann also auch mehrere Dateien auf
+einmal mit PGP verschlüsseln. (Es werden allerdings immer noch
+einzelne Dateien angelegt.)
 
 Dieser Nachteil lässt sich mit der Verwendung von Zip-Dateien
 überwinden, aber wenn es sich um Dateien handelt, die regelmäßig
@@ -118,4 +113,3 @@ Weiterführende Links
     Terminal](http://wiki.ubuntuusers.de/GnuPG#Dateioperationen)
 -   [Anleitung für
     Windows](http://gpg4win.org/doc/de/gpg4win-compendium_24.html#id6)
-
