@@ -67,7 +67,9 @@ einzelne Dateien angelegt.)
 Dieser Nachteil lässt sich mit der Verwendung von Zip-Dateien
 überwinden, aber wenn es sich um Dateien handelt, die regelmäßig
 geändert werden (zum Beispiel eine Todo-Liste auf dem USB-Stick), dann
-ist das sehr unpraktisch.
+ist das sehr unpraktisch. <ins>*Update*: Mit <code>gpg-zip</code> gibt
+es übrigens ein Commandline Tool, das [mehrere Dateien in einer
+Zip-Datei verschlüsseln](http://plasisent.org/0e4m1e8p) kann.</ins>
 
 USB-Sticks oder ganze Partitionen lassen sich mit PGP übrigens gar nicht
 verschlüsseln. Die Verschlüsselung von USB-Sticks wäre ohnehinn nicht
