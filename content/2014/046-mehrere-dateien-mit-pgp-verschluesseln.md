@@ -19,13 +19,12 @@ grafische Oberfläche, die sowohl auf Linux als auch auf Windows läuft.
 Dateien auf einmal verarbeiten
 ------------------------------
 
-Zum einen hat Hauke Laging in seinem
-[Kommentar](http://plasisent.org/dateien-verschluesseln-pgp/#comment-73 "Haukes Kommentar unter einem anderen Artikel von mir.")
-darauf hin­ge­wiesen, dass man – sofern man PGP über das Command Line
-In­terface (CLI) verwendet – den Parameter `--multifile` verwenden und
-anstatt einer einzelnen Datei, mehrere Dateien angeben kann, die
-verschlüsselt werden sollen. Mit diesem Parameter wird für jede
-Quelldatei eine verschlüsselte Datei erstellt.
+Zum einen hat Hauke Laging in seinem Kommentar darauf hin­ge­wiesen,
+dass man – sofern man PGP über das Command Line In­terface (CLI)
+verwendet – den Parameter `--multifile` verwenden und anstatt einer
+einzelnen Datei, mehrere Dateien angeben kann, die verschlüsselt
+werden sollen. Mit diesem Parameter wird für jede Quelldatei eine
+verschlüsselte Datei erstellt.
 
 Sollen die Dateien weitergegeben werden, halte ich dieses Ver­fahren
 zumindest ab einer gewissen Anzahl an Dateien aber nicht für sonderlich
@@ -79,7 +78,7 @@ Artikel](http://www.openpgp-schulungen.de/grafiken/gepruefter_artikel.png)](http
 
 *Die erste Version dieses Artikels wurde von Hauke Laging inhaltlich
 überprüft und signiert. ([Signatur und signierte Datei
-herunter­la­den](http://plasisent.org/wordpress/wp-content/uploads/mehrere-dateien-mit-pgp-verschluesseln.zip "Beide Dateien sind in einer ZIP-Datei gespeichert.").)
+herunter­la­den](https://plasisent.org/assets/files/mehrere-dateien-mit-pgp-verschluesseln.zip "Beide Dateien sind in einer ZIP-Datei gespeichert.").)
 Im Nachhinein wurden von mir noch kleinere Ver­bes­se­rungen
 vorgenommen, die den Inhalt aber nicht änderten.\
 *
