@@ -1,9 +1,15 @@
-.PHONY: all build style
-.FORCE: build
+.PHONY: all build docker-build docker-run style
+.FORCE: build docker-run
 
 SASS_CMD = sass --style compact
 
-all: style build
+all: docker-run
+
+docker-run: docker-build
+	docker run --volume=$(shell pwd):/usr/src/app plasisent:latest
+
+docker-build: Dockerfile Gemfile Gemfile.lock
+	docker build -t plasisent .
 
 build:
 	bundle exec nanoc
