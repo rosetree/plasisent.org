@@ -1,12 +1,16 @@
 .PHONY: all build docker-build docker-run style
 .FORCE: build docker-run
 
-SASS_CMD = sass --style compact
+SASS_CMD = sass --default-encoding utf-8 --style compact
+USER_GROUP = $(shell id -u):$(shell id -g)
 
 all: docker-run
 
-docker-run: docker-build
-	docker run --volume=$(shell pwd):/usr/src/app plasisent:latest
+docker-run:
+	docker run \
+		--volume $(shell pwd):/usr/src/app \
+		--user $(USER_GROUP) \
+		plasisent:latest
 
 docker-build: Dockerfile Gemfile Gemfile.lock
 	docker build -t plasisent .
