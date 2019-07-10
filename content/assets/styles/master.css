@@ -19,9 +19,9 @@ blockquote, q { quotes: "" ""; }
 
 body { width: 94vw; margin: 4vh auto; color: #111; background-color: #fff; font-family: 'Go', sans-serif; }
 
-::selection { background-color: #272; color: #fff; }
+::selection { background-color: #00844a; color: #fff; }
 
-::-moz-selection { background-color: #272; color: #fff; }
+::-moz-selection { background-color: #00844a; color: #fff; }
 
 /* Headlines */
 header p { color: #222; }
@@ -49,7 +49,7 @@ small { font-size: smaller; }
 
 abbr[title] { border-bottom: #aaa dotted medium; }
 
-mark { background-color: #cfc; }
+mark { background-color: #cee7ce; }
 
 q { quotes: "»" "«" "›" "‹"; }
 
@@ -62,9 +62,9 @@ blockquote mark { background-color: #222; color: #fff; }
 main p { max-width: 40rem; }
 
 /* Links */
-a { color: inherit; border-bottom: #272 dotted 1px; }
+a { color: inherit; border-bottom: #00844a dotted 1px; }
 
-a:focus, a:hover { background: #cfc; border-bottom: #222 dotted 2px; }
+a:focus, a:hover { background: #cee7ce; border-bottom: #222 dotted 2px; }
 
 a:hover { border-bottom-style: solid; }
 
@@ -105,9 +105,9 @@ pre { padding: 0.9em 1.1em; background-color: #eef5ee; border-top: #aaa thin sol
 /* Form Elements */
 input { color: #111; background: #eef5ee; width: 70%; padding: 0.3em 0.5em; border: none; border-top: #aaa thin solid; border-bottom: #aaa thin solid; }
 
-input[type=submit] { color: #fff; background-color: #272; width: 20%; cursor: pointer; border-radius: 3px; }
+input[type=submit] { color: #fff; background-color: #00844a; width: 20%; cursor: pointer; border-radius: 3px; }
 
-input[type=submit]:hover { background-color: #282; }
+input[type=submit]:hover { background-color: #00844a; }
 
 input[type=text]:focus { border-top: #222 thin solid; border-bottom: #222 thin solid; }
 

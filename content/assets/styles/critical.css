@@ -4,6 +4,6 @@ body { width: 94vw; margin: 4vh auto; background-color: #fff; color: #111; }
 
 main p { max-width: 40rem; }
 
-a { color: #111; border-bottom: dotted thin #272; }
+a { color: #111; border-bottom: dotted thin #00844a; }
 
-a:hover { background: #cfc; border-bottom: #222 solid 2px; }
+a:hover { background: #cee7ce; border-bottom: #222 solid 2px; }
