@@ -17,7 +17,7 @@ blockquote:before, blockquote:after { content: ""; }
 
 blockquote, q { quotes: "" ""; }
 
-body { width: 94vw; margin: 4vh auto; color: #111; background-color: #fff; font-family: 'Go', sans-serif; }
+body { width: 94vw; margin: 2ch auto; color: #111; background-color: #fff; font-family: 'Go', sans-serif; }
 
 ::selection { background-color: #00844a; color: #fff; }
 
@@ -59,7 +59,7 @@ blockquote { padding: 0.5rem 1.5rem; border-left: #aaa solid thin; }
 
 blockquote mark { background-color: #222; color: #fff; }
 
-main p { max-width: 40rem; }
+main p { max-width: 70ch; }
 
 /* Links */
 a { color: inherit; border-bottom: #00844a dotted 1px; }

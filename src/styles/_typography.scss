@@ -1,6 +1,6 @@
 body {
 	width: 94vw;
-	margin: 4vh auto;
+	margin: 2ch auto;
 	color: $text;
 	background-color: $background;
 	font-family: 'Go', sans-serif;
@@ -94,7 +94,7 @@ blockquote mark {
 }
 
 main p {
-	max-width: 40rem;
+	max-width: 70ch;
 }
 
 /* Links */
