@@ -2,12 +2,13 @@
 .FORCE: build docker-run
 
 SASS_CMD = sass --default-encoding utf-8 --style compact
-USER_GROUP = $(shell id -u):$(shell id -g)
+USER_GROUP = $(shell id -u $(USER)):$(shell id -g $(USER))
 
 all: docker-run
 
 docker-run:
 	docker run \
+		--env TZ=Europe/Berlin \
 		--volume $(shell pwd):/usr/src/app \
 		--user $(USER_GROUP) \
 		plasisent:latest
