@@ -19,15 +19,15 @@ GEM
     hamster (3.0.0)
       concurrent-ruby (~> 1.0)
     kramdown (1.15.0)
-    mini_portile2 (2.3.0)
+    mini_portile2 (2.4.0)
     nanoc (4.8.10)
       addressable (~> 2.5)
       cri (~> 2.8)
       ddplugin (~> 1.0)
       hamster (~> 3.0)
       ref (~> 2.0)
-    nokogiri (1.8.5)
-      mini_portile2 (~> 2.3.0)
+    nokogiri (1.10.8)
+      mini_portile2 (~> 2.4.0)
     public_suffix (3.0.0)
     rack (2.0.3)
     rb-fsevent (0.10.2)
@@ -51,7 +51,7 @@ DEPENDENCIES
   git
   haml
   kramdown
-  mini_portile2 (~> 2.3)
+  mini_portile2 (~> 2.4)
   nanoc
   nokogiri
   sass
