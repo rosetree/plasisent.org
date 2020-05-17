@@ -40,8 +40,7 @@ Als Work-Around muss also:
     enthält mehrere Netzwerk Devices auf und welche Adressbereiche
     verwendet werden.
    
-    <pre><code>
-    $ ip addr
+    <pre><code>$ ip addr
     ✂️schnipp
     10: docker0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN group default 
      link/ether 01:22:32:43:52:6d brd ff:ff:ff:ff:ff:ff
