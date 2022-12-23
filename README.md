@@ -1,6 +1,8 @@
-# [plasisent.org][]
+:warning: this is no longer maintained
 
-This is the source code of my blog [plasisent.org][]. It uses:
+# Archive of [plasisent.org][]
+
+This was the source code of my blog [plasisent.org][]. It used:
 
 * The static site generator [Nanoc][].
 * [kramdown][] to compile markdown.
